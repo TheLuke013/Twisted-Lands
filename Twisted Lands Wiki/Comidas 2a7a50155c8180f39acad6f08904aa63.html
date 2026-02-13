@@ -1,0 +1,792 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Comidas</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2a7a5015-5c81-80f3-9aca-d6f08904aa63" class="page sans"><header><h1 class="page-title" dir="auto">Comidas</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><ul id="2d8a5015-5c81-8028-82ba-ca8d471cd699" class="bulleted-list"><li style="list-style-type:disc"><a href="Comidas/Ma%C3%A7%C3%A3s%20M%C3%A1gicas%202d8a50155c8180cb8f7ef20faf582b16.html">Maçãs Mágicas</a></li></ul></div><div style="display:contents" dir="auto"><ul id="2d8a5015-5c81-8039-b76a-fb8a8fd880bf" class="bulleted-list"><li style="list-style-type:disc"><a href="Comidas/Frutas%202d8a50155c8180d2a8f0d3498491d26d.html">Frutas</a></li></ul></div><div style="display:contents" dir="auto"><ul id="2d8a5015-5c81-8014-bb9d-fbc6be762a98" class="bulleted-list"><li style="list-style-type:disc"><a href="Comidas/Peixes%202d8a50155c8180c19fc2c4bc24633cfa.html">Peixes</a></li></ul></div><div style="display:contents" dir="auto"><ul id="2d8a5015-5c81-80bd-b92a-ff124dc5dd62" class="bulleted-list"><li style="list-style-type:disc"><a href="Comidas/Carnes%202d8a50155c8180648848f1c297df1abf.html">Carnes</a></li></ul></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-801d-b2e7-e88a8a37b97f" class="">Espiga de Milho</h2></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-8015-8c04-d3b86ae0776c" class="image" style="text-align:left"><a href="Comidas/corn_cob.png"><img style="width:128px" src="Comidas/corn_cob.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8057-bbe2-fa96f777218c" class=""><strong>Nutrição: 6</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-801d-a011-f81a7766ee65" class=""><strong>Saturação: 0.75</strong></p></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-8042-9d02-deda87a37b5c" class="">Repolho</h2></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80e1-8c23-fad0b7a5eaad" class="image" style="text-align:left"><a href="Comidas/cabbage.png"><img style="width:128px" src="Comidas/cabbage.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80b9-b596-c25d45f8f78f" class=""><strong>Nutrição: 3</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8052-8d24-f328532255e3" class=""><strong>Saturação: 0.45</strong></p></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-8015-b7b6-cfcbe9b8d6e2" class="">Pato no Tucupi</h2></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-80aa-bf47-e8f42446d05e" class="column-list"><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-80c3-860f-d87ad4ccf546" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-8061-8f29-def1079e7624" class="image" style="text-align:left"><a href="Comidas/duckling_stew.png"><img style="width:128px" src="Comidas/duckling_stew.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-8093-99e4-c5fc75fcb898" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-801d-91f8-cdd264d6a7a1" class="image"><a href="Comidas/Duckling_Stew.png"><img style="width:331.984375px" src="Comidas/Duckling_Stew.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80b9-8e70-e5f2fe493d1e" class=""><strong>Nutrição: 10</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80af-83e4-ffce8dff4dbd" class=""><strong>Saturação: 2.0</strong></p></div><div style="display:contents" dir="auto"><h2 id="2a7a5015-5c81-80f4-8bbc-e07243b8a9ab" class="">Queijo</h2></div><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-8080-b7b4-e08785565ca0" class="column-list"><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-8090-b94d-e8f391bb678d" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a7a5015-5c81-8059-92c7-d97c715f9966" class="image" style="text-align:left"><a href="Comidas/cheese.png"><img style="width:128px" src="Comidas/cheese.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8076-a4a9-d70252ed452e" class=""><strong>Nutrição: 4</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80c0-9a10-cbfa6640d800" class=""><strong>Saturação: 0.75</strong></p></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-803e-9585-dba5707ce2fa" class="">Manteiga</h2></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-8031-88d9-f52c2b524daa" class="image"><a href="Comidas/Butter.png"><img style="width:331.96875px" src="Comidas/Butter.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80f0-ac3c-d8ba2baf756b" class="image" style="text-align:left"><a href="Comidas/butter.png"><img style="width:128px" src="Comidas/butter.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8048-933b-f46f558d60f7" class=""><strong>Nutrição: 1</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80dd-923b-ed75d5dbeeb9" class=""><strong>Saturação: 0.5</strong></p></div></div></div><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-8055-8706-e60ba264e492" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a9a5015-5c81-8051-8ee3-ce37f36bdf89" class="image"><a href="Comidas/Cheese.png"><img style="width:270px" src="Comidas/Cheese.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><h2 id="2a7a5015-5c81-8093-8642-f68c83f50408" class="">Pão de Queijo</h2></div><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-805d-995c-e0e0fe4b3e04" class="column-list"><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-809d-afcd-e4db76cebf8f" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a7a5015-5c81-802a-bc31-e485a11f574a" class="image" style="text-align:left"><a href="Comidas/cheese_bread.png"><img style="width:128px" src="Comidas/cheese_bread.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8019-a60d-c626b54cde7f" class="">Pode ser craftado ou encontrado em minas abandonadas</p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8048-9eb7-f13b967bdb59" class=""><strong>Nutrição: 6</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-802a-bb8e-dbdf926c6aa9" class=""><strong>Saturação: 0.72</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80bd-b091-c24078742629" class=""><strong>Efeitos: regeneração por 5 segundos</strong></p></div></div></div><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-801f-88cb-d7ee0a3361ff" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a9a5015-5c81-80b7-854a-c2a8d95b5311" class="image"><a href="Comidas/Pao_de_queijo.png"><img style="width:331.984375px" src="Comidas/Pao_de_queijo.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><h2 id="2a7a5015-5c81-800b-b7d7-f6ea2cf6de25" class="">Pizza</h2></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-800b-9f7f-c032f31b49cd" class="column-list"><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-807c-b78b-cdcf92d7315e" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a7a5015-5c81-80f3-802d-c2cd3a0450b8" class="image" style="text-align:left"><a href="Comidas/pizza.png"><img style="width:128px" src="Comidas/pizza.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-80ab-b961-e91aeb5c0e56" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-8030-8a17-fa59030f7a43" class="image"><a href="Comidas/Pizza.png"><img style="width:331.984375px" src="Comidas/Pizza.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80e7-9135-d327827c8fd1" class="">Funciona como o bolo, recupera bastante vida e é uma comida legal</p></div><div style="display:contents" dir="auto"><h2 id="2a7a5015-5c81-806d-b2ae-ffe3e2577eca" class="">Pedaço de Pizza</h2></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-80e4-8fb2-ee55a5bf1cfb" class="column-list"><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-809f-bb43-d3dea9fb234b" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a7a5015-5c81-808b-9562-c0a96d1cc323" class="image" style="text-align:left"><a href="Comidas/pizza_piece.png"><img style="width:128px" src="Comidas/pizza_piece.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-804c-9952-dcd2a23edcd6" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80ef-84ca-ec88faf22d85" class="image"><a href="Comidas/Pizza_Piece.png"><img style="width:331.984375px" src="Comidas/Pizza_Piece.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8005-943a-d600378a2f56" class=""><strong>Nutrição: 6</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8026-af93-d0757a26f856" class=""><strong>Saturação: 0.6</strong></p></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-8088-8f2c-c49a88fff7e4" class="">Sanduiche BLT</h2></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-80b8-8d50-ffe7b99dc9a9" class="column-list"><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-80e4-b026-ec9657271182" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-809c-8198-d5191a967482" class="image" style="text-align:left"><a href="Comidas/blt.png"><img style="width:128px" src="Comidas/blt.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8031-8715-d8cd249a47ce" class=""><strong>Nutrição: 12</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8012-8865-c2e2cf1786fd" class=""><strong>Saturação: 0.95</strong></p></div></div></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-8038-b8bc-e32c2c25c8d2" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80c2-8a0c-c5d9c3664d8c" class="image"><a href="Comidas/BLT_Sandwich.png"><img style="width:331.96875px" src="Comidas/BLT_Sandwich.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-806b-aa53-f5d62caa4da5" class="">Lasanha</h2></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-8056-913f-da4cf378cf05" class="column-list"><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-8064-9ff4-def619c1a7cd" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-803d-bc2e-e0f1780f97b8" class="image" style="text-align:left"><a href="Comidas/lasagna.png"><img style="width:128px" src="Comidas/lasagna.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-803b-b9b4-d5fd04b80ce9" class=""><strong>Nutrição: 10</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-801a-b4ec-e145acd7647d" class=""><strong>Saturação: 1.25</strong></p></div></div></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-80f4-a75a-c0b4dbf0e08c" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-8059-a30e-cfe053e6ace2" class="image"><a href="Comidas/Lasagna.png"><img style="width:331.984375px" src="Comidas/Lasagna.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-80d5-959e-db3609af24f8" class="">Hamburger de Siri</h2></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-8078-afcc-c8a873efc21f" class="column-list"><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-8030-92c2-ce40c66b174a" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-8075-96c5-fc26f4f06924" class="image" style="text-align:left"><a href="Comidas/krabby_patty.png"><img style="width:128px" src="Comidas/krabby_patty.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-801a-b905-d10676450528" class=""><strong>Nutrição: 16</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-805a-9b27-d792b902536f" class=""><strong>Saturação: 2.35</strong></p></div></div></div><div style="display:contents" dir="auto"><div id="2d8a5015-5c81-8032-8b6e-c6729c40bebb" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-8055-8a21-ef5529c7c673" class="image"><a href="Comidas/Krabby_Patty.png"><img style="width:331.984375px" src="Comidas/Krabby_Patty.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8059-a908-f7e7e1adb859" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8039-a0eb-de8365d07fb1" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80b0-915c-dc7d582d08ff" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8062-9bbf-e76110a9d282" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80c7-91e5-d72b35c611cf" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-808a-bd41-f8674e545c86" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8037-9c85-e308d81a0020" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8093-93cc-c86e1da3c970" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80a0-84c4-d0f458691e75" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80b2-bcec-fde47619faea" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-804a-a788-d887b06f3d01" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80d0-9ca7-e3ec6a03a740" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80d0-a922-e26a51c9df21" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8083-bec9-e82248a0b4c2" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80c1-bcfa-f8842e5f33b0" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80d1-a8e3-c3178896bdde" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-801c-ae62-f05e967fc2ff" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80d4-b360-ed8e50337349" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80e4-a229-d422e7b6beaf" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80e6-b66b-c77ed5e1e1f4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8050-973e-ea56616ee4b4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80c7-95f3-d2d862cf4850" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8017-80d7-d421113a35bb" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8073-b50c-fcafa1b5a15c" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8065-87c4-c1f621d8b3c0" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80f8-b954-cd7a45536e68" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80cc-8656-e067baf25fb8" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8003-9911-e25b2596a63f" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80ac-83e4-d8d29f9f16f1" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80db-9519-ef448d614bd7" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8038-a37b-de89d944e018" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8001-a54e-cf3454e8c531" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-806d-acdc-c53ddba209e2" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-807a-9f8e-d452cc7bb4b8" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8026-bf7d-e55333600f6a" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-802e-a70a-ff8b8b8a7294" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-802a-8710-dbe9acc60f82" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-809c-9b74-df392724b5a4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8098-b140-eb364ee29be6" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80de-98ec-fa4d25201355" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-801c-8c9b-d80b9da71623" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-801e-adf6-dee9312f64d8" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80f0-b3bb-ed141d993a82" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8083-b5a4-f216f4650e91" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80b4-bf07-dcaadf1b3116" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8015-b1f0-c5dd74aae7cf" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8061-ba7f-fd2f036ea34d" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-803c-a59b-f4134515c2aa" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80e9-a254-d0df09037d20" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80e3-a165-f7e507078d28" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-806f-9fab-f833ba371b38" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8049-9899-f6d323d996f8" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-802a-b555-f4f3a5d99403" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-806e-9334-f42b872e92e3" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80a1-9c1d-f1dea9e676fc" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80b3-8103-f088ca83eec6" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80b8-bca2-ccc69376db18" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8021-829b-dba27d7c811e" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-809d-a6eb-e993fd085c60" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8073-92d3-dfbda433e124" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-805d-9a23-ff64fc57df33" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80d0-aca3-edec75f06090" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80db-a7a3-de258b21440d" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8061-9353-e437602b2cb4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-803a-8803-e0a0755e6856" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80ce-94d8-d059275396d4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8007-a753-ef00f4b99e90" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8095-b937-dfefd21dac3f" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80e8-ac21-ed3abe6f1e03" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8090-bb59-fd02e6435ae8" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80b5-9424-fac056c36e3c" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80b4-87cf-e43d06664bac" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-809b-805a-e4e2e32c96e8" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80fe-b5e8-f1f3b4205f28" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80f5-8196-dfd6dce50212" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80b3-9a96-e3543470f778" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80e9-8f05-ccae7526dcae" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80ff-a35d-f85ddd69594a" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-803f-a32c-efb102f48309" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80cb-8f7e-f20faf582b16" class="link-to-page"><a href="Comidas/Ma%C3%A7%C3%A3s%20M%C3%A1gicas%202d8a50155c8180cb8f7ef20faf582b16.html">Maçãs Mágicas</a></figure></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80d2-a8f0-d3498491d26d" class="link-to-page"><a href="Comidas/Frutas%202d8a50155c8180d2a8f0d3498491d26d.html">Frutas</a></figure></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80c1-9fc2-c4bc24633cfa" class="link-to-page"><a href="Comidas/Peixes%202d8a50155c8180c19fc2c4bc24633cfa.html">Peixes</a></figure></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-8064-8848-f1c297df1abf" class="link-to-page"><a href="Comidas/Carnes%202d8a50155c8180648848f1c297df1abf.html">Carnes</a></figure></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -1,0 +1,737 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Blocos</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="26da5015-5c81-801b-b4ca-c0c19c6b7211" class="page sans"><header><h1 class="page-title" dir="auto">Blocos</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><h3 id="2a7a5015-5c81-80d7-817b-ccde4b1c7519" class=""><a href="Blocos/Min%C3%A9rios%202a7a50155c8180d6ad25dd3f6a9e2f40.html">Minérios</a></h3></div><div style="display:contents" dir="auto"><h3 id="2a7a5015-5c81-804b-ac50-ff0cdbe3c617" class=""><a href="Blocos/Blocos%20de%20Constru%C3%A7%C3%A3o%202a7a50155c818082a447d0c6e423f8d2.html">Blocos de construção</a></h3></div><div style="display:contents" dir="auto"><h3 id="2a7a5015-5c81-8059-b256-ee11582ad643" class=""><a href="Blocos/Natureza%202a7a50155c81800abc13e4edede9aacd.html">Natureza</a></h3></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-802e-93db-ea0dcbc5be60" class="">
+</p></div><div style="display:contents" dir="auto"><h1 id="2a7a5015-5c81-80c2-8a25-d1e2ad7516b8" class="">Blocos</h1></div><div style="display:contents" dir="auto"><h2 id="2a7a5015-5c81-805d-8e0a-c6fadb9762a3" class="">Pó de Sal</h2></div><div style="display:contents" dir="ltr"><figure id="2a7a5015-5c81-8057-a29f-d05462718cc9" class="image" style="text-align:left"><a href="Blocos/salt_dust.png"><img style="width:250px" src="Blocos/salt_dust.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8070-ba28-dc8909c662cc" class="">Pode ser colocado no chão com um Sal, emite um pouco brilho e também afasta fantasmas, espíritos e formigas, sendo mais eficiente que o próprio Bloco de Sal. Não se preocupe mais em não conseguir dormir em paz(ou deixar de dormir), fantasmas não o incomodará mais.</p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80df-b735-dc172fdc128b" class=""><strong>Dureza: 0.5</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8081-a5c1-fe221ffb2406" class=""><strong>Resistencia a explosão: 0</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8017-a74f-dc4ba423c999" class=""><strong>Ferramenta para quebrar: qualquer</strong></p></div><div style="display:contents" dir="auto"><h2 id="2a7a5015-5c81-806d-a4dd-dc05c5a19187" class="">Tocha Sagrada</h2></div><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-8064-bc31-e148af1892c2" class="column-list"><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-80c3-8b0a-e283f7a9e484" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a7a5015-5c81-80d5-ab72-e14d67bf0a68" class="image" style="text-align:left"><a href="Blocos/extreme_torch.png"><img style="width:36px" src="Blocos/extreme_torch.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8044-a565-cb7bcd13465e" class="">A tocha sagrada para iluminar nosso caminho nessa jornada. Será muito usada para ritos místicos ou em dungeons sagradas.</p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-807c-b634-f72b0b3aded1" class=""><strong>Dureza: 0</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80ba-9ae5-e3c0f0e34a92" class=""><strong>Resistencia a explosão: 0</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8053-afc1-d39710d65606" class=""><strong>Ferramenta para quebrar: qualquer</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80dc-88ba-edec2bb4c5a9" class="">Propriedades: Pode iluminar de 20 a 30 blocos em área</p></div></div></div><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-80d8-9a48-d2c455a7b7f2" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a9a5015-5c81-8029-97c8-d0f76df7052b" class="image"><a href="Blocos/Sacred_Torch.png"><img style="width:332px" src="Blocos/Sacred_Torch.png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><h2 id="2a7a5015-5c81-804d-9974-c56384f02336" class="">Altar Rúnico</h2></div><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-8019-8ecb-fb283698ceef" class="column-list"><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-8008-9faa-ea6bd8bbfc3a" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a7a5015-5c81-8057-9a0b-d3021112917a" class="image" style="text-align:left"><a href="Blocos/runic_altar.png"><img style="width:192px" src="Blocos/runic_altar.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8006-83da-ffd85dff81bc" class="">O velho altar rúnico criado originalmente pela bruxa fundadora da Sociedade das Bruxas. Ele pode ser usado para muitas coisas, como craftar itens Ultimate ou transmutar armaduras em versões mágicas e melhoradas. Mas ele colocado não servira de nada, será necessário montar um altar elaborado para ativa-lo.</p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8016-8aab-c89c2345b80c" class=""><strong>Dureza: 15</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80e5-b35d-e08d8d87b453" class=""><strong>Resistencia a explosão: 100</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80e1-be60-ca752de46f1c" class=""><strong>Ferramenta para quebrar: picareta</strong></p></div></div></div><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-8049-88dd-c7059981f20a" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a9a5015-5c81-800d-b9b0-dfb262384a7b" class="image"><a href="Blocos/Captura_de_Tela_(615).png"><img style="width:331.984375px" src="Blocos/Captura_de_Tela_(615).png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="auto"><h2 id="2a7a5015-5c81-8036-b816-e932452ccf35" class="">Altar Rúnico Energizado</h2></div><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-8028-8a76-eaf8c5f8cc2b" class="column-list"><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-8072-bdcd-c361f220db1c" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a7a5015-5c81-8022-8096-d73d2bd9d17a" class="image" style="text-align:left"><a href="Blocos/runic_altar_energized.png"><img style="width:192px" src="Blocos/runic_altar_energized.png"/></a></figure></div></div></div><div style="display:contents" dir="auto"><div id="2a9a5015-5c81-8054-b076-df825cf42c95" style="width:50%" class="column"><div style="display:contents" dir="ltr"><figure id="2a9a5015-5c81-8064-8e86-d0cbffc4670e" class="image"><a href="Blocos/Captura_de_Tela_(271).png"><img style="width:1079px" src="Blocos/Captura_de_Tela_(271).png"/></a></figure></div></div></div></div></div><div style="display:contents" dir="ltr"><figure id="2a9a5015-5c81-80a1-a0f8-fce8cd6cbc30" class="image" style="text-align:right"><a href="Blocos/Captura_de_Tela_(616).png"><img style="width:384px" src="Blocos/Captura_de_Tela_(616).png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-807d-8035-e5b576a67a02" class="">Para ativar o Altar Rúnico é simples, basta fazer um 5x5 de Pedra-Negra Rúnica, colocar uma Tocha Sagrada em cada canto e o Altar no centro. Assim que ativar você ira escutar um som magico e enfim poderá usar a mesa para trabalhar com alta magia, podendo transformar seus itens Netherite em Ultimate, fazer o Cajado dos Trovoes ou melhorar suas armaduras.</p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-805b-8d0b-c6d21647a4e6" class="">Para transmutar suas armaduras Ultimate e Royal é só colocar um Suporte de Armadura em algum canto e jogar uma Estrela do Nether em cima da mesa.</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80b4-a4a5-d8062c186fbd" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80fb-9d46-d3e6e87453b0" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80a0-8511-e3de038cf795" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80ff-ab92-fa9d87357635" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80ae-b5a4-f1bc250d7a36" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80c0-a013-c00f9c01a7db" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-8061-a1c1-dccee626bc17" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-808a-870a-c73d20257e3a" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80c6-994d-c38cbf49405e" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80da-b78b-c84f9e1dbe52" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-8006-88bc-c6f244be5f5d" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-8084-a7a3-c1f7ad5ec183" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-802a-8859-f41efb41a335" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80bf-a4f1-e750805ff4ff" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80f8-be76-c517f95f988a" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-8018-ae10-dc8696a5e9b8" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-808c-bd21-feedbc887cd9" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-803b-bac4-d128fadff75e" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80c7-9336-ce3fac15fc61" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80e5-a52c-f10bb68e4996" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80cf-8733-fbd5a53f2971" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-8050-8c49-f92519e82113" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2a7a5015-5c81-80f0-91cc-eea934385923" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2a7a5015-5c81-80d6-ad25-dd3f6a9e2f40" class="link-to-page"><a href="Blocos/Min%C3%A9rios%202a7a50155c8180d6ad25dd3f6a9e2f40.html">Minérios</a></figure></div><div style="display:contents" dir="ltr"><figure id="2a7a5015-5c81-8082-a447-d0c6e423f8d2" class="link-to-page"><a href="Blocos/Blocos%20de%20Constru%C3%A7%C3%A3o%202a7a50155c818082a447d0c6e423f8d2.html">Blocos de Construção</a></figure></div><div style="display:contents" dir="ltr"><figure id="2a7a5015-5c81-800a-bc13-e4edede9aacd" class="link-to-page"><a href="Blocos/Natureza%202a7a50155c81800abc13e4edede9aacd.html">Natureza</a></figure></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

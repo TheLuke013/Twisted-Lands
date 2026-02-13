@@ -1,0 +1,713 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Comum</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2a8a5015-5c81-8046-88e5-d9cb9aae7050" class="page sans"><header><h1 class="page-title" dir="auto">Comum</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><h2 id="2a8a5015-5c81-8027-be79-c92362edc53d" class="">Vaca-Maçã</h2></div><div style="display:contents" dir="ltr"><figure id="2a8a5015-5c81-80d1-b5ff-f62405d08f8e" class="image" style="text-align:left"><a href="Comum/apple_cow.png"><img style="width:192px" src="Comum/apple_cow.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2a9a5015-5c81-8017-bfd7-ef1623963a3c" class="image" style="text-align:left"><a href="Comum/apple_cow%201.png"><img style="width:128px" src="Comum/apple_cow%201.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8034-8935-f0803c08e57e" class=""><strong>Vida: 10</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-805a-963c-fef8973c3262" class=""><strong>Onde Spawna: Overworld, de manhã</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80c3-9422-cd49534aa554" class=""><strong>Loot: Maçã</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80c9-969d-e93460499f5f" class=""><strong>Raridade: Comum</strong></p></div><div style="display:contents" dir="auto"><h2 id="2a8a5015-5c81-8095-9e36-e901b790c4e3" class="">Vaca-Maçã Dourada</h2></div><div style="display:contents" dir="ltr"><figure id="2a8a5015-5c81-804f-8e14-d3740d2a18ff" class="image" style="text-align:left"><a href="Comum/golden_cow.png"><img style="width:192px" src="Comum/golden_cow.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2a9a5015-5c81-80fc-99da-ef9365119246" class="image" style="text-align:left"><a href="Comum/golden_cow%201.png"><img style="width:128px" src="Comum/golden_cow%201.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80c2-9bf3-d0b144b40d95" class=""><strong>Vida: 10</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8028-a561-e2b6cd62740b" class=""><strong>Onde Spawna: Overworld, de manhã</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-804a-bc7d-d9567f2ec189" class=""><strong>Loot: Maçã Dourada</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80e6-a90f-c38f68f2bfb6" class=""><strong>Raridade: Parcialmente Comum</strong></p></div><div style="display:contents" dir="auto"><h2 id="2a8a5015-5c81-80cc-a5ed-e52f732c19e2" class="">Vaca-Maçã Dourada Encantada</h2></div><div style="display:contents" dir="ltr"><figure id="2a8a5015-5c81-8078-902e-c9fbfdd5a1e1" class="image" style="text-align:left"><a href="Comum/enchanted_cow.png"><img style="width:192px" src="Comum/enchanted_cow.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2a9a5015-5c81-8080-b7f2-e7079395f0e7" class="image" style="text-align:left"><a href="Comum/enchanted_cow%201.png"><img style="width:128px" src="Comum/enchanted_cow%201.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80d3-b0c7-decdef2eae5a" class=""><strong>Vida: 10</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8015-b590-e5a6f88bbec8" class=""><strong>Onde Spawna: Overworld, de manhã</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8033-94d9-edf357a67e15" class=""><strong>Loot: Maçã Dourada Encantada</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8072-9958-e420a7969e75" class=""><strong>Raridade: Parcialmente Comum</strong></p></div><div style="display:contents" dir="auto"><h2 id="2a8a5015-5c81-80e2-bec1-e320146a51c1" class="">Vaca-Maçã de Cristal</h2></div><div style="display:contents" dir="ltr"><figure id="2a8a5015-5c81-80d8-9328-e7de6cb75079" class="image" style="text-align:left"><a href="Comum/crystal_cow.png"><img style="width:192px" src="Comum/crystal_cow.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2a9a5015-5c81-8050-88ab-ff15b90b8fda" class="image" style="text-align:left"><a href="Comum/crystal_cow%201.png"><img style="width:128px" src="Comum/crystal_cow%201.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80b2-ac58-d689715fe59c" class=""><strong>Vida: 10</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8072-a313-e24a9012f724" class=""><strong>Onde Spawna: em nenhum lugar nesta alpha</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-80ea-8815-c018b792b32d" class=""><strong>Loot: Maçã de Cristal</strong></p></div><div style="display:contents" dir="auto"><p id="2a9a5015-5c81-8038-bafb-eedc079179be" class=""><strong>Raridade: Comum</strong></p></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-80c4-962a-f73f8bfc8be4" class="">Vaca-Maçã de Diamante</h2></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-8060-aa4d-d84be9c6d888" class="image" style="text-align:left"><a href="Comum/diamond_cow.png"><img style="width:192px" src="Comum/diamond_cow.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80d2-8f1e-d86844211aa1" class="image" style="text-align:left"><a href="Comum/diamond_apple_cow.png"><img style="width:128px" src="Comum/diamond_apple_cow.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80a4-be4c-f71020d1ce7c" class=""><strong>Vida: 10</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8053-af43-f4e77945f99f" class=""><strong>Onde Spawna: Floresta Encantada</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8017-9d7f-f5bb12202002" class=""><strong>Loot: Maçã de Diamante</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-803e-86e7-e578f101b08c" class=""><strong>Raridade: Comum</strong></p></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-8045-a2c4-c4ffcc949222" class="">Porco-Maçã</h2></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-807b-bad0-c9f9767b5944" class="image" style="text-align:left"><a href="Comum/apple_pig.png"><img style="width:432px" src="Comum/apple_pig.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80b6-8c87-e58d8831189f" class="image" style="text-align:left"><a href="Comum/apple_pig%201.png"><img style="width:128px" src="Comum/apple_pig%201.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8073-8fca-f677bd764803" class=""><strong>Vida: 10</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80ff-8077-db24019ff4d4" class=""><strong>Onde Spawna: Overworld, de manhã</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80c3-99b4-c6cde73e8ac1" class=""><strong>Loot: Maçã de Cristal</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80a4-8f9b-d5f7e5a70d63" class=""><strong>Raridade: Comum</strong></p></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-8028-bf15-facd24bf4dd0" class="">Pinguim</h2></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80c9-91f4-e838e7cd2087" class="image" style="text-align:left"><a href="Comum/Pinguim.png"><img style="width:192px" src="Comum/Pinguim.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-800c-b6d1-de3e2cb63fd0" class="image" style="text-align:left"><a href="Comum/penguin.png"><img style="width:128px" src="Comum/penguin.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8085-8cf1-c8412ae232f1" class="">Pode nadar e caça peixes.</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8005-b837-eed334f3b0eb" class=""><strong>Vida: 40</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-803e-ba8e-e9d16df0604b" class=""><strong>Onde Spawna: em biomas de neve e gelo</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8078-971a-f651232bb712" class=""><strong>Loot: Peixes</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80e2-9b80-d27294f5359f" class=""><strong>Dano: 6</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80bf-9682-da82e2ff6896" class=""><strong>Raridade: Comum</strong></p></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-8005-af42-d5ab01dd7481" class="">Pinguinzinho</h2></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80a1-a014-cea1fd3479d6" class="image" style="text-align:left"><a href="Comum/Pinguim_1.png"><img style="width:192px" src="Comum/Pinguim_1.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-807c-b51e-f54f2649ddfa" class="image" style="text-align:left"><a href="Comum/penguin%201.png"><img style="width:128px" src="Comum/penguin%201.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-805a-8879-d924a95017e6" class="">Pode nadar e caça peixes.</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8043-8ac8-eef1a06bdedb" class=""><strong>Vida: 20</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80a9-926f-e310eac87434" class=""><strong>Onde Spawna: em biomas de neve e gelo</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80ea-9ca5-ce76e2560273" class=""><strong>Loot: Peixes</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80f0-8dc4-e963439020ba" class=""><strong>Dano: 4</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-802e-a599-cbb8aba87734" class=""><strong>Raridade: Comum</strong></p></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-801e-a539-ec11d8800736" class="">Patinho</h2></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80cf-8c9b-e54ff7472f77" class="image" style="text-align:left"><a href="Comum/Rubber_duck_preview.png"><img style="width:192px" src="Comum/Rubber_duck_preview.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-8089-94a8-f98ca14c34ce" class="image" style="text-align:left"><a href="Comum/duckling.png"><img style="width:128px" src="Comum/duckling.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80d0-ae1c-ecbbe88343cb" class=""><strong>Vida: 10</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8038-8baf-c0c27a00fd11" class=""><strong>Onde Spawna: em fontes do Grande Jardim</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8018-b475-c8da35b07f57" class=""><strong>Loot: Patinho Cru</strong></p></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-8085-a99e-f4fc2263e7e5" class="">Rena</h2></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80f2-91f4-cab437dab635" class="image" style="text-align:left"><a href="Comum/Deer_model_fixed_2.png"><img style="width:192px" src="Comum/Deer_model_fixed_2.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80c5-ad8a-ec8a47237f5d" class="image" style="text-align:left"><a href="Comum/reindeer.png"><img style="width:128px" src="Comum/reindeer.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-800d-80c8-c8b7bd224212" class="">Pode voar se estiver nevando/chovendo e estiver de noite</p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80a8-b173-cd8c90164ad6" class=""><strong>Vida: 20</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8083-8e81-d192a2f30807" class=""><strong>Onde Spawna: em biomas de neve e gelo</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80fa-b221-c5bd04504b08" class=""><strong>Loot: Bife e Couro</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8093-8cb2-c5b9f59b726f" class=""><strong>Raridade: Comum</strong></p></div><div style="display:contents" dir="auto"><h2 id="2d8a5015-5c81-80b2-aee6-c785853d586f" class="">Formiga Marrom</h2></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-80c4-aec5-fbffd3d347b0" class="image" style="text-align:left"><a href="Comum/image.png"><img style="width:384px" src="Comum/image.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2d8a5015-5c81-800e-8b23-d602ed3b773f" class="image" style="text-align:left"><a href="Comum/brown_ant.png"><img style="width:128px" src="Comum/brown_ant.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80d7-ab7f-c18872090d6e" class=""><strong>Vida: 40</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80b3-a4d4-e31920a17251" class=""><strong>Onde Spawna: Em formigueiros</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-8005-a23b-d10bd1a1b0fd" class=""><strong>Dano: 8</strong></p></div><div style="display:contents" dir="auto"><p id="2d8a5015-5c81-80a1-a0e5-fe31e966e309" class=""><strong>Raridade: Comum</strong></p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
