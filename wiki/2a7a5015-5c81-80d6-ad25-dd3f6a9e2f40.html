@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Minérios - Twisted Lands Wiki</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
+    <style>
+  :root {
+    color-scheme: dark;
+    --bg: #040b12;
+    --bg-soft: #0b1927;
+    --panel: rgba(8, 19, 31, 0.92);
+    --panel-strong: rgba(13, 29, 47, 0.98);
+    --text: #f2f7ff;
+    --muted: #8ea4bb;
+    --accent: #71e2ff;
+    --accent-2: #b08aff;
+    --border: rgba(255,255,255,0.1);
+    --shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055 0%, #751111 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .brand-logo {
+    width: 220px;
+    max-width: 100%;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .page-panel {
+    background: linear-gradient(135deg, var(--panel), var(--panel-strong));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+  }
+
+  .page-panel h1, .page-panel h2, .page-panel h3, .page-panel h4 {
+    color: var(--accent);
+    margin-top: 0.5rem;
+  }
+
+  .page-panel p, .page-panel li, .page-panel blockquote, .page-panel figcaption {
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .page-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(113, 226, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  .page-panel a:hover {
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .image-item {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .image-card {
+    margin: 0;
+    background: var(--panel-strong);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .image-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .page-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-panel blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-left: 0;
+    color: var(--muted);
+  }
+
+  .page-panel code {
+    background: rgba(113, 226, 255, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #bff6ff;
+  }
+
+  .page-panel ul, .page-panel ol {
+    padding-left: 20px;
+  }
+
+  .page-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      max-width: 200px;
+    }
+    .image-card img {
+      max-width: 200px;
+    }
+    .columns-container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      max-width: 150px;
+    }
+    .image-card img {
+      max-width: 150px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="logo-header">
+        <a href="index.html">
+          <img class="brand-logo" src="../header-icon.png" alt="Twisted Lands" />
+        </a>
+      </div>
+
+      <main class="content">
+        <section class="page-panel">
+          <h2>Minério de Sal</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/da8dd196-e3ae-462d-a301-94cd5b5ae379/salt_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=94e6c43eeffde0b3d2631b31859688a22a855cef0d343564bae910e952c5474e&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Comum</strong></p><p><strong>Dimensão: Overworld</strong></p><p><strong>Distribuição: 10 blocos</strong></p><p><strong>Camadas: Y ( 30-64 )</strong></p><p><strong>Picareta para quebrar: Pedra, Cobre, Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Ametista</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/ed81461d-653c-4e52-bf26-0ff112e5a723/amethyst_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=8135efd8642c95bba05fa7624dd5eb856770e86c963da2913290383c8e5e808a&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Raro</strong></p><p><strong>Dimensão: Overworld</strong></p><p><strong>Distribuição: 2-3 blocos</strong></p><p><strong>Camadas: Y( 0-16 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Rubi</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/9582fb7c-cd6b-41b3-b606-472716740536/ruby_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=7a04c7e44805d8356401f4e28e5a04787cebdd5771cfff30676e37cee910c132&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Raro</strong></p><p><strong>Dimensão: Overworld</strong></p><p><strong>Distribuição: 2-3 blocos</strong></p><p><strong>Camadas: Y ( 0-16 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Urânio</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/d338090d-7e2a-4d58-b0e1-0e3f01440dad/uranium_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=215470a0f281d0b21fe4414ae62f054a4b207d0f445f6a640d1ed298a3664fa8&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Muito Raro</strong></p><p><strong>Dimensão: Overworld</strong></p><p><strong>Distribuição: 1-4 blocos</strong></p><p><strong>Camadas: Y ( 0-16 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Titânio</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/46bd4980-7cc5-49e1-965a-21a71f15681f/titanium_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=2627a2673868f1de13e9f1e5c1bd4ee810b9604522b8f94451815fe821a3b7dc&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Muito Raro</strong></p><p><strong>Dimensão: Overworld</strong></p><p><strong>Distribuição: 1-4 blocos</strong></p><p><strong>Camadas: Y ( 0-16 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Ametista de Ardosiabissal</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/60aeb9d8-58e4-44f0-8fbd-bd5cea617824/deepslate_amethyst_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=0dcfaf36b579357960f92898fbad494419d7c753c22ef7d44476715c163d8f6c&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Raro</strong></p><p><strong>Dimensão: Overworld</strong></p><p><strong>Distribuição: 2-4 blocos</strong></p><p><strong>Camadas: Y ( -64-0 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Rubi de Ardosiabissal</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/d1fa89c8-10e5-432a-b918-f7982d1bd1ce/deepslate_ruby_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=b209f4c3e086415bf79ae1bce7ab9973e60f6514e32151e54b9a5e534195c6e4&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Raro</strong></p><p><strong>Dimensão: Overworld</strong></p><p><strong>Distribuição: 2-4 blocos</strong></p><p><strong>Camadas: Y ( -64-0 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Titânio de Ardosiabissal</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/e71cc642-7aa6-468d-8b80-3ee1176cb32f/deepslate_titanium_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=96f423b21cca24f72f3585f4aaaacfe6c7eab0a871942e7d5637cb36aad1f625&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Muito Raro</strong></p><p><strong>Dimensão: Overworld</strong></p><p><strong>Distribuição: 1-2 blocos</strong></p><p><strong>Camadas: Y ( -64-0 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Urânio de Ardosiabissal</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/1b5e961b-5a04-4424-85c8-0fcf3b7babd2/deepslate_uranium_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=65eec42d4780cc6838f8b232e7d1285f85bb7505a210f07a19f6955dffdfc51a&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Muito Raro</strong></p><p><strong>Dimensão: Overworld</strong></p><p><strong>Distribuição: 1-2 blocos</strong></p><p><strong>Camadas: Y ( -64-0 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Safira</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/0ee403bb-9f7b-4e0d-9cc5-148a026f0a30/sapphire_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=cd2e2ec2dd72c98e3c19884f1b16eda3afff7cba400315be3d5c5708c115c834&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Raro</strong></p><p><strong>Dimensão: O Grande Jardim</strong></p><p><strong>Distribuição: 1-2 blocos</strong></p><p><strong>Camadas: Y ( 90-154 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Rubi do Nether</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/fcf8c5e7-49a0-4acc-8cf1-966946ebfe18/nether_ruby_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=f43cf17b2291ee10210115a40c942cbaa2ebd2720083194db60016b7b576c365&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Raro</strong></p><p><strong>Dimensão: O Grande Jardim</strong></p><p><strong>Distribuição: 1-2 blocos</strong></p><p><strong>Camadas: Y ( 10-117 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Esmeralda Extremo</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/a3edc356-39b6-4071-b860-b4423c2d1b42/extreme_emerald_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=0c60d9b7715ce115c5b4db88b31a9083ee778ff30b0cbff128e64beda4753d3e&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Raro</strong></p><p><strong>Dimensão: Overworld</strong></p><p><strong>Distribuição: 1-2 blocos</strong></p><p><strong>Camadas: Y ( 64-0 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Esmeralda Extremo de Ardosiabissal</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/14b0b674-4298-4040-af61-bf6c046ca713/deepslate_extreme_emerald_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=41028034a3123e1982893ebfb37c280da0bc675a6e720e9120379a9c6f56c79e&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Raro</strong></p><p><strong>Dimensão: Overworld</strong></p><p><strong>Distribuição: 1-2 blocos</strong></p><p><strong>Camadas: Y ( -64-0 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Minério de Pedra-Negra Drakônica</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/2dc0b42f-2313-40b5-bfde-854a7828fd8e/blackstone_drakonic_eye_ore.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TPXRMNTS%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221426Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDaqLNeTUaBZ5gGqNt%2BylVIu42Jft3%2FR9GMAg%2BuPK8EdAIgL7S5WEWGH4txX2O1467UWWVtFJTx%2FgNO2FZbjFWwUcUq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDGpkwBeThCHqcrQg9CrcA8TByELTO8Jn1XCuON5d223vthwBwQhxa0U4i0672SzvojHcsPXRtE6kvninNjBy03O8ONi%2B70Y%2F4FEKjRzGpZqu4klGnsY2fukNfTyR6C3uwMXIPals4I%2FoElVubCYezJfFniJRbeYkxX%2FzEqNhrlxnN4Nz%2Fbes40d6%2FgPhIOpnKqfvw%2BZaiFPb5plFwaUq%2Fd1qnvZJlLMteoQ4upjRRycvC9lQKjRN6%2B0EkueGk5FiqvYl4GcvQy2h530Wa6hw%2FaTIRs9BypmFwS3ZdZ4NNNtAS8VEIQtZJqYFaubNADGKUF37rrpBzKQEXTH0PEXuMTszwEqB4%2F%2FXLU94tVFLw20UBeOGnxmtpTEsOqlHt1aDMov74SZ9kpX8WFVDowqj4Ce%2FOD6WKruC7atZxERdkn2eguolVZuf3T%2BXlvowotd9YmzvmiKO8H4XrzN3sSonqQRA35BfdgMGy8q1vGbLkr8EXYAb7uCz0TfE1xBBB2OlEgfEwpeXF9fo0PYOcliCLQqIkTj00d5J6ln7VH0x7Yc%2Ft%2BWqYJXZ2ysBRvfBHwmvEQDbBIZC%2ByTuvrcvqa7iaUMxmd37kgF4XZrysTSgO%2FFyKAISIiyX1Gsotb5SE54HHuBorc4KIKsEb6u0MNeot9EGOqUBg3AYF4SkRAPMQ4L7Mxpx7mKIvz0KBYP%2F49Bh1AjNQf935gsRd5OPKUDatDM3vPi0iBeN8MkhOb9ZvGXe0lzMw6UV8TEaWqV90d%2F%2FgJXHlDE96vGaKTH44rq4dj%2B9ZA0dCkZmvyp1qKjaAl9Qt9wHgRJlZ7JeM5TXePkRJW1j9RPAeRWRnlpWNh6nMD4%2Bqh4uSl7ZN%2BVRkprCc7hoqHw9DP22qeDb&amp;X-Amz-Signature=a74bad619caa0ac973d92c71a69ca874d874d1eb299d4dbbb766f1c40cb277f9&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Raridade: Raro</strong></p><p><strong>Dimensão: Nether - Basalt Deltas</strong></p><p><strong>Distribuição: 1-2 blocos</strong></p><p><strong>Camadas: Y ( 30-80 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><p></p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

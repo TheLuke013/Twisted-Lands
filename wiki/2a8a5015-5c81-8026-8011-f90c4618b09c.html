@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Armas Comum - Twisted Lands Wiki</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
+    <style>
+  :root {
+    color-scheme: dark;
+    --bg: #040b12;
+    --bg-soft: #0b1927;
+    --panel: rgba(8, 19, 31, 0.92);
+    --panel-strong: rgba(13, 29, 47, 0.98);
+    --text: #f2f7ff;
+    --muted: #8ea4bb;
+    --accent: #71e2ff;
+    --accent-2: #b08aff;
+    --border: rgba(255,255,255,0.1);
+    --shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055 0%, #751111 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .brand-logo {
+    width: 220px;
+    max-width: 100%;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .page-panel {
+    background: linear-gradient(135deg, var(--panel), var(--panel-strong));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+  }
+
+  .page-panel h1, .page-panel h2, .page-panel h3, .page-panel h4 {
+    color: var(--accent);
+    margin-top: 0.5rem;
+  }
+
+  .page-panel p, .page-panel li, .page-panel blockquote, .page-panel figcaption {
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .page-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(113, 226, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  .page-panel a:hover {
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .image-item {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .image-card {
+    margin: 0;
+    background: var(--panel-strong);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .image-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .page-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-panel blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-left: 0;
+    color: var(--muted);
+  }
+
+  .page-panel code {
+    background: rgba(113, 226, 255, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #bff6ff;
+  }
+
+  .page-panel ul, .page-panel ol {
+    padding-left: 20px;
+  }
+
+  .page-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      max-width: 200px;
+    }
+    .image-card img {
+      max-width: 200px;
+    }
+    .columns-container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      max-width: 150px;
+    }
+    .image-card img {
+      max-width: 150px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="logo-header">
+        <a href="index.html">
+          <img class="brand-logo" src="../header-icon.png" alt="Twisted Lands" />
+        </a>
+      </div>
+
+      <main class="content">
+        <section class="page-panel">
+          <h2>Garras de Mantis</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/e703b331-1dff-4873-9a30-2b52e4da07f0/mantis_claw.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4664VIPB3QT%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221424Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIEk%2B%2BXJvIRfRyLyA9%2B7%2FJGSputRfCw9AKBoX%2FQHn2oTYAiEA8Lbo7Td7LWCWPcooejwvvO%2B8706LaVZobfvDY%2BEBO6kq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDIZ6xRoxpzEG02PgxircAyXbcKcblPlIbFEpwDNqs3RTRHGa%2B3Zfb9fZCmoLuxvukvqXoRhdbZ%2Fw6gH0TZtZ8dfVgam8zom6pmupvmRFGbEe1ZPCK86z9WhF8p05hmbowE12zbxtoMg7jqqgMKjKNCf44eHi8EIm2IRhU4wWWS89rkF4Z0dacO0ZzheY0bjWeAplOMWSTQi7V%2B0iUwx1mbnfMQ0zGj5oMG46RQGNt3EQUVz%2F4s09w1QTML0OpmsFRU6t0ZPc%2Bp7TomtF1Cq98xWxOZLKyTWTZDjyHW%2F7aKpDAtqSHauLklCWCuMQaH5NvJtgx5z5WwegOHHrF0jaPNRgE8Kbnkefi%2F2gJgBpC2BQJqtX2wIhw0tldQt2L3EDrVOItWh47E7cH6zPNkKgfdEs3yo%2FsmdDgxtC9MPUkhFzkDEFqcCLcQFLtUnxFPCjV8TEDYk44g6mjCel%2BdDDcxBl1Q3dJqmX6wTpAcKQ%2B0JRr%2BYoWOyBXY%2BxaLyueOKp9rrVAP6kOrGINqKdmPzUo5A77yY0jqlHlxmAB6w4uY%2BMZzl0lzDWHYQr6BNyip664n3O4tMvS%2FhPT9rflo1SYbRJznryCYTNj1XKAhC%2BosQ4u7pzI3KYBzATlBlhrluy4VKdHP51bjjQE%2BTBMLqmt9EGOqUBrOmN4esMi6d%2FJLkQBJxvuQXMpuz2GIikuTwZjRGw7AFwQBlxq3NZq9VkJJvEy5PGogeD%2BSVetPvGW5c5JkV42LFt4v13W%2FFPuFi3iR7XfdBfWuR5OsDY1svL64NhC7Zb0%2Fz0jpXQuSmqnaFP24FKbSTd6aKs4UqEu6jJSQE1APAJLKKcCSVh0kByD%2FqAjytuyBnVCzl%2BAPLe4hhVOe4NI3GHOe7Z&amp;X-Amz-Signature=275ab6ba98a118f7b14b0e73e41c65b97a8aaf4317d0fff6e84bc81b6bb168ac&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Durabilidade: 100</strong></p><p><strong>Dano: 6</strong></p><h2>Shuriken de Rubi</h2><div class="columns-container"><div class="column"><p></p><h2>Espada de Esmeralda</h2><h2>Espada de Esmeralda Encantada</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/61f01a9f-9e43-4698-bbb0-4456ea7f3e5a/emerald_sword.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4664VIPB3QT%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221424Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIEk%2B%2BXJvIRfRyLyA9%2B7%2FJGSputRfCw9AKBoX%2FQHn2oTYAiEA8Lbo7Td7LWCWPcooejwvvO%2B8706LaVZobfvDY%2BEBO6kq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDIZ6xRoxpzEG02PgxircAyXbcKcblPlIbFEpwDNqs3RTRHGa%2B3Zfb9fZCmoLuxvukvqXoRhdbZ%2Fw6gH0TZtZ8dfVgam8zom6pmupvmRFGbEe1ZPCK86z9WhF8p05hmbowE12zbxtoMg7jqqgMKjKNCf44eHi8EIm2IRhU4wWWS89rkF4Z0dacO0ZzheY0bjWeAplOMWSTQi7V%2B0iUwx1mbnfMQ0zGj5oMG46RQGNt3EQUVz%2F4s09w1QTML0OpmsFRU6t0ZPc%2Bp7TomtF1Cq98xWxOZLKyTWTZDjyHW%2F7aKpDAtqSHauLklCWCuMQaH5NvJtgx5z5WwegOHHrF0jaPNRgE8Kbnkefi%2F2gJgBpC2BQJqtX2wIhw0tldQt2L3EDrVOItWh47E7cH6zPNkKgfdEs3yo%2FsmdDgxtC9MPUkhFzkDEFqcCLcQFLtUnxFPCjV8TEDYk44g6mjCel%2BdDDcxBl1Q3dJqmX6wTpAcKQ%2B0JRr%2BYoWOyBXY%2BxaLyueOKp9rrVAP6kOrGINqKdmPzUo5A77yY0jqlHlxmAB6w4uY%2BMZzl0lzDWHYQr6BNyip664n3O4tMvS%2FhPT9rflo1SYbRJznryCYTNj1XKAhC%2BosQ4u7pzI3KYBzATlBlhrluy4VKdHP51bjjQE%2BTBMLqmt9EGOqUBrOmN4esMi6d%2FJLkQBJxvuQXMpuz2GIikuTwZjRGw7AFwQBlxq3NZq9VkJJvEy5PGogeD%2BSVetPvGW5c5JkV42LFt4v13W%2FFPuFi3iR7XfdBfWuR5OsDY1svL64NhC7Zb0%2Fz0jpXQuSmqnaFP24FKbSTd6aKs4UqEu6jJSQE1APAJLKKcCSVh0kByD%2FqAjytuyBnVCzl%2BAPLe4hhVOe4NI3GHOe7Z&amp;X-Amz-Signature=48d8f3bc800ad8ffa3a10b855b3d2a8261f3757206267cde4c78fc4d117072c1&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <p>Ao atacar um mob você ganhara 10x mais exp.</p><p><strong>Durabilidade: 1400</strong></p><p><strong>Dano: 10</strong></p><h2>Espada de Mantis</h2><h2>Espada de Rosas</h2><h2>Espada de Ametista</h2><h2>Grande Martelo</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/bc3cb88d-bc46-43b0-9f76-15278a576cb1/big_hammer.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4664VIPB3QT%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221424Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIEk%2B%2BXJvIRfRyLyA9%2B7%2FJGSputRfCw9AKBoX%2FQHn2oTYAiEA8Lbo7Td7LWCWPcooejwvvO%2B8706LaVZobfvDY%2BEBO6kq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDIZ6xRoxpzEG02PgxircAyXbcKcblPlIbFEpwDNqs3RTRHGa%2B3Zfb9fZCmoLuxvukvqXoRhdbZ%2Fw6gH0TZtZ8dfVgam8zom6pmupvmRFGbEe1ZPCK86z9WhF8p05hmbowE12zbxtoMg7jqqgMKjKNCf44eHi8EIm2IRhU4wWWS89rkF4Z0dacO0ZzheY0bjWeAplOMWSTQi7V%2B0iUwx1mbnfMQ0zGj5oMG46RQGNt3EQUVz%2F4s09w1QTML0OpmsFRU6t0ZPc%2Bp7TomtF1Cq98xWxOZLKyTWTZDjyHW%2F7aKpDAtqSHauLklCWCuMQaH5NvJtgx5z5WwegOHHrF0jaPNRgE8Kbnkefi%2F2gJgBpC2BQJqtX2wIhw0tldQt2L3EDrVOItWh47E7cH6zPNkKgfdEs3yo%2FsmdDgxtC9MPUkhFzkDEFqcCLcQFLtUnxFPCjV8TEDYk44g6mjCel%2BdDDcxBl1Q3dJqmX6wTpAcKQ%2B0JRr%2BYoWOyBXY%2BxaLyueOKp9rrVAP6kOrGINqKdmPzUo5A77yY0jqlHlxmAB6w4uY%2BMZzl0lzDWHYQr6BNyip664n3O4tMvS%2FhPT9rflo1SYbRJznryCYTNj1XKAhC%2BosQ4u7pzI3KYBzATlBlhrluy4VKdHP51bjjQE%2BTBMLqmt9EGOqUBrOmN4esMi6d%2FJLkQBJxvuQXMpuz2GIikuTwZjRGw7AFwQBlxq3NZq9VkJJvEy5PGogeD%2BSVetPvGW5c5JkV42LFt4v13W%2FFPuFi3iR7XfdBfWuR5OsDY1svL64NhC7Zb0%2Fz0jpXQuSmqnaFP24FKbSTd6aKs4UqEu6jJSQE1APAJLKKcCSVh0kByD%2FqAjytuyBnVCzl%2BAPLe4hhVOe4NI3GHOe7Z&amp;X-Amz-Signature=6375f0a54aacc970aeaaf0a2af0043078088b8a5355f84d0a55f7ec33e3f1762&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <p>Lança o mob para cima (altura aumenta conforme menor for a vida do mob atacado, mas com um certo limite).</p><p><strong>Durabilidade: 4000</strong></p><p><strong>Dano: 15</strong></p><h2>Espada de Rubi</h2><p><strong>Durabilidade: 3500</strong></p><p><strong>Dano: 32</strong></p><p>Encantamentos: Inquebrável III, Julgamento V e Repulsão II.</p><h2>Espada de Madeira de Cristal</h2><p><strong>Durabilidade: 60</strong></p><p><strong>Dano: 5</strong></p><h2>Espada de Cianita</h2><p><strong>Durabilidade: 132</strong></p><p><strong>Dano: 6</strong></p><h2>Espada de Turmalina Rosa</h2><p><strong>Durabilidade: 250</strong></p><p><strong>Dano: 7</strong></p><h2>Espada de Jade</h2><p><strong>Durabilidade: 2032</strong></p><p><strong>Dano: 9</strong></p><h2>Espada de Olho de Tigre</h2><p><strong>Durabilidade: 1562</strong></p><p><strong>Dano: 8</strong></p><h2>Arco Skate</h2></div></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

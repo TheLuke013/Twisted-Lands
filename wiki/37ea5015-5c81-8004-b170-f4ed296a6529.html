@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Backroom - Twisted Lands Wiki</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
+    <style>
+  :root {
+    color-scheme: dark;
+    --bg: #040b12;
+    --bg-soft: #0b1927;
+    --panel: rgba(8, 19, 31, 0.92);
+    --panel-strong: rgba(13, 29, 47, 0.98);
+    --text: #f2f7ff;
+    --muted: #8ea4bb;
+    --accent: #71e2ff;
+    --accent-2: #b08aff;
+    --border: rgba(255,255,255,0.1);
+    --shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055 0%, #751111 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .brand-logo {
+    width: 220px;
+    max-width: 100%;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .page-panel {
+    background: linear-gradient(135deg, var(--panel), var(--panel-strong));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+  }
+
+  .page-panel h1, .page-panel h2, .page-panel h3, .page-panel h4 {
+    color: var(--accent);
+    margin-top: 0.5rem;
+  }
+
+  .page-panel p, .page-panel li, .page-panel blockquote, .page-panel figcaption {
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .page-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(113, 226, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  .page-panel a:hover {
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .image-item {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .image-card {
+    margin: 0;
+    background: var(--panel-strong);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .image-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .page-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-panel blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-left: 0;
+    color: var(--muted);
+  }
+
+  .page-panel code {
+    background: rgba(113, 226, 255, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #bff6ff;
+  }
+
+  .page-panel ul, .page-panel ol {
+    padding-left: 20px;
+  }
+
+  .page-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      max-width: 200px;
+    }
+    .image-card img {
+      max-width: 200px;
+    }
+    .columns-container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      max-width: 150px;
+    }
+    .image-card img {
+      max-width: 150px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="logo-header">
+        <a href="index.html">
+          <img class="brand-logo" src="../header-icon.png" alt="Twisted Lands" />
+        </a>
+      </div>
+
+      <main class="content">
+        <section class="page-panel">
+          <h2>Tabuas de Papel de Parede</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/a393d997-132e-4ca2-b744-edd6960fa715/wallpaper_planks.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=9943e6d15481544d30d074e150e38c32cb33a70be2a9ccbb91ec2d0d4db36ab8&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Papel de Parede Liso</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/40e175d5-5355-43f5-845f-347e425dd3bc/wallpaper_smooth.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=e28c3673b6da0b3e65e73d5b4d58adbfc9ead7ee251dc3d122dea1b0a77ae7aa&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Mosaico de Papel de Parede</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/3ec3396a-0cf0-435e-bc2b-f71e04260d40/wallpaper_mosaic.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=236786e8c3ed40a6e1a1d9a2dedc35bbdd0a907a38accb7ee2e6e6474863c287&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Lâmpada de Papel de Parede Liso</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/5aa41923-ded6-4cd2-ad1a-cf94a4e88e28/wallpaper_smooth_lamp.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=9a9d7ba8a0772b23d7b69b05aee5dde0135f588b880c2a3bb557b0d2a64b96e6&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Azulejo de Papel de Parede</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/b0ec7bf7-5135-4629-b354-54346aed576f/wallpaper_tilled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=c687d3301e99f7d7bfed93e6731defdd75adc43d101ea350603f2d9d2896657e&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Azulejo de Papel de Parede Escuro</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/27115a09-32fe-46fb-8bd7-1e0efb546e12/wallpaper_tilled_dark.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=3582200e93d751f858f2c67946deca95ac53886d3d600809d00fe38dce563cec&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Papel de Parede Liso Escuro</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/006c32cf-6ded-4424-a8fa-9219da96b36f/wallpaper_smooth_dark.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=8113e19f28bc520f94abe87a9fbf183538b5b05fc288537c6a28615e5adfcdf7&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Bloco de Papel de Parede</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/7caa2acd-3c53-4ce8-9e47-9ff4ead886b4/backrooms_wallpaper.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=9d60715dac68c8a67fffde6dc571dcd142d332bf50227461f5c7698772aff5d2&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Lâmpada de Azulejo de Papel de Parede</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/0612d7d2-5a44-483c-99df-a5391b572b5c/wallpaper_tilled_lamp.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=6dd083389b0b220b819a3fd1b8f88a509af5b5af874844b547d8efe06adc7a90&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Azulejo de Piscina</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/47b0dc43-d535-4d78-81eb-419b907a8c05/pool_tiles.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=18c933ae95e7d511c525c64bb9b3216d3ca386ff63c58bc463cae825b2fea66f&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Tábuas de Madeira Não-cristalino</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/664bdd5b-7a6f-43f3-9705-36b590584111/uncrystal_wood_planks.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=0cc7ebba9f45b07dfc3ad5d05cbe1796f924a7a7c0993bb2d82b58ac24f84d5d&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Pilar de Madeira Não-cristalino</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/70c9aa1d-f186-419f-9c73-c67b7b46972b/uncrystal_pilar.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=d891ba923415cc2f5bbe5fff4d748aebfeea27fe0f88082d5f8aa4dcd71abecb&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Papel de Parede</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/b34543e1-0248-44af-9219-efc90bbdce52/wallpaper_wallpaper.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RPMCZ7MY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221413Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBjM8DtZyC1JheW51%2Fb6dN1SWHtxqLFvqxcY%2Brhot3s4AiAkgP%2FiRstXnsCVwcS56hOikf0cfV%2BUhxyI6MeLIqRJ7yr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM8wMCXi54sC7EcgI4KtwDKTr7m%2BUDaZMgQtM89Zyh%2BKi6xoqAdIFLsk4p4tg3pG4ENk0Skqdrq8%2Fxt8nijGJqHsC8LioOWsY35RYMgQuRRalMKQxVGO8fQicIBC9U1YuyD9uVXfZABAFgjnlLevYrAKKuGV85drUeRNJGPGbKXTlp0ocectEVKtpwKFyDfDp4xZtCNVz5tUf7sosOU%2BTBXL4dHJFChzqkATjeenORt%2BSX8hFg7AIaeYzI2Y7Z3lj1tNiQZHMPXCQcFamVy33YTFyob%2BtBSGsvpssZlMmoFs5jWgf3RnppGZ%2FXYvKasV8titKKuFK6HvOjm4pFtC1lKSlBYbsUrxDxsekslfQ5xke6yjMfPoZ5ZNol8uqGep3r9FrfMSjFwf%2FLtJQCBDE8ikATau6ruTXqUSQRurlIWvYwrNueRKSkjzPJkWoN2dkUy24vQ2ye292xmIOe6wRgzgVGtP15FmTL2KqNTaYSQKN1AI%2B%2B5m5p0tfCaOv1gAEKq3n%2Bk%2B11J22EcXRWqV8OH8Utj%2Bxo%2BCCX7deV9ek5LJqqlGQz1Gqxk4zoo4HzyJdhywBj4AU3%2F8gxDqh6h0lNp2sSv9FYH7YTHnb0RCg1sh1f46RtY85%2FcPKcf979UzaglmW6L8SEd%2BWux64w%2Faa30QY6pgG3kHpT9C00WEPx7JvQeUvsVh5BC1mD7Qxw9vW3KJMZ1Nx7e1njq7kp2qosb1nryjzqFZgIOZMA5mP1Hvj%2BGJwgw1140WMwhXTOwlIkeHKj36ib40Ko0bdVjeVzusqssKVk0VWD0JY6J2VXmWIK20AFmtHEE9uiu%2FlbLCY6TIf2UZKQZr6%2FZW3%2FG4QVDWJkGj3DmoGtCZJdELT1ZtM0BjHRGf4nPFu1&amp;X-Amz-Signature=fba946075b82da8719e597fc9f26e6ec3cd1721e7d93727ef240eb9621a1d4b2&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

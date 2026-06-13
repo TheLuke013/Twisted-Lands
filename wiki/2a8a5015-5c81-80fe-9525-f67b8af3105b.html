@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lendários - Twisted Lands Wiki</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
+    <style>
+  :root {
+    color-scheme: dark;
+    --bg: #040b12;
+    --bg-soft: #0b1927;
+    --panel: rgba(8, 19, 31, 0.92);
+    --panel-strong: rgba(13, 29, 47, 0.98);
+    --text: #f2f7ff;
+    --muted: #8ea4bb;
+    --accent: #71e2ff;
+    --accent-2: #b08aff;
+    --border: rgba(255,255,255,0.1);
+    --shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055 0%, #751111 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .brand-logo {
+    width: 220px;
+    max-width: 100%;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .page-panel {
+    background: linear-gradient(135deg, var(--panel), var(--panel-strong));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+  }
+
+  .page-panel h1, .page-panel h2, .page-panel h3, .page-panel h4 {
+    color: var(--accent);
+    margin-top: 0.5rem;
+  }
+
+  .page-panel p, .page-panel li, .page-panel blockquote, .page-panel figcaption {
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .page-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(113, 226, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  .page-panel a:hover {
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .image-item {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .image-card {
+    margin: 0;
+    background: var(--panel-strong);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .image-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .page-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-panel blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-left: 0;
+    color: var(--muted);
+  }
+
+  .page-panel code {
+    background: rgba(113, 226, 255, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #bff6ff;
+  }
+
+  .page-panel ul, .page-panel ol {
+    padding-left: 20px;
+  }
+
+  .page-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      max-width: 200px;
+    }
+    .image-card img {
+      max-width: 200px;
+    }
+    .columns-container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      max-width: 150px;
+    }
+    .image-card img {
+      max-width: 150px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="logo-header">
+        <a href="index.html">
+          <img class="brand-logo" src="../header-icon.png" alt="Twisted Lands" />
+        </a>
+      </div>
+
+      <main class="content">
+        <section class="page-panel">
+          <h2>Mobjira</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/ebcd22ef-5dee-41c3-98f2-8109ef7a5f1f/210_mobjira.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RBZTGJK4%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221415Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQDbMnuHlFox6C2AUQwaBZR3Uit5gzzTDeGUUYIyhCZ6wgIhAIMo3fOQFtKetiGY3%2BM2foCIQ50EI05yEJ9lioLNSZ2PKv8DCDcQABoMNjM3NDIzMTgzODA1IgyZXhiqnX77f3Spgikq3AMHubJjilJ4WBaEZTSXaZ8jQuNjFDuaZxQaelkYeY7pJE1hta9tBvgr6MfCKKutVpz5eBkrKKnriLNSXMwjk6ibDoota%2FRrw8w652P5DMrKyN57uV%2FVcQtGN7jSSBQFRS34AAs22TASUWG0RqKmO%2F0EAtaiYmmncX%2FHwsde3YDOU0UMbJWlqE7b%2B9mUQtrsZ6KUPFmse87LSS0eAUUZhNlKhr5XZurPw3aeo2b5qWQy4OYINW%2FeCAqTA27gtyQRlCmUxh0ulpMyyE6kCX73e3lJOZvINNpVjJ%2Bjt2Ayacb4OIPdfgvqXY8nXAbO%2BKr210uTO7klPzz9ipTh2%2FhYzfxzVFJDXT5DRrXu1g0ExQum%2BOcEDmXfr2P47Qg%2F%2Be%2B0ipoY9%2FrjmldzwObviuKQ0IOtuKpHqjYDiNe6OyoHa%2BCJTjuCIQVpx1fPFtytkRH0Y64To327kXrqTUeVc%2FHmtdsuHTuFhDlCzol3OnaZBSy8SqYD8NHgSysHJAoAOovC%2BavtOtYxXkzp5YgqaTDAd7Cvc0fio2vpGJuB2N3UewW4rW00Vdl4fbNmwB912Kj1BQcDldUdubXwEhsi35XTDbezKiOwWuuWZyOC%2BJ3Toir%2BCdacG3%2FDMRC1pLmxHzC6prfRBjqkARzWFJ9Vmd95AiXQhogMPoQCPJDqk6gvWhq6GhA4fKCnpz%2Fb0G5%2F0SJChqFWTQHoXw1LJLbc5rLQXyTwE5LGNQLYwZuDrq1XNCvAnAMhmJLjzgpUtckLCycCXdIVWvzT63WMAgssAzDzp%2FGs7RT%2FVvft2QXnvpUi4WW1fXF3mtt53icL97k%2FRndODmrBBBSx5tP40fcJVf%2FWjrz7FX%2F2f0N9Bxtr&amp;X-Amz-Signature=e0c4221e48ed26b0f65a50f3fad70a6b6935ec312a80a37b55c043b757056964&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/213d752f-9042-4f10-96c8-3d64ab7da4c2/mobjria_spawn_egg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RBZTGJK4%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221415Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQDbMnuHlFox6C2AUQwaBZR3Uit5gzzTDeGUUYIyhCZ6wgIhAIMo3fOQFtKetiGY3%2BM2foCIQ50EI05yEJ9lioLNSZ2PKv8DCDcQABoMNjM3NDIzMTgzODA1IgyZXhiqnX77f3Spgikq3AMHubJjilJ4WBaEZTSXaZ8jQuNjFDuaZxQaelkYeY7pJE1hta9tBvgr6MfCKKutVpz5eBkrKKnriLNSXMwjk6ibDoota%2FRrw8w652P5DMrKyN57uV%2FVcQtGN7jSSBQFRS34AAs22TASUWG0RqKmO%2F0EAtaiYmmncX%2FHwsde3YDOU0UMbJWlqE7b%2B9mUQtrsZ6KUPFmse87LSS0eAUUZhNlKhr5XZurPw3aeo2b5qWQy4OYINW%2FeCAqTA27gtyQRlCmUxh0ulpMyyE6kCX73e3lJOZvINNpVjJ%2Bjt2Ayacb4OIPdfgvqXY8nXAbO%2BKr210uTO7klPzz9ipTh2%2FhYzfxzVFJDXT5DRrXu1g0ExQum%2BOcEDmXfr2P47Qg%2F%2Be%2B0ipoY9%2FrjmldzwObviuKQ0IOtuKpHqjYDiNe6OyoHa%2BCJTjuCIQVpx1fPFtytkRH0Y64To327kXrqTUeVc%2FHmtdsuHTuFhDlCzol3OnaZBSy8SqYD8NHgSysHJAoAOovC%2BavtOtYxXkzp5YgqaTDAd7Cvc0fio2vpGJuB2N3UewW4rW00Vdl4fbNmwB912Kj1BQcDldUdubXwEhsi35XTDbezKiOwWuuWZyOC%2BJ3Toir%2BCdacG3%2FDMRC1pLmxHzC6prfRBjqkARzWFJ9Vmd95AiXQhogMPoQCPJDqk6gvWhq6GhA4fKCnpz%2Fb0G5%2F0SJChqFWTQHoXw1LJLbc5rLQXyTwE5LGNQLYwZuDrq1XNCvAnAMhmJLjzgpUtckLCycCXdIVWvzT63WMAgssAzDzp%2FGs7RT%2FVvft2QXnvpUi4WW1fXF3mtt53icL97k%2FRndODmrBBBSx5tP40fcJVf%2FWjrz7FX%2F2f0N9Bxtr&amp;X-Amz-Signature=2a78357a4d22e927c83f409f54b712ef1d62343e21f388215d6ae801610788f1&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 35000</strong></p><p><strong>Loot: Bifes e Escamas de Mobjira</strong></p><p><strong>Ataques: muitos ataques novos</strong></p><p>Descrição: </p><h2>Mobjira Classico</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/7c42da11-cb63-4050-9b27-9837768e64a9/mobjira.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RBZTGJK4%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221415Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQDbMnuHlFox6C2AUQwaBZR3Uit5gzzTDeGUUYIyhCZ6wgIhAIMo3fOQFtKetiGY3%2BM2foCIQ50EI05yEJ9lioLNSZ2PKv8DCDcQABoMNjM3NDIzMTgzODA1IgyZXhiqnX77f3Spgikq3AMHubJjilJ4WBaEZTSXaZ8jQuNjFDuaZxQaelkYeY7pJE1hta9tBvgr6MfCKKutVpz5eBkrKKnriLNSXMwjk6ibDoota%2FRrw8w652P5DMrKyN57uV%2FVcQtGN7jSSBQFRS34AAs22TASUWG0RqKmO%2F0EAtaiYmmncX%2FHwsde3YDOU0UMbJWlqE7b%2B9mUQtrsZ6KUPFmse87LSS0eAUUZhNlKhr5XZurPw3aeo2b5qWQy4OYINW%2FeCAqTA27gtyQRlCmUxh0ulpMyyE6kCX73e3lJOZvINNpVjJ%2Bjt2Ayacb4OIPdfgvqXY8nXAbO%2BKr210uTO7klPzz9ipTh2%2FhYzfxzVFJDXT5DRrXu1g0ExQum%2BOcEDmXfr2P47Qg%2F%2Be%2B0ipoY9%2FrjmldzwObviuKQ0IOtuKpHqjYDiNe6OyoHa%2BCJTjuCIQVpx1fPFtytkRH0Y64To327kXrqTUeVc%2FHmtdsuHTuFhDlCzol3OnaZBSy8SqYD8NHgSysHJAoAOovC%2BavtOtYxXkzp5YgqaTDAd7Cvc0fio2vpGJuB2N3UewW4rW00Vdl4fbNmwB912Kj1BQcDldUdubXwEhsi35XTDbezKiOwWuuWZyOC%2BJ3Toir%2BCdacG3%2FDMRC1pLmxHzC6prfRBjqkARzWFJ9Vmd95AiXQhogMPoQCPJDqk6gvWhq6GhA4fKCnpz%2Fb0G5%2F0SJChqFWTQHoXw1LJLbc5rLQXyTwE5LGNQLYwZuDrq1XNCvAnAMhmJLjzgpUtckLCycCXdIVWvzT63WMAgssAzDzp%2FGs7RT%2FVvft2QXnvpUi4WW1fXF3mtt53icL97k%2FRndODmrBBBSx5tP40fcJVf%2FWjrz7FX%2F2f0N9Bxtr&amp;X-Amz-Signature=fed3d39909f511d57650f8a25b5af5bf536d9aeeebc12c6e1ac0fd99ef8c640e&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/af08ba69-c40c-4047-8f49-c402150bbce5/mobjira.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RBZTGJK4%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221415Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQDbMnuHlFox6C2AUQwaBZR3Uit5gzzTDeGUUYIyhCZ6wgIhAIMo3fOQFtKetiGY3%2BM2foCIQ50EI05yEJ9lioLNSZ2PKv8DCDcQABoMNjM3NDIzMTgzODA1IgyZXhiqnX77f3Spgikq3AMHubJjilJ4WBaEZTSXaZ8jQuNjFDuaZxQaelkYeY7pJE1hta9tBvgr6MfCKKutVpz5eBkrKKnriLNSXMwjk6ibDoota%2FRrw8w652P5DMrKyN57uV%2FVcQtGN7jSSBQFRS34AAs22TASUWG0RqKmO%2F0EAtaiYmmncX%2FHwsde3YDOU0UMbJWlqE7b%2B9mUQtrsZ6KUPFmse87LSS0eAUUZhNlKhr5XZurPw3aeo2b5qWQy4OYINW%2FeCAqTA27gtyQRlCmUxh0ulpMyyE6kCX73e3lJOZvINNpVjJ%2Bjt2Ayacb4OIPdfgvqXY8nXAbO%2BKr210uTO7klPzz9ipTh2%2FhYzfxzVFJDXT5DRrXu1g0ExQum%2BOcEDmXfr2P47Qg%2F%2Be%2B0ipoY9%2FrjmldzwObviuKQ0IOtuKpHqjYDiNe6OyoHa%2BCJTjuCIQVpx1fPFtytkRH0Y64To327kXrqTUeVc%2FHmtdsuHTuFhDlCzol3OnaZBSy8SqYD8NHgSysHJAoAOovC%2BavtOtYxXkzp5YgqaTDAd7Cvc0fio2vpGJuB2N3UewW4rW00Vdl4fbNmwB912Kj1BQcDldUdubXwEhsi35XTDbezKiOwWuuWZyOC%2BJ3Toir%2BCdacG3%2FDMRC1pLmxHzC6prfRBjqkARzWFJ9Vmd95AiXQhogMPoQCPJDqk6gvWhq6GhA4fKCnpz%2Fb0G5%2F0SJChqFWTQHoXw1LJLbc5rLQXyTwE5LGNQLYwZuDrq1XNCvAnAMhmJLjzgpUtckLCycCXdIVWvzT63WMAgssAzDzp%2FGs7RT%2FVvft2QXnvpUi4WW1fXF3mtt53icL97k%2FRndODmrBBBSx5tP40fcJVf%2FWjrz7FX%2F2f0N9Bxtr&amp;X-Amz-Signature=7c17f30237e6b05281ae30d3675c02eb50b3ebc85cffa239985f7dddec904927&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 25000</strong></p><p><strong>Loot: Bifes e Escamas de Mobjira</strong></p><p><strong>Ataques: 100-125, bolas de fogo e raios</strong></p><p>Descrição: Quanto mais escavamos rumo as profundezas, mais mistérios horríveis são descobertos, um pesadelo terrível nascido do medo humano, uma criatura nefasta nascido do rancor e da fúria humana.</p><h2>Crysodrakon King</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/31f34634-b3de-4453-815b-604d0d5e6289/crysodrakon_king.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RBZTGJK4%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221415Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQDbMnuHlFox6C2AUQwaBZR3Uit5gzzTDeGUUYIyhCZ6wgIhAIMo3fOQFtKetiGY3%2BM2foCIQ50EI05yEJ9lioLNSZ2PKv8DCDcQABoMNjM3NDIzMTgzODA1IgyZXhiqnX77f3Spgikq3AMHubJjilJ4WBaEZTSXaZ8jQuNjFDuaZxQaelkYeY7pJE1hta9tBvgr6MfCKKutVpz5eBkrKKnriLNSXMwjk6ibDoota%2FRrw8w652P5DMrKyN57uV%2FVcQtGN7jSSBQFRS34AAs22TASUWG0RqKmO%2F0EAtaiYmmncX%2FHwsde3YDOU0UMbJWlqE7b%2B9mUQtrsZ6KUPFmse87LSS0eAUUZhNlKhr5XZurPw3aeo2b5qWQy4OYINW%2FeCAqTA27gtyQRlCmUxh0ulpMyyE6kCX73e3lJOZvINNpVjJ%2Bjt2Ayacb4OIPdfgvqXY8nXAbO%2BKr210uTO7klPzz9ipTh2%2FhYzfxzVFJDXT5DRrXu1g0ExQum%2BOcEDmXfr2P47Qg%2F%2Be%2B0ipoY9%2FrjmldzwObviuKQ0IOtuKpHqjYDiNe6OyoHa%2BCJTjuCIQVpx1fPFtytkRH0Y64To327kXrqTUeVc%2FHmtdsuHTuFhDlCzol3OnaZBSy8SqYD8NHgSysHJAoAOovC%2BavtOtYxXkzp5YgqaTDAd7Cvc0fio2vpGJuB2N3UewW4rW00Vdl4fbNmwB912Kj1BQcDldUdubXwEhsi35XTDbezKiOwWuuWZyOC%2BJ3Toir%2BCdacG3%2FDMRC1pLmxHzC6prfRBjqkARzWFJ9Vmd95AiXQhogMPoQCPJDqk6gvWhq6GhA4fKCnpz%2Fb0G5%2F0SJChqFWTQHoXw1LJLbc5rLQXyTwE5LGNQLYwZuDrq1XNCvAnAMhmJLjzgpUtckLCycCXdIVWvzT63WMAgssAzDzp%2FGs7RT%2FVvft2QXnvpUi4WW1fXF3mtt53icL97k%2FRndODmrBBBSx5tP40fcJVf%2FWjrz7FX%2F2f0N9Bxtr&amp;X-Amz-Signature=25200d102367a88b2fab2af7ca9d486bbd81852ea4e5bac91372836515256263&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/8e9ebf2f-b330-47be-9947-7521fd66fda8/crysodrakon.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RBZTGJK4%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221415Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQDbMnuHlFox6C2AUQwaBZR3Uit5gzzTDeGUUYIyhCZ6wgIhAIMo3fOQFtKetiGY3%2BM2foCIQ50EI05yEJ9lioLNSZ2PKv8DCDcQABoMNjM3NDIzMTgzODA1IgyZXhiqnX77f3Spgikq3AMHubJjilJ4WBaEZTSXaZ8jQuNjFDuaZxQaelkYeY7pJE1hta9tBvgr6MfCKKutVpz5eBkrKKnriLNSXMwjk6ibDoota%2FRrw8w652P5DMrKyN57uV%2FVcQtGN7jSSBQFRS34AAs22TASUWG0RqKmO%2F0EAtaiYmmncX%2FHwsde3YDOU0UMbJWlqE7b%2B9mUQtrsZ6KUPFmse87LSS0eAUUZhNlKhr5XZurPw3aeo2b5qWQy4OYINW%2FeCAqTA27gtyQRlCmUxh0ulpMyyE6kCX73e3lJOZvINNpVjJ%2Bjt2Ayacb4OIPdfgvqXY8nXAbO%2BKr210uTO7klPzz9ipTh2%2FhYzfxzVFJDXT5DRrXu1g0ExQum%2BOcEDmXfr2P47Qg%2F%2Be%2B0ipoY9%2FrjmldzwObviuKQ0IOtuKpHqjYDiNe6OyoHa%2BCJTjuCIQVpx1fPFtytkRH0Y64To327kXrqTUeVc%2FHmtdsuHTuFhDlCzol3OnaZBSy8SqYD8NHgSysHJAoAOovC%2BavtOtYxXkzp5YgqaTDAd7Cvc0fio2vpGJuB2N3UewW4rW00Vdl4fbNmwB912Kj1BQcDldUdubXwEhsi35XTDbezKiOwWuuWZyOC%2BJ3Toir%2BCdacG3%2FDMRC1pLmxHzC6prfRBjqkARzWFJ9Vmd95AiXQhogMPoQCPJDqk6gvWhq6GhA4fKCnpz%2Fb0G5%2F0SJChqFWTQHoXw1LJLbc5rLQXyTwE5LGNQLYwZuDrq1XNCvAnAMhmJLjzgpUtckLCycCXdIVWvzT63WMAgssAzDzp%2FGs7RT%2FVvft2QXnvpUi4WW1fXF3mtt53icL97k%2FRndODmrBBBSx5tP40fcJVf%2FWjrz7FX%2F2f0N9Bxtr&amp;X-Amz-Signature=cd39ad0dd0d33806c79b0ba2c4f4223d3157e36988b9ae7b5c3bae700aa40f10&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p></p><p><strong>Vida: 50000</strong></p><p><strong>Onde Spawna: Na Arvore da Riqueza no Grande Jardim</strong></p><p><strong>Loot: Armadura Royal, carnes de dragão e coisas de ouro</strong></p><p><strong>Raridade: LENDARIO</strong></p><p>Descrição:  Você dizia que a existência deveria se curva a vocês, que os mortais deveriam se somente seres a serem conquistados, é somente seus nomes deveriam existir na existência, eu digo a você que você está errado, a existência não precisa de seres repugnantes como vocês, a sua glória foi o prepulsou da sua própria queda, é no fim nada disso o satisfez de fato, a destruição somente consumiu a sua existência.</p><h2>Skotodrakon Queen</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/62ec1644-9d4c-498d-a923-1a412e77fd45/file_37.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RBZTGJK4%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221415Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQDbMnuHlFox6C2AUQwaBZR3Uit5gzzTDeGUUYIyhCZ6wgIhAIMo3fOQFtKetiGY3%2BM2foCIQ50EI05yEJ9lioLNSZ2PKv8DCDcQABoMNjM3NDIzMTgzODA1IgyZXhiqnX77f3Spgikq3AMHubJjilJ4WBaEZTSXaZ8jQuNjFDuaZxQaelkYeY7pJE1hta9tBvgr6MfCKKutVpz5eBkrKKnriLNSXMwjk6ibDoota%2FRrw8w652P5DMrKyN57uV%2FVcQtGN7jSSBQFRS34AAs22TASUWG0RqKmO%2F0EAtaiYmmncX%2FHwsde3YDOU0UMbJWlqE7b%2B9mUQtrsZ6KUPFmse87LSS0eAUUZhNlKhr5XZurPw3aeo2b5qWQy4OYINW%2FeCAqTA27gtyQRlCmUxh0ulpMyyE6kCX73e3lJOZvINNpVjJ%2Bjt2Ayacb4OIPdfgvqXY8nXAbO%2BKr210uTO7klPzz9ipTh2%2FhYzfxzVFJDXT5DRrXu1g0ExQum%2BOcEDmXfr2P47Qg%2F%2Be%2B0ipoY9%2FrjmldzwObviuKQ0IOtuKpHqjYDiNe6OyoHa%2BCJTjuCIQVpx1fPFtytkRH0Y64To327kXrqTUeVc%2FHmtdsuHTuFhDlCzol3OnaZBSy8SqYD8NHgSysHJAoAOovC%2BavtOtYxXkzp5YgqaTDAd7Cvc0fio2vpGJuB2N3UewW4rW00Vdl4fbNmwB912Kj1BQcDldUdubXwEhsi35XTDbezKiOwWuuWZyOC%2BJ3Toir%2BCdacG3%2FDMRC1pLmxHzC6prfRBjqkARzWFJ9Vmd95AiXQhogMPoQCPJDqk6gvWhq6GhA4fKCnpz%2Fb0G5%2F0SJChqFWTQHoXw1LJLbc5rLQXyTwE5LGNQLYwZuDrq1XNCvAnAMhmJLjzgpUtckLCycCXdIVWvzT63WMAgssAzDzp%2FGs7RT%2FVvft2QXnvpUi4WW1fXF3mtt53icL97k%2FRndODmrBBBSx5tP40fcJVf%2FWjrz7FX%2F2f0N9Bxtr&amp;X-Amz-Signature=f792bfc86fb5946dd41c2ebde82818fc14df8f0eda2af04b98e7798fda4b760e&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/f203fcc5-94f3-4bd4-8c64-0e6c7e5914be/skoto_spawn.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466RBZTGJK4%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221415Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQDbMnuHlFox6C2AUQwaBZR3Uit5gzzTDeGUUYIyhCZ6wgIhAIMo3fOQFtKetiGY3%2BM2foCIQ50EI05yEJ9lioLNSZ2PKv8DCDcQABoMNjM3NDIzMTgzODA1IgyZXhiqnX77f3Spgikq3AMHubJjilJ4WBaEZTSXaZ8jQuNjFDuaZxQaelkYeY7pJE1hta9tBvgr6MfCKKutVpz5eBkrKKnriLNSXMwjk6ibDoota%2FRrw8w652P5DMrKyN57uV%2FVcQtGN7jSSBQFRS34AAs22TASUWG0RqKmO%2F0EAtaiYmmncX%2FHwsde3YDOU0UMbJWlqE7b%2B9mUQtrsZ6KUPFmse87LSS0eAUUZhNlKhr5XZurPw3aeo2b5qWQy4OYINW%2FeCAqTA27gtyQRlCmUxh0ulpMyyE6kCX73e3lJOZvINNpVjJ%2Bjt2Ayacb4OIPdfgvqXY8nXAbO%2BKr210uTO7klPzz9ipTh2%2FhYzfxzVFJDXT5DRrXu1g0ExQum%2BOcEDmXfr2P47Qg%2F%2Be%2B0ipoY9%2FrjmldzwObviuKQ0IOtuKpHqjYDiNe6OyoHa%2BCJTjuCIQVpx1fPFtytkRH0Y64To327kXrqTUeVc%2FHmtdsuHTuFhDlCzol3OnaZBSy8SqYD8NHgSysHJAoAOovC%2BavtOtYxXkzp5YgqaTDAd7Cvc0fio2vpGJuB2N3UewW4rW00Vdl4fbNmwB912Kj1BQcDldUdubXwEhsi35XTDbezKiOwWuuWZyOC%2BJ3Toir%2BCdacG3%2FDMRC1pLmxHzC6prfRBjqkARzWFJ9Vmd95AiXQhogMPoQCPJDqk6gvWhq6GhA4fKCnpz%2Fb0G5%2F0SJChqFWTQHoXw1LJLbc5rLQXyTwE5LGNQLYwZuDrq1XNCvAnAMhmJLjzgpUtckLCycCXdIVWvzT63WMAgssAzDzp%2FGs7RT%2FVvft2QXnvpUi4WW1fXF3mtt53icL97k%2FRndODmrBBBSx5tP40fcJVf%2FWjrz7FX%2F2f0N9Bxtr&amp;X-Amz-Signature=e00cc1d571f4e7fa266610886237a34301abdb80615080ad4cd81f67512d17c7&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p></p><p><strong>Vida: 40000</strong></p><p><strong>Onde Spawna: Na Arvore da Riqueza no Grande Jardim</strong></p><p><strong>Loot: Carnes de dragão, coisas de Rubi e Escamas</strong></p><p><strong>Raridade: LENDARIO</strong></p><p>Descrição: você dizia que amava os seres vivos, mas o seu amor só era um ato para esconder a seu sadismo, você e um ser cruel, talvez o pior de todos os três, a sua convicção de que a existência cederia para a sua existência foi falha, você nunca entendeu o que e amar de verdade, talvez, você de fato seja alguem que nunca quis entender de fato o que e amar</p><p></p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

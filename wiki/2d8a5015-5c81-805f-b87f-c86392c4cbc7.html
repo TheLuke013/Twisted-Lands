@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grande Jardim - Twisted Lands Wiki</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
+    <style>
+  :root {
+    color-scheme: dark;
+    --bg: #040b12;
+    --bg-soft: #0b1927;
+    --panel: rgba(8, 19, 31, 0.92);
+    --panel-strong: rgba(13, 29, 47, 0.98);
+    --text: #f2f7ff;
+    --muted: #8ea4bb;
+    --accent: #71e2ff;
+    --accent-2: #b08aff;
+    --border: rgba(255,255,255,0.1);
+    --shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055 0%, #751111 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .brand-logo {
+    width: 220px;
+    max-width: 100%;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .page-panel {
+    background: linear-gradient(135deg, var(--panel), var(--panel-strong));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+  }
+
+  .page-panel h1, .page-panel h2, .page-panel h3, .page-panel h4 {
+    color: var(--accent);
+    margin-top: 0.5rem;
+  }
+
+  .page-panel p, .page-panel li, .page-panel blockquote, .page-panel figcaption {
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .page-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(113, 226, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  .page-panel a:hover {
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .image-item {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .image-card {
+    margin: 0;
+    background: var(--panel-strong);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .image-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .page-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-panel blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-left: 0;
+    color: var(--muted);
+  }
+
+  .page-panel code {
+    background: rgba(113, 226, 255, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #bff6ff;
+  }
+
+  .page-panel ul, .page-panel ol {
+    padding-left: 20px;
+  }
+
+  .page-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      max-width: 200px;
+    }
+    .image-card img {
+      max-width: 200px;
+    }
+    .columns-container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      max-width: 150px;
+    }
+    .image-card img {
+      max-width: 150px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="logo-header">
+        <a href="index.html">
+          <img class="brand-logo" src="../header-icon.png" alt="Twisted Lands" />
+        </a>
+      </div>
+
+      <main class="content">
+        <section class="page-panel">
+          
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/53d20c8d-6f9c-417e-ace9-601890df9b7b/Captura_de_Tela_%28435%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4664J6WFZZT%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221432Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBWYYHvDpNcZlwFokakKDSSrBSl%2FotbfYKHxXiNUPtSjAiBr02adE0gvC3SXTP%2BanG54KSW5rFLHnGOLewURMEVHwSr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMSHNetsdIS75ui9xkKtwDZ4PUsta9AGJDLX78n1AubERm9PlIM0QB4O7gCIOce7Y6ZN%2ByXn3COGQwd1jnZjvNEyk8J1QoaeKXnYB2q2cYaOe9xQtpP7kFgC%2FH2ulP3pL5C6ipbVveeXpS0C1A70x2CMpo6khjwmON6A1XnRTcFQ8qaETYmaWX%2Fc9teLmxMLN%2BMwY9jd579OlHH7WINd6sV7EPq%2Bs59vRRVU7GYV8NMJPQSOOmUa6vNpB2LW%2FrOkmDnjzBkzVNSX4Q7ZJG%2BLLALR7HM88oWqyroKgeDgw3TfskLmNHO%2B7PpxojCoanUtdCuxNh%2BSZ0chkh8WuE8NDIxd1I50tKP%2FHFdPwG%2B9hG6MPPjbn8guaR5nv6VtsxXWSzkcghg4oqZLdatmowkVuBp5rTTM92m%2BvnCW%2B9MBHnNjjV8zK0VdVqcN%2FpcbWCvyn%2F2Nn1RRzS2r8HpMKj5Va4X0qkuLg5zjLG5JmZL1eGcjXiTM5e7UE7wh%2BMBtCLqEFlhShW13cXgzG%2BPEehDaruExNHap6lPWMjizB0ezZgcJwEFPF%2BYS19tkdCHIlZuF70SPkLdj0jNFWViW92qlMXIc0yRvCZbqvEshqlr2GfCPmm%2FKoX%2FXXsa7jockodErH0JPpBjdEiGV9Vr5Aw5qa30QY6pgFT1wuVRSATtqzAMhcCWGxXSG0A7oWEloGodggwIWKtk95tu5w3XJxzmGX2koQyjYmEua6ZP0qrbkigCdFcDdUbCG%2BY%2F8qnVAGXDROqMcTalwM7M3A4fuF%2FUWTPyVkdRDx9FwjzbI5Rv9W42ESHAybBBJHhjebkhkVaGanCNoQg761%2BSPhFxkiNCLTSGXcvx9E4%2FUZ13DJ9Nss%2Fik%2BY7Mm4Ao5OUQd2&amp;X-Amz-Signature=164c78d9f4d2445c15860e9da3acaf7a63d1dd9f64cbc03ae65210920e3d05b8&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p></p><p><strong>&quot;Um lugar esquecido por muito, um lugar perdido pela memória, um lugar lembrado pela grande mãe, um lugar que cultiva o seu sofrimento. lembre-se, ela está sempre NÓS observando.”</strong></p><p></p><h2><strong>Portal</strong></h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/fa0ccbeb-80fd-43c2-8130-366d34732ab1/Captura_de_Tela_%28620%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4664J6WFZZT%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221431Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBWYYHvDpNcZlwFokakKDSSrBSl%2FotbfYKHxXiNUPtSjAiBr02adE0gvC3SXTP%2BanG54KSW5rFLHnGOLewURMEVHwSr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMSHNetsdIS75ui9xkKtwDZ4PUsta9AGJDLX78n1AubERm9PlIM0QB4O7gCIOce7Y6ZN%2ByXn3COGQwd1jnZjvNEyk8J1QoaeKXnYB2q2cYaOe9xQtpP7kFgC%2FH2ulP3pL5C6ipbVveeXpS0C1A70x2CMpo6khjwmON6A1XnRTcFQ8qaETYmaWX%2Fc9teLmxMLN%2BMwY9jd579OlHH7WINd6sV7EPq%2Bs59vRRVU7GYV8NMJPQSOOmUa6vNpB2LW%2FrOkmDnjzBkzVNSX4Q7ZJG%2BLLALR7HM88oWqyroKgeDgw3TfskLmNHO%2B7PpxojCoanUtdCuxNh%2BSZ0chkh8WuE8NDIxd1I50tKP%2FHFdPwG%2B9hG6MPPjbn8guaR5nv6VtsxXWSzkcghg4oqZLdatmowkVuBp5rTTM92m%2BvnCW%2B9MBHnNjjV8zK0VdVqcN%2FpcbWCvyn%2F2Nn1RRzS2r8HpMKj5Va4X0qkuLg5zjLG5JmZL1eGcjXiTM5e7UE7wh%2BMBtCLqEFlhShW13cXgzG%2BPEehDaruExNHap6lPWMjizB0ezZgcJwEFPF%2BYS19tkdCHIlZuF70SPkLdj0jNFWViW92qlMXIc0yRvCZbqvEshqlr2GfCPmm%2FKoX%2FXXsa7jockodErH0JPpBjdEiGV9Vr5Aw5qa30QY6pgFT1wuVRSATtqzAMhcCWGxXSG0A7oWEloGodggwIWKtk95tu5w3XJxzmGX2koQyjYmEua6ZP0qrbkigCdFcDdUbCG%2BY%2F8qnVAGXDROqMcTalwM7M3A4fuF%2FUWTPyVkdRDx9FwjzbI5Rv9W42ESHAybBBJHhjebkhkVaGanCNoQg761%2BSPhFxkiNCLTSGXcvx9E4%2FUZ13DJ9Nss%2Fik%2BY7Mm4Ao5OUQd2&amp;X-Amz-Signature=e37721ac4c15d2a5a9fe5e25470cb6280aba586402b8a79411b0d5597693e34d&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p>O portal para o Grande Jardim só pode ser ativado através de um altar rúnico, jogando uma Mandíbula de Formiga Marrom em cima da Mesa Rúnica. E assim o portal se abrira, basta atravessar e você sairá direto no Jardim.</p><h2>Estruturas</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/a7ca4290-d6b6-40af-b324-747534df220f/Captura_de_Tela_%28432%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4664J6WFZZT%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221431Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBWYYHvDpNcZlwFokakKDSSrBSl%2FotbfYKHxXiNUPtSjAiBr02adE0gvC3SXTP%2BanG54KSW5rFLHnGOLewURMEVHwSr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMSHNetsdIS75ui9xkKtwDZ4PUsta9AGJDLX78n1AubERm9PlIM0QB4O7gCIOce7Y6ZN%2ByXn3COGQwd1jnZjvNEyk8J1QoaeKXnYB2q2cYaOe9xQtpP7kFgC%2FH2ulP3pL5C6ipbVveeXpS0C1A70x2CMpo6khjwmON6A1XnRTcFQ8qaETYmaWX%2Fc9teLmxMLN%2BMwY9jd579OlHH7WINd6sV7EPq%2Bs59vRRVU7GYV8NMJPQSOOmUa6vNpB2LW%2FrOkmDnjzBkzVNSX4Q7ZJG%2BLLALR7HM88oWqyroKgeDgw3TfskLmNHO%2B7PpxojCoanUtdCuxNh%2BSZ0chkh8WuE8NDIxd1I50tKP%2FHFdPwG%2B9hG6MPPjbn8guaR5nv6VtsxXWSzkcghg4oqZLdatmowkVuBp5rTTM92m%2BvnCW%2B9MBHnNjjV8zK0VdVqcN%2FpcbWCvyn%2F2Nn1RRzS2r8HpMKj5Va4X0qkuLg5zjLG5JmZL1eGcjXiTM5e7UE7wh%2BMBtCLqEFlhShW13cXgzG%2BPEehDaruExNHap6lPWMjizB0ezZgcJwEFPF%2BYS19tkdCHIlZuF70SPkLdj0jNFWViW92qlMXIc0yRvCZbqvEshqlr2GfCPmm%2FKoX%2FXXsa7jockodErH0JPpBjdEiGV9Vr5Aw5qa30QY6pgFT1wuVRSATtqzAMhcCWGxXSG0A7oWEloGodggwIWKtk95tu5w3XJxzmGX2koQyjYmEua6ZP0qrbkigCdFcDdUbCG%2BY%2F8qnVAGXDROqMcTalwM7M3A4fuF%2FUWTPyVkdRDx9FwjzbI5Rv9W42ESHAybBBJHhjebkhkVaGanCNoQg761%2BSPhFxkiNCLTSGXcvx9E4%2FUZ13DJ9Nss%2Fik%2BY7Mm4Ao5OUQd2&amp;X-Amz-Signature=d00bce04cd21ea996fee3ca5a643f25720715d44ab0179c3ceae347ca422143c&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="Portal do Jardim" loading="lazy" />
+                        <figcaption>Portal do Jardim</figcaption>
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/9f2c8bda-e89f-4bda-8498-c845a338c004/Captura_de_Tela_%28433%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4664J6WFZZT%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221431Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBWYYHvDpNcZlwFokakKDSSrBSl%2FotbfYKHxXiNUPtSjAiBr02adE0gvC3SXTP%2BanG54KSW5rFLHnGOLewURMEVHwSr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMSHNetsdIS75ui9xkKtwDZ4PUsta9AGJDLX78n1AubERm9PlIM0QB4O7gCIOce7Y6ZN%2ByXn3COGQwd1jnZjvNEyk8J1QoaeKXnYB2q2cYaOe9xQtpP7kFgC%2FH2ulP3pL5C6ipbVveeXpS0C1A70x2CMpo6khjwmON6A1XnRTcFQ8qaETYmaWX%2Fc9teLmxMLN%2BMwY9jd579OlHH7WINd6sV7EPq%2Bs59vRRVU7GYV8NMJPQSOOmUa6vNpB2LW%2FrOkmDnjzBkzVNSX4Q7ZJG%2BLLALR7HM88oWqyroKgeDgw3TfskLmNHO%2B7PpxojCoanUtdCuxNh%2BSZ0chkh8WuE8NDIxd1I50tKP%2FHFdPwG%2B9hG6MPPjbn8guaR5nv6VtsxXWSzkcghg4oqZLdatmowkVuBp5rTTM92m%2BvnCW%2B9MBHnNjjV8zK0VdVqcN%2FpcbWCvyn%2F2Nn1RRzS2r8HpMKj5Va4X0qkuLg5zjLG5JmZL1eGcjXiTM5e7UE7wh%2BMBtCLqEFlhShW13cXgzG%2BPEehDaruExNHap6lPWMjizB0ezZgcJwEFPF%2BYS19tkdCHIlZuF70SPkLdj0jNFWViW92qlMXIc0yRvCZbqvEshqlr2GfCPmm%2FKoX%2FXXsa7jockodErH0JPpBjdEiGV9Vr5Aw5qa30QY6pgFT1wuVRSATtqzAMhcCWGxXSG0A7oWEloGodggwIWKtk95tu5w3XJxzmGX2koQyjYmEua6ZP0qrbkigCdFcDdUbCG%2BY%2F8qnVAGXDROqMcTalwM7M3A4fuF%2FUWTPyVkdRDx9FwjzbI5Rv9W42ESHAybBBJHhjebkhkVaGanCNoQg761%2BSPhFxkiNCLTSGXcvx9E4%2FUZ13DJ9Nss%2Fik%2BY7Mm4Ao5OUQd2&amp;X-Amz-Signature=0f7b184ca4bb2bbf71c6d40b2ed56dff50a9924bf127276093047ecdfdfbed34&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="Vila Dominada por robôs" loading="lazy" />
+                        <figcaption>Vila Dominada por robôs</figcaption>
+                    </figure>
+                </div>
+            <p></p>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/477a53bb-0cea-4fb7-9928-0d8089aa188d/Captura_de_Tela_%28434%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4664J6WFZZT%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221431Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBWYYHvDpNcZlwFokakKDSSrBSl%2FotbfYKHxXiNUPtSjAiBr02adE0gvC3SXTP%2BanG54KSW5rFLHnGOLewURMEVHwSr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMSHNetsdIS75ui9xkKtwDZ4PUsta9AGJDLX78n1AubERm9PlIM0QB4O7gCIOce7Y6ZN%2ByXn3COGQwd1jnZjvNEyk8J1QoaeKXnYB2q2cYaOe9xQtpP7kFgC%2FH2ulP3pL5C6ipbVveeXpS0C1A70x2CMpo6khjwmON6A1XnRTcFQ8qaETYmaWX%2Fc9teLmxMLN%2BMwY9jd579OlHH7WINd6sV7EPq%2Bs59vRRVU7GYV8NMJPQSOOmUa6vNpB2LW%2FrOkmDnjzBkzVNSX4Q7ZJG%2BLLALR7HM88oWqyroKgeDgw3TfskLmNHO%2B7PpxojCoanUtdCuxNh%2BSZ0chkh8WuE8NDIxd1I50tKP%2FHFdPwG%2B9hG6MPPjbn8guaR5nv6VtsxXWSzkcghg4oqZLdatmowkVuBp5rTTM92m%2BvnCW%2B9MBHnNjjV8zK0VdVqcN%2FpcbWCvyn%2F2Nn1RRzS2r8HpMKj5Va4X0qkuLg5zjLG5JmZL1eGcjXiTM5e7UE7wh%2BMBtCLqEFlhShW13cXgzG%2BPEehDaruExNHap6lPWMjizB0ezZgcJwEFPF%2BYS19tkdCHIlZuF70SPkLdj0jNFWViW92qlMXIc0yRvCZbqvEshqlr2GfCPmm%2FKoX%2FXXsa7jockodErH0JPpBjdEiGV9Vr5Aw5qa30QY6pgFT1wuVRSATtqzAMhcCWGxXSG0A7oWEloGodggwIWKtk95tu5w3XJxzmGX2koQyjYmEua6ZP0qrbkigCdFcDdUbCG%2BY%2F8qnVAGXDROqMcTalwM7M3A4fuF%2FUWTPyVkdRDx9FwjzbI5Rv9W42ESHAybBBJHhjebkhkVaGanCNoQg761%2BSPhFxkiNCLTSGXcvx9E4%2FUZ13DJ9Nss%2Fik%2BY7Mm4Ao5OUQd2&amp;X-Amz-Signature=4f2f56a5ed7caa5a619759968ad6e6080866abffd4809fe00a99929ecc35208b&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="Poços do Jardim" loading="lazy" />
+                        <figcaption>Poços do Jardim</figcaption>
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/b6d69e8c-6ce9-4057-8cd4-b5a44b392da8/Captura_de_Tela_%28403%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4664J6WFZZT%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221431Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBWYYHvDpNcZlwFokakKDSSrBSl%2FotbfYKHxXiNUPtSjAiBr02adE0gvC3SXTP%2BanG54KSW5rFLHnGOLewURMEVHwSr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMSHNetsdIS75ui9xkKtwDZ4PUsta9AGJDLX78n1AubERm9PlIM0QB4O7gCIOce7Y6ZN%2ByXn3COGQwd1jnZjvNEyk8J1QoaeKXnYB2q2cYaOe9xQtpP7kFgC%2FH2ulP3pL5C6ipbVveeXpS0C1A70x2CMpo6khjwmON6A1XnRTcFQ8qaETYmaWX%2Fc9teLmxMLN%2BMwY9jd579OlHH7WINd6sV7EPq%2Bs59vRRVU7GYV8NMJPQSOOmUa6vNpB2LW%2FrOkmDnjzBkzVNSX4Q7ZJG%2BLLALR7HM88oWqyroKgeDgw3TfskLmNHO%2B7PpxojCoanUtdCuxNh%2BSZ0chkh8WuE8NDIxd1I50tKP%2FHFdPwG%2B9hG6MPPjbn8guaR5nv6VtsxXWSzkcghg4oqZLdatmowkVuBp5rTTM92m%2BvnCW%2B9MBHnNjjV8zK0VdVqcN%2FpcbWCvyn%2F2Nn1RRzS2r8HpMKj5Va4X0qkuLg5zjLG5JmZL1eGcjXiTM5e7UE7wh%2BMBtCLqEFlhShW13cXgzG%2BPEehDaruExNHap6lPWMjizB0ezZgcJwEFPF%2BYS19tkdCHIlZuF70SPkLdj0jNFWViW92qlMXIc0yRvCZbqvEshqlr2GfCPmm%2FKoX%2FXXsa7jockodErH0JPpBjdEiGV9Vr5Aw5qa30QY6pgFT1wuVRSATtqzAMhcCWGxXSG0A7oWEloGodggwIWKtk95tu5w3XJxzmGX2koQyjYmEua6ZP0qrbkigCdFcDdUbCG%2BY%2F8qnVAGXDROqMcTalwM7M3A4fuF%2FUWTPyVkdRDx9FwjzbI5Rv9W42ESHAybBBJHhjebkhkVaGanCNoQg761%2BSPhFxkiNCLTSGXcvx9E4%2FUZ13DJ9Nss%2Fik%2BY7Mm4Ao5OUQd2&amp;X-Amz-Signature=756e6cf81c6e9a09d0efafe10175453d462a8ce89c2d77c2ddf0dd051211f2f6&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="Fonte de Patinhos" loading="lazy" />
+                        <figcaption>Fonte de Patinhos</figcaption>
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/05547474-a52a-4bbf-ab01-7b66085640ba/Captura_de_Tela_%28396%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4664J6WFZZT%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221431Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBWYYHvDpNcZlwFokakKDSSrBSl%2FotbfYKHxXiNUPtSjAiBr02adE0gvC3SXTP%2BanG54KSW5rFLHnGOLewURMEVHwSr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMSHNetsdIS75ui9xkKtwDZ4PUsta9AGJDLX78n1AubERm9PlIM0QB4O7gCIOce7Y6ZN%2ByXn3COGQwd1jnZjvNEyk8J1QoaeKXnYB2q2cYaOe9xQtpP7kFgC%2FH2ulP3pL5C6ipbVveeXpS0C1A70x2CMpo6khjwmON6A1XnRTcFQ8qaETYmaWX%2Fc9teLmxMLN%2BMwY9jd579OlHH7WINd6sV7EPq%2Bs59vRRVU7GYV8NMJPQSOOmUa6vNpB2LW%2FrOkmDnjzBkzVNSX4Q7ZJG%2BLLALR7HM88oWqyroKgeDgw3TfskLmNHO%2B7PpxojCoanUtdCuxNh%2BSZ0chkh8WuE8NDIxd1I50tKP%2FHFdPwG%2B9hG6MPPjbn8guaR5nv6VtsxXWSzkcghg4oqZLdatmowkVuBp5rTTM92m%2BvnCW%2B9MBHnNjjV8zK0VdVqcN%2FpcbWCvyn%2F2Nn1RRzS2r8HpMKj5Va4X0qkuLg5zjLG5JmZL1eGcjXiTM5e7UE7wh%2BMBtCLqEFlhShW13cXgzG%2BPEehDaruExNHap6lPWMjizB0ezZgcJwEFPF%2BYS19tkdCHIlZuF70SPkLdj0jNFWViW92qlMXIc0yRvCZbqvEshqlr2GfCPmm%2FKoX%2FXXsa7jockodErH0JPpBjdEiGV9Vr5Aw5qa30QY6pgFT1wuVRSATtqzAMhcCWGxXSG0A7oWEloGodggwIWKtk95tu5w3XJxzmGX2koQyjYmEua6ZP0qrbkigCdFcDdUbCG%2BY%2F8qnVAGXDROqMcTalwM7M3A4fuF%2FUWTPyVkdRDx9FwjzbI5Rv9W42ESHAybBBJHhjebkhkVaGanCNoQg761%2BSPhFxkiNCLTSGXcvx9E4%2FUZ13DJ9Nss%2Fik%2BY7Mm4Ao5OUQd2&amp;X-Amz-Signature=4c22a78f31ffa73330889a5392165ecd806076db5eb5b37119921e145eae17a9&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="Arvore do Crysodrakon King" loading="lazy" />
+                        <figcaption>Arvore do Crysodrakon King</figcaption>
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/96628547-1d3b-4e0b-8e99-90d3bbe3d133/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4664J6WFZZT%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221431Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIBWYYHvDpNcZlwFokakKDSSrBSl%2FotbfYKHxXiNUPtSjAiBr02adE0gvC3SXTP%2BanG54KSW5rFLHnGOLewURMEVHwSr%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMSHNetsdIS75ui9xkKtwDZ4PUsta9AGJDLX78n1AubERm9PlIM0QB4O7gCIOce7Y6ZN%2ByXn3COGQwd1jnZjvNEyk8J1QoaeKXnYB2q2cYaOe9xQtpP7kFgC%2FH2ulP3pL5C6ipbVveeXpS0C1A70x2CMpo6khjwmON6A1XnRTcFQ8qaETYmaWX%2Fc9teLmxMLN%2BMwY9jd579OlHH7WINd6sV7EPq%2Bs59vRRVU7GYV8NMJPQSOOmUa6vNpB2LW%2FrOkmDnjzBkzVNSX4Q7ZJG%2BLLALR7HM88oWqyroKgeDgw3TfskLmNHO%2B7PpxojCoanUtdCuxNh%2BSZ0chkh8WuE8NDIxd1I50tKP%2FHFdPwG%2B9hG6MPPjbn8guaR5nv6VtsxXWSzkcghg4oqZLdatmowkVuBp5rTTM92m%2BvnCW%2B9MBHnNjjV8zK0VdVqcN%2FpcbWCvyn%2F2Nn1RRzS2r8HpMKj5Va4X0qkuLg5zjLG5JmZL1eGcjXiTM5e7UE7wh%2BMBtCLqEFlhShW13cXgzG%2BPEehDaruExNHap6lPWMjizB0ezZgcJwEFPF%2BYS19tkdCHIlZuF70SPkLdj0jNFWViW92qlMXIc0yRvCZbqvEshqlr2GfCPmm%2FKoX%2FXXsa7jockodErH0JPpBjdEiGV9Vr5Aw5qa30QY6pgFT1wuVRSATtqzAMhcCWGxXSG0A7oWEloGodggwIWKtk95tu5w3XJxzmGX2koQyjYmEua6ZP0qrbkigCdFcDdUbCG%2BY%2F8qnVAGXDROqMcTalwM7M3A4fuF%2FUWTPyVkdRDx9FwjzbI5Rv9W42ESHAybBBJHhjebkhkVaGanCNoQg761%2BSPhFxkiNCLTSGXcvx9E4%2FUZ13DJ9Nss%2Fik%2BY7Mm4Ao5OUQd2&amp;X-Amz-Signature=6930a09c63d4aa7d0e7e5f979a79a60bd8f109f7e717a5788180d1980b8a6e12&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="Arvore da Skotodrakon Queen" loading="lazy" />
+                        <figcaption>Arvore da Skotodrakon Queen</figcaption>
+                    </figure>
+                </div>
+            <h2>Mobs que spawnam</h2><ul><li>Abelhas</li><li>Farejador</li><li>Vacas</li><li>Mobjira(muito raro)</li><li>Crysodrakon King(em sua arvore)</li><li>Skotodrakon Queen(em sua arvore)</li></ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maçãs Mágicas - Twisted Lands Wiki</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
+    <style>
+  :root {
+    color-scheme: dark;
+    --bg: #040b12;
+    --bg-soft: #0b1927;
+    --panel: rgba(8, 19, 31, 0.92);
+    --panel-strong: rgba(13, 29, 47, 0.98);
+    --text: #f2f7ff;
+    --muted: #8ea4bb;
+    --accent: #71e2ff;
+    --accent-2: #b08aff;
+    --border: rgba(255,255,255,0.1);
+    --shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055 0%, #751111 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .brand-logo {
+    width: 220px;
+    max-width: 100%;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .page-panel {
+    background: linear-gradient(135deg, var(--panel), var(--panel-strong));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+  }
+
+  .page-panel h1, .page-panel h2, .page-panel h3, .page-panel h4 {
+    color: var(--accent);
+    margin-top: 0.5rem;
+  }
+
+  .page-panel p, .page-panel li, .page-panel blockquote, .page-panel figcaption {
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .page-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(113, 226, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  .page-panel a:hover {
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .image-item {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .image-card {
+    margin: 0;
+    background: var(--panel-strong);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .image-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .page-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-panel blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-left: 0;
+    color: var(--muted);
+  }
+
+  .page-panel code {
+    background: rgba(113, 226, 255, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #bff6ff;
+  }
+
+  .page-panel ul, .page-panel ol {
+    padding-left: 20px;
+  }
+
+  .page-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      max-width: 200px;
+    }
+    .image-card img {
+      max-width: 200px;
+    }
+    .columns-container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      max-width: 150px;
+    }
+    .image-card img {
+      max-width: 150px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="logo-header">
+        <a href="index.html">
+          <img class="brand-logo" src="../header-icon.png" alt="Twisted Lands" />
+        </a>
+      </div>
+
+      <main class="content">
+        <section class="page-panel">
+          <h2>Maçã de Cristal</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/734bcb45-68fe-4c49-b261-a29f2c9799be/crystal_apple.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4667X755Q2N%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221435Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIDOr0RDvKRgrZ5hRgEKnPpfEa9sR%2FuGRhYzy%2F3TBrqosAiB0LSbvy9YFSIFG7OnICt7k0lrgL%2FWptjbLUZEgzdRztir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMLFVIEWKoMLfWbogLKtwDDJIajrxEg0VFCXBhswdJUYYJbI8yxdubu4uhSvuu%2BcmprVPco5HiyXCE4PWYJyh1LLuHudBcpwUoPSRzhqsmSTIGnM5c7lnIPb9xGCWYynX%2FO7s3KpftlTwGAUgos%2FnxURBHBhfINhYGDuD2J2gOCzOCipZV66rLFS2BYVwLnRoSKYYb83c7yMnne0ata4XDb55w5W8Lv%2BE37PTgQrqTRjsQH1aPxefpFVShthSXayOh9Qo%2FgvaM6PALOafWSAOj%2FedxA0DFWNnPLQGYecLtfivX1Gpbug6sdKATUT7w8%2F4mYYs0GA5s9JzdsMxoc14NjmfgEqRFWAYuXkoZPQeArfFiygBZoenida1CzH41csk7IXihefUcKwonckjgWfMn0ok5y5DNV5lxViRAmrkiu%2Fs82Uv%2FiDwdk4QEZHHFimJAXWsSwWzN0K6fp%2B77a%2FBVUyr5Wwosf%2FhgFUYYOiLDy6WZmReqN%2BqwYvx%2B2eEe8SHqH7WRLAilTs6ZaLORPd5Vo%2FhNgdB3USXi8rhOChe6y5KDXaemynmqHoocD2rh5a6CkweOjd%2FexAVGjK9vV%2BUmWBXhVSgnaBDkkf7psHS27KkqG1sG6lhYK5EfsvY0%2FE6BekMW4HpsqOwpgvAwvqi30QY6pgF7Rz76Bwvh98oG5EQMaBebmzqRKyRobk2sIjz1owD140VFGFyEe7X7aNWq1whi7zU1t7dNer5LBPv9p9rW%2FGjAp0kl29gEBCL0cGRAIg884fKam3hdr3tBhlm9ZA7L5nrfGG3s%2F8gHP4LhR%2BA%2FAp4WpAqEYNStZvnrJJfXXN5i6uk1nZgDX9zeuG%2FqciId%2FWK7X8VCvmaS68sf3i%2F9dTl6gBHaaTZ2&amp;X-Amz-Signature=0ce93b1dd0e4a0c911e04ebc6d3fa010190cabaefafda367e944391e9ad2bf33&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Nutrição: 5</strong></p><p><strong>Saturação: 0.85</strong></p><p><strong>Efeitos: força e regeneração por 150 segundos</strong></p><h2>Maçã Meio-dourada</h2><div class="columns-container"><div class="column"><p><strong>Nutrição: 4</strong></p><p><strong>Saturação: 1</strong></p><p><strong>Efeitos: absorção por 30 segundos</strong></p><h2>Maçã de Esmeralda</h2><p><strong>Nutrição: 7</strong></p><p><strong>Saturação: 1.3</strong></p><p><strong>Efeitos: resistência por 20 segundos e regeneração por 15 segundos</strong></p><h2>Maçã de Diamante</h2><p><strong>Nutrição: 5</strong></p><p><strong>Saturação: 1</strong></p><p><strong>Efeitos: resistência por 30 segundos e absorção por 60 segundos</strong></p><h2>Maçã de Ametista</h2><p><strong>Nutrição: 6</strong></p><p><strong>Saturação: 1.2</strong></p><p><strong>Efeitos: visão noturna por 60 segundos e queda-lenta por 20 segundos</strong></p><h2>Maçã de Safira</h2><p><strong>Nutrição: 4</strong></p><p><strong>Saturação: 1</strong></p><p><strong>Efeitos: regeneração e absorção por 110 segundos e queda-lenta e visão noturna por 30 segundos</strong></p></div></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

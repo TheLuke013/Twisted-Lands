@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Peixes - Twisted Lands Wiki</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
+    <style>
+  :root {
+    color-scheme: dark;
+    --bg: #040b12;
+    --bg-soft: #0b1927;
+    --panel: rgba(8, 19, 31, 0.92);
+    --panel-strong: rgba(13, 29, 47, 0.98);
+    --text: #f2f7ff;
+    --muted: #8ea4bb;
+    --accent: #71e2ff;
+    --accent-2: #b08aff;
+    --border: rgba(255,255,255,0.1);
+    --shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055 0%, #751111 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .brand-logo {
+    width: 220px;
+    max-width: 100%;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .page-panel {
+    background: linear-gradient(135deg, var(--panel), var(--panel-strong));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+  }
+
+  .page-panel h1, .page-panel h2, .page-panel h3, .page-panel h4 {
+    color: var(--accent);
+    margin-top: 0.5rem;
+  }
+
+  .page-panel p, .page-panel li, .page-panel blockquote, .page-panel figcaption {
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .page-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(113, 226, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  .page-panel a:hover {
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .image-item {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .image-card {
+    margin: 0;
+    background: var(--panel-strong);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .image-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .page-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-panel blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-left: 0;
+    color: var(--muted);
+  }
+
+  .page-panel code {
+    background: rgba(113, 226, 255, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #bff6ff;
+  }
+
+  .page-panel ul, .page-panel ol {
+    padding-left: 20px;
+  }
+
+  .page-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      max-width: 200px;
+    }
+    .image-card img {
+      max-width: 200px;
+    }
+    .columns-container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      max-width: 150px;
+    }
+    .image-card img {
+      max-width: 150px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="logo-header">
+        <a href="index.html">
+          <img class="brand-logo" src="../header-icon.png" alt="Twisted Lands" />
+        </a>
+      </div>
+
+      <main class="content">
+        <section class="page-panel">
+          <h2>Peixe diabo-negro</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/62cc4aba-72ce-413a-8d73-72674fae74cf/black_fish.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4663EIH5V5H%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221419Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIFUgciCl0qgafWiVy%2FyXJvMiFQT48ZOheJJ4tHliF4FkAiB8augE9OckJH7Y9GB3ChdORF43FboRvibOlW3nU%2FBGcir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMbMXhEsSYkeoYvnlRKtwDu8zY9RUqZ54q6f5BkretFqKr495LPr7Xctd1h9neCadiIrH%2F%2Byt2cF6d6roe86K2j0IFEVh2cC%2BhaoH39hXPhsO%2Fdip9JH2t%2FNbwGQISNHrijtc05Z2kgmRDPd7HJp6YGvvLhLZ4FHZM%2BfwjqqH6%2BsX0Ztyc9ZzIII4U4v6ECXyG3Obdqznv6Nx1PIRHcibMCXMmcEU6UQCYLd1276pM1EQXrdldqkL9dc%2FbRjYavcevRAOo78ly5zW67KrWeC8nGWLhROSy66T5%2Bgw2rDA6mIAMwHHy%2Fq7HIrd0tKasHkg%2ByaRJiiQTd2OioYEaTW10dEAvq0JZHEiOo1x0WJUPMk2QF%2FCPHOou4K9imIhyzIk8XOG65yRXXYpquYttUtKJK3y%2BdX1ZU0U1LoAizRr7XgAcQyqSnhcNBzPndbVeLPYXpO72d655XjYvM4%2BoAI3cTS0PcZbWiHwfonC3FtS1NbzlC7SGf99QkcO3A%2Fhka4Qk9s%2FMPR4kP9ZOdJu4rBG3efnzN7EFWfJL2UqTYGGUvsotyeY27ahHLoPLQZHduH0kogidj6sN%2B2gYuxuoECi0zzMFObhwOf6zSWv%2FMedDcHmAyhIUsfGmj3WOBqx2bS1VFJpashPjYQydVPsw9aa30QY6pgFI80nxbctH6NGb3b2WWkp1%2BAF2eD4HXMV%2F%2BUCaZE5qSDQ1VLpjL3F9rQiwj3RUzGWpxvH1SuaVHf5L9V%2F2u8sUsyP2RkRIaU5oIZQoODckc4fcjZf%2BMHuJ%2BrY1H9zIbU9iCu%2B%2BVZXmUDgWUeKYR%2FkTiEwFnKNdggK0Fy3alA2n9sWcWxwogil4s6gadyMRDbEEmtVsgDNyA%2BHBXxh4kmykkl91lE6H&amp;X-Amz-Signature=c7cd71f1665e375fed0bdc52a4eab9b5ee7cc6e4426c520473e5f4a07ff1bd77&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Nutrição: 2</strong></p><p><strong>Saturação: 0.2</strong></p><h2>Peixe Azul</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/cd9e37e8-e627-4dd9-9099-8f18d4557278/blue_fish.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4663EIH5V5H%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221419Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIFUgciCl0qgafWiVy%2FyXJvMiFQT48ZOheJJ4tHliF4FkAiB8augE9OckJH7Y9GB3ChdORF43FboRvibOlW3nU%2FBGcir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMbMXhEsSYkeoYvnlRKtwDu8zY9RUqZ54q6f5BkretFqKr495LPr7Xctd1h9neCadiIrH%2F%2Byt2cF6d6roe86K2j0IFEVh2cC%2BhaoH39hXPhsO%2Fdip9JH2t%2FNbwGQISNHrijtc05Z2kgmRDPd7HJp6YGvvLhLZ4FHZM%2BfwjqqH6%2BsX0Ztyc9ZzIII4U4v6ECXyG3Obdqznv6Nx1PIRHcibMCXMmcEU6UQCYLd1276pM1EQXrdldqkL9dc%2FbRjYavcevRAOo78ly5zW67KrWeC8nGWLhROSy66T5%2Bgw2rDA6mIAMwHHy%2Fq7HIrd0tKasHkg%2ByaRJiiQTd2OioYEaTW10dEAvq0JZHEiOo1x0WJUPMk2QF%2FCPHOou4K9imIhyzIk8XOG65yRXXYpquYttUtKJK3y%2BdX1ZU0U1LoAizRr7XgAcQyqSnhcNBzPndbVeLPYXpO72d655XjYvM4%2BoAI3cTS0PcZbWiHwfonC3FtS1NbzlC7SGf99QkcO3A%2Fhka4Qk9s%2FMPR4kP9ZOdJu4rBG3efnzN7EFWfJL2UqTYGGUvsotyeY27ahHLoPLQZHduH0kogidj6sN%2B2gYuxuoECi0zzMFObhwOf6zSWv%2FMedDcHmAyhIUsfGmj3WOBqx2bS1VFJpashPjYQydVPsw9aa30QY6pgFI80nxbctH6NGb3b2WWkp1%2BAF2eD4HXMV%2F%2BUCaZE5qSDQ1VLpjL3F9rQiwj3RUzGWpxvH1SuaVHf5L9V%2F2u8sUsyP2RkRIaU5oIZQoODckc4fcjZf%2BMHuJ%2BrY1H9zIbU9iCu%2B%2BVZXmUDgWUeKYR%2FkTiEwFnKNdggK0Fy3alA2n9sWcWxwogil4s6gadyMRDbEEmtVsgDNyA%2BHBXxh4kmykkl91lE6H&amp;X-Amz-Signature=fede9a0df60773d5cfd3f751296ea27d061292864f75bd5242b149ecec45a70d&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Nutrição: 2</strong></p><p><strong>Saturação: 0.2</strong></p><h2>Peixe Marrom</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/4e6e9477-a6ad-46c1-a052-5a337c7b5588/brown_fish.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4663EIH5V5H%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221419Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIFUgciCl0qgafWiVy%2FyXJvMiFQT48ZOheJJ4tHliF4FkAiB8augE9OckJH7Y9GB3ChdORF43FboRvibOlW3nU%2FBGcir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMbMXhEsSYkeoYvnlRKtwDu8zY9RUqZ54q6f5BkretFqKr495LPr7Xctd1h9neCadiIrH%2F%2Byt2cF6d6roe86K2j0IFEVh2cC%2BhaoH39hXPhsO%2Fdip9JH2t%2FNbwGQISNHrijtc05Z2kgmRDPd7HJp6YGvvLhLZ4FHZM%2BfwjqqH6%2BsX0Ztyc9ZzIII4U4v6ECXyG3Obdqznv6Nx1PIRHcibMCXMmcEU6UQCYLd1276pM1EQXrdldqkL9dc%2FbRjYavcevRAOo78ly5zW67KrWeC8nGWLhROSy66T5%2Bgw2rDA6mIAMwHHy%2Fq7HIrd0tKasHkg%2ByaRJiiQTd2OioYEaTW10dEAvq0JZHEiOo1x0WJUPMk2QF%2FCPHOou4K9imIhyzIk8XOG65yRXXYpquYttUtKJK3y%2BdX1ZU0U1LoAizRr7XgAcQyqSnhcNBzPndbVeLPYXpO72d655XjYvM4%2BoAI3cTS0PcZbWiHwfonC3FtS1NbzlC7SGf99QkcO3A%2Fhka4Qk9s%2FMPR4kP9ZOdJu4rBG3efnzN7EFWfJL2UqTYGGUvsotyeY27ahHLoPLQZHduH0kogidj6sN%2B2gYuxuoECi0zzMFObhwOf6zSWv%2FMedDcHmAyhIUsfGmj3WOBqx2bS1VFJpashPjYQydVPsw9aa30QY6pgFI80nxbctH6NGb3b2WWkp1%2BAF2eD4HXMV%2F%2BUCaZE5qSDQ1VLpjL3F9rQiwj3RUzGWpxvH1SuaVHf5L9V%2F2u8sUsyP2RkRIaU5oIZQoODckc4fcjZf%2BMHuJ%2BrY1H9zIbU9iCu%2B%2BVZXmUDgWUeKYR%2FkTiEwFnKNdggK0Fy3alA2n9sWcWxwogil4s6gadyMRDbEEmtVsgDNyA%2BHBXxh4kmykkl91lE6H&amp;X-Amz-Signature=dad3f170a7ea9341f9e0602ced0ecb6b9203cc4ae921210602b7a8d465c3ac9e&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Nutrição: 2</strong></p><p><strong>Saturação: 0.2</strong></p><h2>Peixe Tropical Cozido</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/952c2c2f-6d8b-43cc-af2f-1f5ca5c2b371/cooked_tropical_fish.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4663EIH5V5H%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221419Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIFUgciCl0qgafWiVy%2FyXJvMiFQT48ZOheJJ4tHliF4FkAiB8augE9OckJH7Y9GB3ChdORF43FboRvibOlW3nU%2FBGcir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMbMXhEsSYkeoYvnlRKtwDu8zY9RUqZ54q6f5BkretFqKr495LPr7Xctd1h9neCadiIrH%2F%2Byt2cF6d6roe86K2j0IFEVh2cC%2BhaoH39hXPhsO%2Fdip9JH2t%2FNbwGQISNHrijtc05Z2kgmRDPd7HJp6YGvvLhLZ4FHZM%2BfwjqqH6%2BsX0Ztyc9ZzIII4U4v6ECXyG3Obdqznv6Nx1PIRHcibMCXMmcEU6UQCYLd1276pM1EQXrdldqkL9dc%2FbRjYavcevRAOo78ly5zW67KrWeC8nGWLhROSy66T5%2Bgw2rDA6mIAMwHHy%2Fq7HIrd0tKasHkg%2ByaRJiiQTd2OioYEaTW10dEAvq0JZHEiOo1x0WJUPMk2QF%2FCPHOou4K9imIhyzIk8XOG65yRXXYpquYttUtKJK3y%2BdX1ZU0U1LoAizRr7XgAcQyqSnhcNBzPndbVeLPYXpO72d655XjYvM4%2BoAI3cTS0PcZbWiHwfonC3FtS1NbzlC7SGf99QkcO3A%2Fhka4Qk9s%2FMPR4kP9ZOdJu4rBG3efnzN7EFWfJL2UqTYGGUvsotyeY27ahHLoPLQZHduH0kogidj6sN%2B2gYuxuoECi0zzMFObhwOf6zSWv%2FMedDcHmAyhIUsfGmj3WOBqx2bS1VFJpashPjYQydVPsw9aa30QY6pgFI80nxbctH6NGb3b2WWkp1%2BAF2eD4HXMV%2F%2BUCaZE5qSDQ1VLpjL3F9rQiwj3RUzGWpxvH1SuaVHf5L9V%2F2u8sUsyP2RkRIaU5oIZQoODckc4fcjZf%2BMHuJ%2BrY1H9zIbU9iCu%2B%2BVZXmUDgWUeKYR%2FkTiEwFnKNdggK0Fy3alA2n9sWcWxwogil4s6gadyMRDbEEmtVsgDNyA%2BHBXxh4kmykkl91lE6H&amp;X-Amz-Signature=71e85f072dd827cd69775b95a7c2dd61a26c85638028adcd9f019a4e5e72a32b&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Nutrição: 4</strong></p><p><strong>Saturação: 0.8</strong></p><h2>Peixe Verde</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/42375c1f-1b29-4170-b733-03677aa40ebd/green_fish.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4663EIH5V5H%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221419Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIFUgciCl0qgafWiVy%2FyXJvMiFQT48ZOheJJ4tHliF4FkAiB8augE9OckJH7Y9GB3ChdORF43FboRvibOlW3nU%2FBGcir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMbMXhEsSYkeoYvnlRKtwDu8zY9RUqZ54q6f5BkretFqKr495LPr7Xctd1h9neCadiIrH%2F%2Byt2cF6d6roe86K2j0IFEVh2cC%2BhaoH39hXPhsO%2Fdip9JH2t%2FNbwGQISNHrijtc05Z2kgmRDPd7HJp6YGvvLhLZ4FHZM%2BfwjqqH6%2BsX0Ztyc9ZzIII4U4v6ECXyG3Obdqznv6Nx1PIRHcibMCXMmcEU6UQCYLd1276pM1EQXrdldqkL9dc%2FbRjYavcevRAOo78ly5zW67KrWeC8nGWLhROSy66T5%2Bgw2rDA6mIAMwHHy%2Fq7HIrd0tKasHkg%2ByaRJiiQTd2OioYEaTW10dEAvq0JZHEiOo1x0WJUPMk2QF%2FCPHOou4K9imIhyzIk8XOG65yRXXYpquYttUtKJK3y%2BdX1ZU0U1LoAizRr7XgAcQyqSnhcNBzPndbVeLPYXpO72d655XjYvM4%2BoAI3cTS0PcZbWiHwfonC3FtS1NbzlC7SGf99QkcO3A%2Fhka4Qk9s%2FMPR4kP9ZOdJu4rBG3efnzN7EFWfJL2UqTYGGUvsotyeY27ahHLoPLQZHduH0kogidj6sN%2B2gYuxuoECi0zzMFObhwOf6zSWv%2FMedDcHmAyhIUsfGmj3WOBqx2bS1VFJpashPjYQydVPsw9aa30QY6pgFI80nxbctH6NGb3b2WWkp1%2BAF2eD4HXMV%2F%2BUCaZE5qSDQ1VLpjL3F9rQiwj3RUzGWpxvH1SuaVHf5L9V%2F2u8sUsyP2RkRIaU5oIZQoODckc4fcjZf%2BMHuJ%2BrY1H9zIbU9iCu%2B%2BVZXmUDgWUeKYR%2FkTiEwFnKNdggK0Fy3alA2n9sWcWxwogil4s6gadyMRDbEEmtVsgDNyA%2BHBXxh4kmykkl91lE6H&amp;X-Amz-Signature=be0725641e287b4d456f055832aae53f030a4bea0b02aea121285babe6ec52df&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Nutrição: 2</strong></p><p><strong>Saturação: 0.2</strong></p><h2>Peixe-lua</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/4c622c86-176a-4f4c-8853-cac70a748352/sun_fish.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4663EIH5V5H%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221419Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIFUgciCl0qgafWiVy%2FyXJvMiFQT48ZOheJJ4tHliF4FkAiB8augE9OckJH7Y9GB3ChdORF43FboRvibOlW3nU%2FBGcir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMbMXhEsSYkeoYvnlRKtwDu8zY9RUqZ54q6f5BkretFqKr495LPr7Xctd1h9neCadiIrH%2F%2Byt2cF6d6roe86K2j0IFEVh2cC%2BhaoH39hXPhsO%2Fdip9JH2t%2FNbwGQISNHrijtc05Z2kgmRDPd7HJp6YGvvLhLZ4FHZM%2BfwjqqH6%2BsX0Ztyc9ZzIII4U4v6ECXyG3Obdqznv6Nx1PIRHcibMCXMmcEU6UQCYLd1276pM1EQXrdldqkL9dc%2FbRjYavcevRAOo78ly5zW67KrWeC8nGWLhROSy66T5%2Bgw2rDA6mIAMwHHy%2Fq7HIrd0tKasHkg%2ByaRJiiQTd2OioYEaTW10dEAvq0JZHEiOo1x0WJUPMk2QF%2FCPHOou4K9imIhyzIk8XOG65yRXXYpquYttUtKJK3y%2BdX1ZU0U1LoAizRr7XgAcQyqSnhcNBzPndbVeLPYXpO72d655XjYvM4%2BoAI3cTS0PcZbWiHwfonC3FtS1NbzlC7SGf99QkcO3A%2Fhka4Qk9s%2FMPR4kP9ZOdJu4rBG3efnzN7EFWfJL2UqTYGGUvsotyeY27ahHLoPLQZHduH0kogidj6sN%2B2gYuxuoECi0zzMFObhwOf6zSWv%2FMedDcHmAyhIUsfGmj3WOBqx2bS1VFJpashPjYQydVPsw9aa30QY6pgFI80nxbctH6NGb3b2WWkp1%2BAF2eD4HXMV%2F%2BUCaZE5qSDQ1VLpjL3F9rQiwj3RUzGWpxvH1SuaVHf5L9V%2F2u8sUsyP2RkRIaU5oIZQoODckc4fcjZf%2BMHuJ%2BrY1H9zIbU9iCu%2B%2BVZXmUDgWUeKYR%2FkTiEwFnKNdggK0Fy3alA2n9sWcWxwogil4s6gadyMRDbEEmtVsgDNyA%2BHBXxh4kmykkl91lE6H&amp;X-Amz-Signature=bcdca981d40d2ade6306715daebd10ab0f4c738677c26598b36d88b747613f93&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Nutrição: 5</strong></p><p><strong>Saturação: 0.85</strong></p><p>Efeitos: Resistencia ao fogo por 300 segundos</p><h2>Peixe-árvore</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/6eb445e2-b045-418c-ad16-cafce1b8875c/tree_fish.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB4663EIH5V5H%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221419Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIFUgciCl0qgafWiVy%2FyXJvMiFQT48ZOheJJ4tHliF4FkAiB8augE9OckJH7Y9GB3ChdORF43FboRvibOlW3nU%2FBGcir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIMbMXhEsSYkeoYvnlRKtwDu8zY9RUqZ54q6f5BkretFqKr495LPr7Xctd1h9neCadiIrH%2F%2Byt2cF6d6roe86K2j0IFEVh2cC%2BhaoH39hXPhsO%2Fdip9JH2t%2FNbwGQISNHrijtc05Z2kgmRDPd7HJp6YGvvLhLZ4FHZM%2BfwjqqH6%2BsX0Ztyc9ZzIII4U4v6ECXyG3Obdqznv6Nx1PIRHcibMCXMmcEU6UQCYLd1276pM1EQXrdldqkL9dc%2FbRjYavcevRAOo78ly5zW67KrWeC8nGWLhROSy66T5%2Bgw2rDA6mIAMwHHy%2Fq7HIrd0tKasHkg%2ByaRJiiQTd2OioYEaTW10dEAvq0JZHEiOo1x0WJUPMk2QF%2FCPHOou4K9imIhyzIk8XOG65yRXXYpquYttUtKJK3y%2BdX1ZU0U1LoAizRr7XgAcQyqSnhcNBzPndbVeLPYXpO72d655XjYvM4%2BoAI3cTS0PcZbWiHwfonC3FtS1NbzlC7SGf99QkcO3A%2Fhka4Qk9s%2FMPR4kP9ZOdJu4rBG3efnzN7EFWfJL2UqTYGGUvsotyeY27ahHLoPLQZHduH0kogidj6sN%2B2gYuxuoECi0zzMFObhwOf6zSWv%2FMedDcHmAyhIUsfGmj3WOBqx2bS1VFJpashPjYQydVPsw9aa30QY6pgFI80nxbctH6NGb3b2WWkp1%2BAF2eD4HXMV%2F%2BUCaZE5qSDQ1VLpjL3F9rQiwj3RUzGWpxvH1SuaVHf5L9V%2F2u8sUsyP2RkRIaU5oIZQoODckc4fcjZf%2BMHuJ%2BrY1H9zIbU9iCu%2B%2BVZXmUDgWUeKYR%2FkTiEwFnKNdggK0Fy3alA2n9sWcWxwogil4s6gadyMRDbEEmtVsgDNyA%2BHBXxh4kmykkl91lE6H&amp;X-Amz-Signature=f54929d22a9fc51e0eeb6d755c4dddf2e6b4913e9fe388e46a4a823639fa3f01&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Nutrição: 2</strong></p><p><strong>Saturação: 0.2</strong></p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

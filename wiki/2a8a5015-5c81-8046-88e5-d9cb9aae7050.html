@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Comum - Twisted Lands Wiki</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
+    <style>
+  :root {
+    color-scheme: dark;
+    --bg: #040b12;
+    --bg-soft: #0b1927;
+    --panel: rgba(8, 19, 31, 0.92);
+    --panel-strong: rgba(13, 29, 47, 0.98);
+    --text: #f2f7ff;
+    --muted: #8ea4bb;
+    --accent: #71e2ff;
+    --accent-2: #b08aff;
+    --border: rgba(255,255,255,0.1);
+    --shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055 0%, #751111 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .brand-logo {
+    width: 220px;
+    max-width: 100%;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .page-panel {
+    background: linear-gradient(135deg, var(--panel), var(--panel-strong));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+  }
+
+  .page-panel h1, .page-panel h2, .page-panel h3, .page-panel h4 {
+    color: var(--accent);
+    margin-top: 0.5rem;
+  }
+
+  .page-panel p, .page-panel li, .page-panel blockquote, .page-panel figcaption {
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .page-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(113, 226, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  .page-panel a:hover {
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .image-item {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .image-card {
+    margin: 0;
+    background: var(--panel-strong);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .image-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .page-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-panel blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-left: 0;
+    color: var(--muted);
+  }
+
+  .page-panel code {
+    background: rgba(113, 226, 255, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #bff6ff;
+  }
+
+  .page-panel ul, .page-panel ol {
+    padding-left: 20px;
+  }
+
+  .page-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      max-width: 200px;
+    }
+    .image-card img {
+      max-width: 200px;
+    }
+    .columns-container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      max-width: 150px;
+    }
+    .image-card img {
+      max-width: 150px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="logo-header">
+        <a href="index.html">
+          <img class="brand-logo" src="../header-icon.png" alt="Twisted Lands" />
+        </a>
+      </div>
+
+      <main class="content">
+        <section class="page-panel">
+          <h2>Vaca-Maçã</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/8e791599-35cc-4f6f-b010-2a29f2209090/apple_cow.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=56191f4637eb4e5922dbdc5b5ea0c99a624ab3ead0d59863cfb78b48b7b34ae4&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/8d6cf08c-8028-4584-a439-96f3e4d9a866/apple_cow.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=1f9003771873c441c0c470187bdd99181df3c1ca4860d5c12505ae387adc6cac&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 10</strong></p><p><strong>Onde Spawna: Overworld, de manhã</strong></p><p><strong>Loot: Maçã</strong></p><p><strong>Raridade: Comum</strong></p><p><strong>Descrição: Uma vaca feita de maçãs, isso e um pouco estranho particularmente, do que será que ela se alimentou para fica desse jeito.</strong></p><h2>Vaca-Maçã Dourada</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/e3e26e80-0ec5-411d-90c6-985fcb625fe5/golden_cow.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=62ccfbdef3524ef6c1e7efd83b987727d6eb83cc3da1183b4d21ca0cfc062b05&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/02b0881b-5469-490d-9518-ede76f03db1c/golden_cow.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=90402406f09efac07be093ec396c081166623e16e4253422291de1e170ae345c&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 10</strong></p><p><strong>Onde Spawna: Overworld, de manhã</strong></p><p><strong>Loot: Maçã Dourada</strong></p><p><strong>Raridade: Parcialmente Comum</strong></p><p>Descrições: Uma forma mais brilhante da vaca de maçãs, talvez uma mutação? Ela parece ter uma pele mais dourada, como se fosse feita de ouro.</p><h2>Vaca-Maçã Dourada Encantada</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/2910df9a-ea29-4865-aed9-87d236618cb9/enchanted_cow.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=357cdda283bdce82e819adc8878c8b5e5d773fbb3af429582c9dc3f1a115eb7b&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/2be468e4-4b54-4917-8134-16cd0025cd8b/enchanted_cow.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=ae5f7c1112d4a201102c0b455811ad8226d8b3f20a18f3fffedf6468dc0346ca&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 10</strong></p><p><strong>Onde Spawna: Overworld, de manhã</strong></p><p><strong>Loot: Maçã Dourada Encantada</strong></p><p><strong>Raridade: Parcialmente Comum</strong></p><p>Descrição: Algumas criaturas podem gerar energias especiais em seus corpos, talvez seja o caso dessa criatura, ela parece liberar uma energia para atrair outros seres? Talvez há um mistério por trás desses seres.</p><h2>Vaca-Maçã de Cristal</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/b63abb7b-4c76-477b-b569-dde1eb43f68c/crystal_cow.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=3afa2303d1ff26851db834588321acdc46909251656f964e170924606fdcd5b4&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/7efa10d3-7119-4f67-be74-7fe44ee228d6/crystal_cow.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=874b0a5f088748ee7c53ae38c90bfa2a22ffdcdf3c41ee1a9d91a64d8cd840b3&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 10</strong></p><p><strong>Onde Spawna: em nenhum lugar nesta alpha</strong></p><p><strong>Loot: Maçã de Cristal</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: Alguns sonhos são mais estranhos que outros, quem diria que uma criatura família existia nessa realidade </p><h2>Vaca-Maçã de Diamante</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/c65f1618-dae8-40a3-9476-9680c592885d/diamond_cow.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=0042c2a0131b1b11ab5058fa42ef96c81895fcd32288f2654f7284ff1b0e9c53&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/a6860208-893d-4df3-afeb-9521fdc10c6d/diamond_apple_cow.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=3afa71a7cc3ca33b57c072cba3634788dca5cd2e40b87c71e98b12413cf48d07&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 10</strong></p><p><strong>Onde Spawna: Floresta Encantada</strong></p><p><strong>Loot: Maçã de Diamante</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição:  A contaminação daquele local parece que está afetando os seres vivos, fazendo eles se tornarem seres diferentes dos normais, preciso me apressar e descobrir a causa disso.</p><h2>Porco-Maçã</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/a1f15f7c-47cb-4293-85b7-f71d6b0b84e8/apple_pig.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=66c27164257f733ad1a449a1b022bff1db9171dc17862f5f3091ae1f62c901a5&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/1c101eb6-d659-4b0c-9e16-855abbcdf22c/apple_pig.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=d4b64727dda49a7ec8c4d0de33b995737f6e890bd6e429c0e77c13a312b23722&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 10</strong></p><p><strong>Onde Spawna: Overworld, de manhã</strong></p><p><strong>Loot: Maçã de Cristal</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: As vezes, seres feitos de minerais surgem na superfície em busca recursos, eles não são feitos de material orgânica, é pelo o que eu escutei de alguns moradores, eles não parecem serem agressivos.</p><h2>Pinguim</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/3b181788-6a47-46f5-9976-a4338e36d70e/Pinguim.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=6ecd00b3f2e5ed24272723f48237d80c4ac2da865f0daf20620053addfa81df8&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/ec01bf41-0353-4f46-9c12-69c851a432d0/penguin.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=3164f415d55548f291751c91d7281f37ed590bd667f83a502b12ea839dc4bdcf&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p>Pode nadar e caça peixes.</p><p><strong>Vida: 40</strong></p><p><strong>Onde Spawna: em biomas de neve e gelo</strong></p><p><strong>Loot: Peixes</strong></p><p><strong>Dano: 6</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: Esses seres parecem serem tão macios, eles me dão uma vontade de levar eles embora e criar-los como animal de estimação, preciso resistir a isso.</p><h2>Pinguinzinho</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/c50164b7-4e25-4ae7-a276-8f8d34f2698b/Pinguim_1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=485c1e02c5f52b382815bd23d0746b2a00f4b795b2fc7f93086c0f08601394cd&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/cb591bb5-87a5-48c1-bc92-e9bc69974945/penguin.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=87d543f19bb34af55cfa481ac6caff0d2e91a9981c3134b56958b76e80bf5b9b&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p>Pode nadar e caça peixes.</p><p><strong>Vida: 20</strong></p><p><strong>Onde Spawna: em biomas de neve e gelo</strong></p><p><strong>Loot: Peixes</strong></p><p><strong>Dano: 4</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: Essa aparência, esse jeito de andar, eu não consigo resistir a tanta fofura.</p><h2>Patinho</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/30394853-dbb3-4386-9e14-2ed5dd0ad313/Rubber_duck_preview.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=b3d5b86acdb8e93ad4ded7c84ba2f5dc71ce3a2698648ed167034987df695185&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/4b5f1c02-4c1f-4346-8c5a-347dfcae862f/duckling.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=a6406eb8b2ed6a40aafb5094c68a5790b740a65b91a286362f10e0a01b5d4789&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 10</strong></p><p><strong>Onde Spawna: em fontes do Grande Jardim</strong></p><p><strong>Loot: Patinho Cru</strong></p><p>Descrição: eles se parecem com patos, mas eles nunca crescem,  parecem serem feitos de um material diferente, a qual propósito esses seres foram criados?</p><h2>Rena</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/90e487c2-a7f3-4741-8eae-ab3f046fa545/Deer_model_fixed_2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=4864948b2d67ac23d5473ae9d46176d8ae39f4e654cfefc97496a476eac94830&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/ea869bb8-2d10-4ac7-84ef-c29742880668/reindeer.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=60eaf37a915e528087df192fcbc87fd4715cfe081dc9ee0796890bb4fb67510a&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p>Pode voar se estiver nevando/chovendo e estiver de noite</p><p><strong>Vida: 20</strong></p><p><strong>Onde Spawna: em biomas de neve e gelo</strong></p><p><strong>Loot: Bife e Couro</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: Um animal grande, peludo e com chifres, isso com certeza e uma rena, pelo o que eu vi dos morado da região, elas parecem voar quando está nevando, isso parece surreal demais para ser verdade.</p><h2>Formiga Marrom</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/c753b6aa-3217-414e-87f5-b5fb6d6b80b3/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=b3e91bcc4584133a1db683164b0ed08f16242eab90c851a713ecfd8e3e0afead&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/f8c2882f-fca5-4145-9c0b-70855ce5bfbe/brown_ant.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=f5748f3e8bdd54cdb33ae83e849dad1d818916d14fe69430a108b389a9fac960&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 40</strong></p><p><strong>Onde Spawna: Em formigueiros</strong></p><p><strong>Dano: 8</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: Uma formiga gigante, elas parecem serem capazes de carregar árvore inteira caso estejam juntas, elas podem ser um problema caso resolvam ataca uma aldeia.</p><h2>Formiga Arco-Íris</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/2da29de0-08a2-49de-9414-aa3bd4d3a9dc/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=4c0a0e7f20163062cc467145c34350cdbdda9239eeedb4289ada306952f7ffdb&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/1e08b3d6-9fd3-4ca5-996d-52797cc44ca8/rainbow_spwn_egg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466UEL2ECVL%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221416Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJGMEQCIAQMPlVevPg9kW9Oj8uqtMduWgkuqioHX%2FZlDyhdIPkgAiATopZoFMpZgcnhg8KCdqGlm%2Fa9533ZddWwIAI6F2MPyir%2FAwg3EAAaDDYzNzQyMzE4MzgwNSIM5qjFT6OdNkLH%2BEErKtwDtCOE48pngBSH7t%2BSUhI%2BrPYvLWKBUuQLioNe5n1GbdWtZUAxlUdSufKfpyry8RewB3if%2FblutJqaeyuoHdY327ILCJc4wHtTi%2FY99PB2GeYvkK2Xl4xLFsKJZs5RrlJ%2BmN0BKhQzADMJ5MKXOPZKuVbJz%2BRumWUtPnOH0moe9c88sKfONZhZqW2b54qGo7TlONIdIPU4OzJcKF98jwEknW4yt9vTwky4R2yAq%2B9l1Ga325BQW2Fuqg3DSUriDG8QWNTC1jspSSu46onWNBFXBBIOwWpR3iR42qRBu0rk6pjGImNkG10WlHBJ58%2FyJeq4MQGVxf%2B2GAcYY9ixZkrrgLRoABVv2VSYJGTm3Gma2AZv2u1pouqOrW%2F85QE2f3D62rTd%2BB%2FKTL%2BkQw29kFstdXYRHUicJSGhUV3hJeNdLmKtFpXi53NX2dh%2F0Bhu233Vb1SnJOjtoiMct93bonp9wKTb%2FIezPKn4VGKwSTCOqifLgnO3%2BGEazVAVbaazDP2737yRgOa83vKVlmFlzNViMyxpAkYdD3WUwvMReR6gjk3X0ZvzHAcelMhca8uKwP%2BBvOfno2UvYpkXPhpDpGOAMvNSO28MyBhiBudjBcm7mIDrmaWXgxei6OMclnIw76e30QY6pgH06I61IPg3nSvOOR%2B7UH1KbpaFnQoWT9fBl09NqROpnv5gbVF05OxVdUDW0I%2FSQ6EMijYIZzLEYgY75MKKTFFb8xkW8sWXL7BhHx4fCFhw9Zo2fjCYvDMmQZQIfWufV1xojakH8q%2F8bpnVab09zgAqCUI3kuzsVsKkHGHW6TPtCgTgxMsawZPZIKSAXeu48o9GExVbZ3wX1aSuHcChqifsE2Ya3feh&amp;X-Amz-Signature=f0627ab9687a80b19ae9de90591ea7cd2dbb238787fa6cc5b18b8a760c053355&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 40</strong></p><p><strong>Onde Spawna: No bloco de terra em cavernas</strong></p><p><strong>Dano: 4</strong></p><p><strong>Raridade: Raro</strong></p><p>Descrição: </p><h2>Irukandji</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/b8abf3fb-54ba-44ce-b771-03ee212dc9e0/irukandji.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=c875b881695cfc9a9c63659e677a0bc04428dd1e7bb72fd64e04acf244ae4e6e&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/a21c33b6-1147-47d4-bc7d-83077bf5a272/irukandji_spawn_egg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=04cef787b24b8da42adad0af7eade575eb6edc528538582a5884e3d434eee215&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 14</strong></p><p><strong>Onde Spawna: Em rios e oceanos</strong></p><p><strong>Dano: 20</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: </p><h2>Vaga-lume</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/f1d3c568-910e-4919-950c-f65d734d6ad6/firefly.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=c3eb378553b6c2f3245aba091a29abb1d7d6ac14a33cf97c9de7891aae162d0f&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 5</strong></p><p><strong>Onde Spawna: Em todos lugares durante a noite</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: </p><h2>Grilo</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/92450316-6028-4241-9d1e-edf9079a4b1a/cricket.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=e5de173467c14aeac7117e0f28c26e91949eaaedf4032df003d3c968fb7c66ea&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/4b184116-656a-4b85-9d3d-5c6d52b0eb5c/cricket_spawn_egg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=2ed6ec8ef4ed1cdcb7301a705aed10deef35d86dd9d5a1b6ff95084a346720c2&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 40</strong></p><p><strong>Onde Spawna: Em formigueiros</strong></p><p><strong>Dano: 8</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: </p><h2>Rato</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/3e934670-ff3c-4c1c-95af-0c68429ccc64/rat.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=7d6b77a72e5b0dbac1a9402454445bf7e111b4f8cc00c46212f3ec6b01a068a4&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/e724670f-7072-4c62-a7bc-e2a3db1b7fbd/rat_spawn_egg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=86bd6c969bb185d6bfc07280baa754cb4e0cc82d3cfbc575270c509abfcd67f1&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 10</strong></p><p><strong>Onde Spawna: Em cavernas</strong></p><p><strong>Dano: 1-2 + efeito de fome</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: </p><h2>Tâmia</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/c9c4948d-e977-419b-866d-9cdac0f57fab/chipmunk.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=57a36969bff6d34a784decbbb92f9abe69d621052def87c6bd7dfeb734d2cf08&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/930246f9-d37b-4cc7-ada8-266e2da17cab/chipmunk_spawn_egg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=66da1c939b7688f9db3bcd34152a9333d0120872c526f401dee9af9bfe207469&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 15</strong></p><p><strong>Onde Spawna: Em florestas</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: </p><h2>Esquilo</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/624f2215-cfd9-429e-b9f2-93350362e4ae/squirrel.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=474ee36c419a6a232d9a7489f527c96cbf1b1c877013d9f17fde30724cf4b7fe&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/5acc0903-e2e0-4980-90f5-bf240e6ddbb2/squirrel_spwn_egg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=93b9888e73fc427c09462d51699e62b719e76d0eb221b54aa2170edf27a50eec&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 15</strong></p><p><strong>Onde Spawna: Em Florestas</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: </p><h2>Castor</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/11d42e12-0d03-4e26-a690-f2c492023ff3/beaver.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=fed8a7aaf7cf5ade87a5e192e9ef01b63b3c6f844fc82ac73b7325135cc9b0db&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/940d98b0-6b35-41f1-8a46-07a0d5704023/beaver_spawn_egg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=8043d21fed911ca87941f16a9a5df111f76110c55d6bf656ab9dffcb884d02b1&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 15</strong></p><p><strong>Onde Spawna: Em formigueiros</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: </p><h2>Casuar</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/5846795b-2ab6-48e1-84bc-23e4b1301abf/cassowary.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=305a2631d9b0b7dd32a21a88057ff0d24f130467518c080586fc7ab7d7512076&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/2f5c1cdb-1c7b-4ad7-a3d0-74fd78ec5eff/cassowary_spawn_egg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=88dd15ad9ce4bac55b4c5e5db727041550751a5275485581ad38c907224daa27&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 20</strong></p><p><strong>Onde Spawna: Em selvas</strong></p><p><strong>Dano: 6</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: </p><h2>Gazela</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/5b47af52-04d1-422a-b32d-3e86a6d2e5e4/gazelle.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=67bdbca8baf9fa349bf1448748b38d16b5a6db7e1371fcd3ab3948416179e826&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/f1a88987-a1f0-4062-93c9-592fc0e0387a/gazelle_spwn_egg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=20ff866c6a87cf05c314c8efc639e846b027290d73051a487d006318cb13a41b&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 10</strong></p><p><strong>Onde Spawna: Na Savana</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: </p><h2>Pavão</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/3fc8ae54-eaca-4f41-a2db-5cc037f587f6/cock_de_asas_abertas.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=126c2e1c062187e88a4bb44d650293737456825bef602695d08f862201d99915&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/e40390a9-f7e3-498b-bfc7-e7cc54511009/peacock_spawn_egg.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XZU62ANN%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221417Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCdm5sGK5dFzjLkzAwUOVwwSyqPXXXmqzoy0N0uJNc7pAIhAO8tsxSMNlzoF1Zf0uOZMWcfmpE7VAE%2BUW%2FUI0YnV6RfKv8DCDcQABoMNjM3NDIzMTgzODA1Igz6W9HimiZ7tTn9N7Yq3AOWBDR2WGoOBSs0D9I4HR%2BIYsvsW3w4IwFk5gZt2H6GShHMOO7nhR75FhXn7vIU0NfP1UcGQTNwdSWzZwnOQyW8339fPSqov6o%2B%2F13g4jdo4CJhClOgUwaSFxHo6xGHvq0rY0EYQUjm3L%2F86WX2Bj%2Bu09UeThKeQ4ofrq53vFMjY%2Fp3EWWcNVTGpmO4F41I8%2BEtYTb6UhQ8vJ7PvjDqLSnr0e5CFJKa79KJv%2Bqok16KWtzwKE4psyEPHz1bsgp%2FGgxoNkA2MD11ixlvz92BNm%2F%2Fa%2B0oqjFwzlTGJsjNQBvseEBgWXYgVU82Gsl1LPtGtVKLb5FRf2wFeyBTbldxW6%2FdaY3E4AxYp8xLWh2JZmu%2Bdx74KJtxaLcnKaTN7CnjQJUlL6wH0gppHIlhna3i9oTQ%2B7iJw1tT7573LVa%2F32BgyjHFICnbm4y1erPLWvQhG01ICHhAqjaHuFoqTUzcoiuiGKhWCHbuFOIQtx6EmUdzltHR0ik%2Fvt6ZTN0mb5ZyPQGpOprENIQRsQPE5P%2FbIM%2BJxSnOrbz%2B25R%2F7oryBtPaVT7AHGK6LyOiUopxjPy6b%2BXu8FbNTPj2RBRlsX%2FFDNrLLkOmhnqDPm0DZi%2Ba5aD%2F9el%2BOwP9Q%2F5SwLa31DD0prfRBjqkAXZA3sA7u9c00tPCiAFHEzDdKIQtSr3HZ371cN7g0lTU1oUYrPXnlE74WjYmR729OfunJTYEZ2ubl2fWX3lmfCS7e9OaN%2BOmHX69LDUk83gYy%2FohSzWOmSRjNWTP0BTVaI4IgIqEM5SmLmgiysTWZjTVtw3WCfYdXwj7Nkt%2B4vAwuxxVQVxkHfb2cLFd%2ByVEbBRFFt%2FxqtHP7t%2FbWmLeNYfmyjgH&amp;X-Amz-Signature=fdbddc4327b2891e6d66c0845209109db6fcf34b5e0499586985c0dcd3227293&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p><strong>Vida: 20</strong></p><p><strong>Onde Spawna: Na floresta encantada</strong></p><p><strong>Raridade: Comum</strong></p><p>Descrição: </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

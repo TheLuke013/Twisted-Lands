@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Natureza - Twisted Lands Wiki</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
+    <style>
+  :root {
+    color-scheme: dark;
+    --bg: #040b12;
+    --bg-soft: #0b1927;
+    --panel: rgba(8, 19, 31, 0.92);
+    --panel-strong: rgba(13, 29, 47, 0.98);
+    --text: #f2f7ff;
+    --muted: #8ea4bb;
+    --accent: #71e2ff;
+    --accent-2: #b08aff;
+    --border: rgba(255,255,255,0.1);
+    --shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055 0%, #751111 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .brand-logo {
+    width: 220px;
+    max-width: 100%;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .page-panel {
+    background: linear-gradient(135deg, var(--panel), var(--panel-strong));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+  }
+
+  .page-panel h1, .page-panel h2, .page-panel h3, .page-panel h4 {
+    color: var(--accent);
+    margin-top: 0.5rem;
+  }
+
+  .page-panel p, .page-panel li, .page-panel blockquote, .page-panel figcaption {
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .page-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(113, 226, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  .page-panel a:hover {
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .image-item {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .image-card {
+    margin: 0;
+    background: var(--panel-strong);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .image-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .page-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-panel blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-left: 0;
+    color: var(--muted);
+  }
+
+  .page-panel code {
+    background: rgba(113, 226, 255, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #bff6ff;
+  }
+
+  .page-panel ul, .page-panel ol {
+    padding-left: 20px;
+  }
+
+  .page-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      max-width: 200px;
+    }
+    .image-card img {
+      max-width: 200px;
+    }
+    .columns-container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      max-width: 150px;
+    }
+    .image-card img {
+      max-width: 150px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="logo-header">
+        <a href="index.html">
+          <img class="brand-logo" src="../header-icon.png" alt="Twisted Lands" />
+        </a>
+      </div>
+
+      <main class="content">
+        <section class="page-panel">
+          <h2>Pedra-Negra Rúnica</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/f7bdbc54-f2ef-4c5d-96c2-65f6f02ec47c/runic_blackstone.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=18c0456460cc72df7176031d1c3cfe881db6f000b4bc696e068effa0d1435a6b&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p>Uma pedra que funciona como um minério que tem uma certa chance de dropar ametista, e também pode ser usada para construir o altar rúnico</p><p><strong>Raridade: Raro</strong></p><p><strong>Dimensão: Nether - Basalt Deltas</strong></p><p><strong>Distribuição: 1-2 blocos</strong></p><p><strong>Camadas: Y ( 30-80 )</strong></p><p><strong>Picareta para quebrar: Ferro, Ouro, Diamante, Netherita</strong></p><h2>Rosa de Litchurgo</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/5636ab94-2fa9-4cb5-b50b-2f4c34519b49/litchurgo_rose.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=0e40a097cca77eedf5dc976ab60cc4d6360748f7eddc9e072914da6fde0f23ee&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p>Uma rosa magica e rara de se conseguir, dizem que ela traz o pressagio da morte espiritual. Ela pode ser usada para muitas coisas como usar pétalas para fazer poções e o Altar Rúnico além de ser também venenosa, então ao chegar perto certifique-se que esteja agachado.</p><p><strong>Onde é encontrada? Na dimensão do Grande Jardim.</strong></p><h2>Muda de Azuralis</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/72a4ea1b-bfda-4ec9-842b-12a02a5a3234/blue_sapling.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=5fbac4d6efe886a40f9daa16b349c71335a5f7b17c422ade3e0b9c61d5b18d75&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p>São dropadas em uma pequena chance ao quebrar Folhas de Azuralis.</p><h2>Folhas de Azuralis</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/c960fc45-1bc5-4e99-a0b6-73735a22e513/blue_leaves.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=15b3c569aa1f1324e196fcda649629271fc508da61f91f7ce6ba29c2e68da861&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Trepadeiras Azuralis</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/1a0950a0-4996-48f5-9de4-5b90417fa58c/blue_vines.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=0df702aee2a85925e28994d2a15bdd1330fd1ccd52d73580a35933550bdb8aa4&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p>Gerada nos troncos de Azuralis.</p><h2>Tronco de Azuralis</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/198f9d3b-0a3c-452b-b525-c169139a1913/blue_log.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=218a0773d9738d4d3c0ef55c1f476da7a2d335f06d42470f2fa9f4d071e3e5fe&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <h2>Vinhas de Blue Berries</h2><div class="columns-container"><div class="column"><p>Encontradas suspensas nas folhas de Azuralis. Seus frutos são muito doce e dão um efeito de visão noturna.</p><h2>Folhas do Pomar</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/1fdbf3b2-ac56-446b-abf8-4606b46efa70/orchard_leaves.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=f9a1c93099352a27fa1e486700bf603fd04aaa4b4cb5da12474b5c5cc31ff3d0&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <h2>Folhas de Macieira</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/36a15f00-c737-48de-afa1-2baaf1a99e65/apple_leaves.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=65104a774cb3c68e3c0a044034e75dbe483f1cff5805737693a7eae485ad8714&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <h2>Folhas de Cerejeira</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/a93e2d96-951b-46cc-9522-d5a1bae9eb76/cherry_leaves.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=ec3138cfea29005226dc479d03bf3963f2ac6a55b531d209f398972422aff506&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <h2>Folhas de Pessegueiro</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/be33ef71-a4b8-41df-87fd-a7784a760afe/peach_leaves.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=e386da3beeeda860d385827df3fb6fe9ef4164d31deebf6a62c9ec4e39d84d1d&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <h2>Bloco de Rubi</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/9a2daabc-075e-438c-bfdb-2840489f5576/ruby_block.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=7b681cf9c9bee9ed076b53b440617ebc04e19f15918829308ba64bce9982df86&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <h2>Drusa de Rubi</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/097442e6-3e42-4c38-84b5-e1d4082af1a9/budding_ruby.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=028ae7269664e1cd8f8ee8dc98f70a3ec221f9132ef040e544e382cd11b0fa68&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <h2>Cristal de Rubi</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/dfd4e597-69ff-424b-8932-55beee2466c0/small_ruby_budy.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=e6db435b2260d7878733175650f43fab59d8b6ba7e1d5eab794006e65f2531f6&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/97b5eba0-ba4b-4e1d-97c7-f1ef05e2033b/medium_ruby_bud.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=cd90fd3f8205e7d14f1dd2c61e532a0058ad9412448a089e0479cf5aac597bbf&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/a07a6c29-5b46-4279-9bb1-4216bd52b420/large_ruby_budy.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=da6cee5fdd72b8228b7ed202f9c01fcfbffff9d17691217e2604de34ea00f6df&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <h2>Agregado de Rubi</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/9ef358e1-98d5-4ab2-a108-12cf6a50c543/ruby_cluster.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=b965e3d19a217c8d4d285610e0edbaed2d0103fc94497272c60f38590e821102&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <h2>Bloco de Grama do Mundo dos Sonhos</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/c29e95ff-5e67-48e2-8b76-01f475260753/dream_grass.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=46325bae601422b160f4563c95068323aef4ee0d3dcdfa7285bc21344416c2b6&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <p>Encontrado em toda superfície do Mundo dos Sonhos</p><h2>Rocha do Mundo dos Sonhos</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/8f3d831d-f8dd-41d5-a35c-19410ac97b40/dream_stone.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466V544FPFG%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221423Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQD7%2FGV2X8A1dD1FuQW2lkVEKEG%2Fshd4N%2FmJnuxjMbt5jAIhANVTL4yQJfWTe2l4EZgZ1zh9QdHseMZnatS%2FkNMmAkYrKv8DCDcQABoMNjM3NDIzMTgzODA1IgzqUwmpWRYOhKoChckq3APpdzHeyhloKJbyCzIchml8l3BYFml4q8veyJJ9%2F4u%2FX4Asz8Rd96H7Ks1cIDimHVUF%2B6Omw142kgeHZvuhhRBTSme%2BBLAIHhcIIon%2Ft6QKfmDlaeFKwyq8lkbeYcK7XCG8CbXmXF4BFWAXHL%2Bp95eDYRsGo%2FbdTez%2B0b4i9qpEaNOJJmJJPJOo3stdanFl8gZ05kcbv0UjScw8cJYmf4kaf0Lek77rOzfpJNetgEu9xkbsb3Pgb5KNMOZNOyf1l0JWaL051q1TkQMsQjRsQLSVl1KfptXTLHbyKaC2%2FPgRRwSY44sYpmUaN1F4V7GrvdlR1TYj%2F0DqPeeUaCUp1tylFbLIm0h9pNCxDBXvA2ZrpYTeY1YmfxLkDBH8xbDO0rrN5DZEjwgWQZqd1hc1vDP3cPlTSEIOOm1ChRD23fHHFza8Mqt8SOzYuq0wYfvbqXVJYJ6xLKpVtG0hm3u%2FdDgFiwrjtuYxNLOqPyocVLV1kiECJ4W%2B%2FdpHjV3VNS%2FXUdiixMGMe%2FdGDZdKKaj%2BjUk7nuRZKWeFolGQ%2FNfT08uzO2%2BP2xCNcBXGApkletVwFca%2BDy6sfN3v0a%2FAAhgILJj8XDt3WDaIdfXykkkgj33gwP1vJHPMVmOtzmpeEDCXqbfRBjqkAcm7CR3RdpXIQQOltfSciIU79dIgKAAVHJ%2FebTZYXU48DcnWDqFYOOMiQNfFrRpNH8VYj%2BX7hsalKQvD2prNSRVQpeb5DsiU12r%2BAFAZDDBu43kgtV3etGCW6o%2BThscBZ97zWKC0lVvL1pmsvEcX4BUjwZ6sVK%2F6cRiOmWK3aQzKKtt587izaknLLpf59gv%2FRuYcZmCU6Ev8ujolLoUdlE41DNu%2B&amp;X-Amz-Signature=5a9abbfbcc3d97ebd69c1a913e6027d67fbf7aaa1d4f77e925009ec17ae4cf39&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <p>Encontrada em todo subterrâneo do Mundo dos Sonhos</p></div></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

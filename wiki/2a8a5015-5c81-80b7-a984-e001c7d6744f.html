@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blasters - Twisted Lands Wiki</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
+    <style>
+  :root {
+    color-scheme: dark;
+    --bg: #040b12;
+    --bg-soft: #0b1927;
+    --panel: rgba(8, 19, 31, 0.92);
+    --panel-strong: rgba(13, 29, 47, 0.98);
+    --text: #f2f7ff;
+    --muted: #8ea4bb;
+    --accent: #71e2ff;
+    --accent-2: #b08aff;
+    --border: rgba(255,255,255,0.1);
+    --shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055 0%, #751111 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .brand-logo {
+    width: 220px;
+    max-width: 100%;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .page-panel {
+    background: linear-gradient(135deg, var(--panel), var(--panel-strong));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+  }
+
+  .page-panel h1, .page-panel h2, .page-panel h3, .page-panel h4 {
+    color: var(--accent);
+    margin-top: 0.5rem;
+  }
+
+  .page-panel p, .page-panel li, .page-panel blockquote, .page-panel figcaption {
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .page-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(113, 226, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  .page-panel a:hover {
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .image-item {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .image-card {
+    margin: 0;
+    background: var(--panel-strong);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .image-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .page-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-panel blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-left: 0;
+    color: var(--muted);
+  }
+
+  .page-panel code {
+    background: rgba(113, 226, 255, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #bff6ff;
+  }
+
+  .page-panel ul, .page-panel ol {
+    padding-left: 20px;
+  }
+
+  .page-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      max-width: 200px;
+    }
+    .image-card img {
+      max-width: 200px;
+    }
+    .columns-container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      max-width: 150px;
+    }
+    .image-card img {
+      max-width: 150px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="logo-header">
+        <a href="index.html">
+          <img class="brand-logo" src="../header-icon.png" alt="Twisted Lands" />
+        </a>
+      </div>
+
+      <main class="content">
+        <section class="page-panel">
+          <h2>Blaster da Agua</h2><div class="columns-container"><div class="column"><h3>Munição</h3><h2>Spider Blaster</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/1c9e2d36-cf66-4717-aeee-a0ad378ee2f3/spider_blaster.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TP6AAVNY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221427Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCYqLipFVjbsYDp3L%2BrWPEWGRLhIA%2BP9kPzXlSNCoHJuwIhAL%2Bs7CrVdi5%2Fd4KnEpTEtrWFUL76N4sxp8YyF64iz7KmKv8DCDcQABoMNjM3NDIzMTgzODA1IgzdgqFSpunU5UQs65Qq3AORmxEyaUXuEFHsrogkxc1sk3QQNA4ufr8fS15SGM1ADcle4Ojk2HvN8rh%2FTrm24xs%2B%2ByMO%2BVRMb1cnNBpCVdQXSBwK3Ae2qZXg9HDM9qPT%2Bfq95UqD%2Boo5j9a64iOGiAe0hIwPF3kH%2BCepsZoiYgGlIEGKTOqbBGoVXYCh%2FUtbBfw8yqkdncpTNHtXEcTjq83R6HwiQCqfAkqumc%2F4Wp8AEulzkVfOmZYV9ls7ESRrjWkcGeMiC22kiqNJY6AgoZKT2Qx333ytyoIfkkacQrDuNLRMcFnB9o7iUrk0O7hnwi7V4ZyVHVdGWUIilcfRzZ7L%2BDQi6GQhLa9YCP65yaXAA22qJhHTxOILDVVxFv70qT01MpgGow70yzmDrgALROLKq6gYMN%2Fw90MPyoXoW8HGAipsUfd%2F%2Fjf8cJXuANngf8NySJFcQlkjaM46cvp3ypILzhjMYjYeP8i8tdhSpnCGH5E%2F7G%2FJSioUCz6j4%2FjaumJvgT98cEKBlWzY1xeT2B408Hd3QcMd6SymgN2nZjbwQNN%2BHYwd%2FAVgg3cmqHR2Gqzo%2FdwrDMs%2B3IJQoQh9GZRp%2BtesrUKGIa8%2F%2FtX%2BSk9RznVt%2FFMuLRGstAnXm%2BMvbiHGlKw%2BIYJHVT6D%2BDCGqLfRBjqkAaWzBSOpq33lTFSnp4DAUB7tTUHoCGlCsye5Rzhev1iCSYt9IMApSEKm7TOoM33%2BXg%2B6SMOKqR61jDYtC7G%2FhMMtrvyLpDWaKPNPztlz2INwzPzTZ42zyXKrjvmGkS3cC1K8KNPHaSIIRnKradXaBSOMTxqfK8Vkawo7wFf8ZWz1euDhBKvxM0vYClHgDvIDPhBaEZoJ0Odwfj8IODZGdbbeAdjE&amp;X-Amz-Signature=9080a6c137a666417aa0e10ba77a2e8b8dbb47c5c555e18dd60657d4a6062ccb&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <p>Cria uma área de Teia de Aranha em volta do mob atingido e spawna aranhas venenosas em torno.</p><p><strong>Durabilidade: 500</strong></p><p><strong>Dano: 25</strong></p><p><strong>Cooldown: 10 segundos</strong></p><h3>Munição</h3><h2>Blaster do Fogo</h2><h3>Munição</h3><h2>Lumen Blaster</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/ab921387-ee75-4429-8726-0f1c910baf14/lumen_blaster.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TP6AAVNY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221427Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCYqLipFVjbsYDp3L%2BrWPEWGRLhIA%2BP9kPzXlSNCoHJuwIhAL%2Bs7CrVdi5%2Fd4KnEpTEtrWFUL76N4sxp8YyF64iz7KmKv8DCDcQABoMNjM3NDIzMTgzODA1IgzdgqFSpunU5UQs65Qq3AORmxEyaUXuEFHsrogkxc1sk3QQNA4ufr8fS15SGM1ADcle4Ojk2HvN8rh%2FTrm24xs%2B%2ByMO%2BVRMb1cnNBpCVdQXSBwK3Ae2qZXg9HDM9qPT%2Bfq95UqD%2Boo5j9a64iOGiAe0hIwPF3kH%2BCepsZoiYgGlIEGKTOqbBGoVXYCh%2FUtbBfw8yqkdncpTNHtXEcTjq83R6HwiQCqfAkqumc%2F4Wp8AEulzkVfOmZYV9ls7ESRrjWkcGeMiC22kiqNJY6AgoZKT2Qx333ytyoIfkkacQrDuNLRMcFnB9o7iUrk0O7hnwi7V4ZyVHVdGWUIilcfRzZ7L%2BDQi6GQhLa9YCP65yaXAA22qJhHTxOILDVVxFv70qT01MpgGow70yzmDrgALROLKq6gYMN%2Fw90MPyoXoW8HGAipsUfd%2F%2Fjf8cJXuANngf8NySJFcQlkjaM46cvp3ypILzhjMYjYeP8i8tdhSpnCGH5E%2F7G%2FJSioUCz6j4%2FjaumJvgT98cEKBlWzY1xeT2B408Hd3QcMd6SymgN2nZjbwQNN%2BHYwd%2FAVgg3cmqHR2Gqzo%2FdwrDMs%2B3IJQoQh9GZRp%2BtesrUKGIa8%2F%2FtX%2BSk9RznVt%2FFMuLRGstAnXm%2BMvbiHGlKw%2BIYJHVT6D%2BDCGqLfRBjqkAaWzBSOpq33lTFSnp4DAUB7tTUHoCGlCsye5Rzhev1iCSYt9IMApSEKm7TOoM33%2BXg%2B6SMOKqR61jDYtC7G%2FhMMtrvyLpDWaKPNPztlz2INwzPzTZ42zyXKrjvmGkS3cC1K8KNPHaSIIRnKradXaBSOMTxqfK8Vkawo7wFf8ZWz1euDhBKvxM0vYClHgDvIDPhBaEZoJ0Odwfj8IODZGdbbeAdjE&amp;X-Amz-Signature=083ad429de8c38c5056762eec6bf134b9be20491f270f8e9616bb48bb8d089f1&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <p>Dispara raios lasers rapidamente.</p><p><strong>Durabilidade:</strong></p><p><strong>Dano: 8</strong></p><h3>Munição</h3>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/42a15015-83f7-4a50-836a-e885c1d5182c/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TP6AAVNY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221427Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCYqLipFVjbsYDp3L%2BrWPEWGRLhIA%2BP9kPzXlSNCoHJuwIhAL%2Bs7CrVdi5%2Fd4KnEpTEtrWFUL76N4sxp8YyF64iz7KmKv8DCDcQABoMNjM3NDIzMTgzODA1IgzdgqFSpunU5UQs65Qq3AORmxEyaUXuEFHsrogkxc1sk3QQNA4ufr8fS15SGM1ADcle4Ojk2HvN8rh%2FTrm24xs%2B%2ByMO%2BVRMb1cnNBpCVdQXSBwK3Ae2qZXg9HDM9qPT%2Bfq95UqD%2Boo5j9a64iOGiAe0hIwPF3kH%2BCepsZoiYgGlIEGKTOqbBGoVXYCh%2FUtbBfw8yqkdncpTNHtXEcTjq83R6HwiQCqfAkqumc%2F4Wp8AEulzkVfOmZYV9ls7ESRrjWkcGeMiC22kiqNJY6AgoZKT2Qx333ytyoIfkkacQrDuNLRMcFnB9o7iUrk0O7hnwi7V4ZyVHVdGWUIilcfRzZ7L%2BDQi6GQhLa9YCP65yaXAA22qJhHTxOILDVVxFv70qT01MpgGow70yzmDrgALROLKq6gYMN%2Fw90MPyoXoW8HGAipsUfd%2F%2Fjf8cJXuANngf8NySJFcQlkjaM46cvp3ypILzhjMYjYeP8i8tdhSpnCGH5E%2F7G%2FJSioUCz6j4%2FjaumJvgT98cEKBlWzY1xeT2B408Hd3QcMd6SymgN2nZjbwQNN%2BHYwd%2FAVgg3cmqHR2Gqzo%2FdwrDMs%2B3IJQoQh9GZRp%2BtesrUKGIa8%2F%2FtX%2BSk9RznVt%2FFMuLRGstAnXm%2BMvbiHGlKw%2BIYJHVT6D%2BDCGqLfRBjqkAaWzBSOpq33lTFSnp4DAUB7tTUHoCGlCsye5Rzhev1iCSYt9IMApSEKm7TOoM33%2BXg%2B6SMOKqR61jDYtC7G%2FhMMtrvyLpDWaKPNPztlz2INwzPzTZ42zyXKrjvmGkS3cC1K8KNPHaSIIRnKradXaBSOMTxqfK8Vkawo7wFf8ZWz1euDhBKvxM0vYClHgDvIDPhBaEZoJ0Odwfj8IODZGdbbeAdjE&amp;X-Amz-Signature=17e29496184957de283fada6244ba5afadec692f4bddb436e621e9fc1ba19a0c&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <h2>Blaster do Exterminador 4-B</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/1f689a95-b291-47cc-86cd-8977ba82e891/exterminator_blaster.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TP6AAVNY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221427Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCYqLipFVjbsYDp3L%2BrWPEWGRLhIA%2BP9kPzXlSNCoHJuwIhAL%2Bs7CrVdi5%2Fd4KnEpTEtrWFUL76N4sxp8YyF64iz7KmKv8DCDcQABoMNjM3NDIzMTgzODA1IgzdgqFSpunU5UQs65Qq3AORmxEyaUXuEFHsrogkxc1sk3QQNA4ufr8fS15SGM1ADcle4Ojk2HvN8rh%2FTrm24xs%2B%2ByMO%2BVRMb1cnNBpCVdQXSBwK3Ae2qZXg9HDM9qPT%2Bfq95UqD%2Boo5j9a64iOGiAe0hIwPF3kH%2BCepsZoiYgGlIEGKTOqbBGoVXYCh%2FUtbBfw8yqkdncpTNHtXEcTjq83R6HwiQCqfAkqumc%2F4Wp8AEulzkVfOmZYV9ls7ESRrjWkcGeMiC22kiqNJY6AgoZKT2Qx333ytyoIfkkacQrDuNLRMcFnB9o7iUrk0O7hnwi7V4ZyVHVdGWUIilcfRzZ7L%2BDQi6GQhLa9YCP65yaXAA22qJhHTxOILDVVxFv70qT01MpgGow70yzmDrgALROLKq6gYMN%2Fw90MPyoXoW8HGAipsUfd%2F%2Fjf8cJXuANngf8NySJFcQlkjaM46cvp3ypILzhjMYjYeP8i8tdhSpnCGH5E%2F7G%2FJSioUCz6j4%2FjaumJvgT98cEKBlWzY1xeT2B408Hd3QcMd6SymgN2nZjbwQNN%2BHYwd%2FAVgg3cmqHR2Gqzo%2FdwrDMs%2B3IJQoQh9GZRp%2BtesrUKGIa8%2F%2FtX%2BSk9RznVt%2FFMuLRGstAnXm%2BMvbiHGlKw%2BIYJHVT6D%2BDCGqLfRBjqkAaWzBSOpq33lTFSnp4DAUB7tTUHoCGlCsye5Rzhev1iCSYt9IMApSEKm7TOoM33%2BXg%2B6SMOKqR61jDYtC7G%2FhMMtrvyLpDWaKPNPztlz2INwzPzTZ42zyXKrjvmGkS3cC1K8KNPHaSIIRnKradXaBSOMTxqfK8Vkawo7wFf8ZWz1euDhBKvxM0vYClHgDvIDPhBaEZoJ0Odwfj8IODZGdbbeAdjE&amp;X-Amz-Signature=b01e170c0f1f5f4cedaedd0769e65100970e657b9e3a4b2f0bb7bae54741114e&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <p>Dispara orbes de plasma que causam uma enorme explosão com potencia 7.</p><p><strong>Durabilidade: 1000</strong></p><p><strong>Dano: 30</strong></p><p><strong>Cooldown: 3 segundos</strong></p><h3>Munição</h3>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/ec3b94d8-2d99-4f9c-a5ea-12b6f9ab6d2c/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TP6AAVNY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221427Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCYqLipFVjbsYDp3L%2BrWPEWGRLhIA%2BP9kPzXlSNCoHJuwIhAL%2Bs7CrVdi5%2Fd4KnEpTEtrWFUL76N4sxp8YyF64iz7KmKv8DCDcQABoMNjM3NDIzMTgzODA1IgzdgqFSpunU5UQs65Qq3AORmxEyaUXuEFHsrogkxc1sk3QQNA4ufr8fS15SGM1ADcle4Ojk2HvN8rh%2FTrm24xs%2B%2ByMO%2BVRMb1cnNBpCVdQXSBwK3Ae2qZXg9HDM9qPT%2Bfq95UqD%2Boo5j9a64iOGiAe0hIwPF3kH%2BCepsZoiYgGlIEGKTOqbBGoVXYCh%2FUtbBfw8yqkdncpTNHtXEcTjq83R6HwiQCqfAkqumc%2F4Wp8AEulzkVfOmZYV9ls7ESRrjWkcGeMiC22kiqNJY6AgoZKT2Qx333ytyoIfkkacQrDuNLRMcFnB9o7iUrk0O7hnwi7V4ZyVHVdGWUIilcfRzZ7L%2BDQi6GQhLa9YCP65yaXAA22qJhHTxOILDVVxFv70qT01MpgGow70yzmDrgALROLKq6gYMN%2Fw90MPyoXoW8HGAipsUfd%2F%2Fjf8cJXuANngf8NySJFcQlkjaM46cvp3ypILzhjMYjYeP8i8tdhSpnCGH5E%2F7G%2FJSioUCz6j4%2FjaumJvgT98cEKBlWzY1xeT2B408Hd3QcMd6SymgN2nZjbwQNN%2BHYwd%2FAVgg3cmqHR2Gqzo%2FdwrDMs%2B3IJQoQh9GZRp%2BtesrUKGIa8%2F%2FtX%2BSk9RznVt%2FFMuLRGstAnXm%2BMvbiHGlKw%2BIYJHVT6D%2BDCGqLfRBjqkAaWzBSOpq33lTFSnp4DAUB7tTUHoCGlCsye5Rzhev1iCSYt9IMApSEKm7TOoM33%2BXg%2B6SMOKqR61jDYtC7G%2FhMMtrvyLpDWaKPNPztlz2INwzPzTZ42zyXKrjvmGkS3cC1K8KNPHaSIIRnKradXaBSOMTxqfK8Vkawo7wFf8ZWz1euDhBKvxM0vYClHgDvIDPhBaEZoJ0Odwfj8IODZGdbbeAdjE&amp;X-Amz-Signature=e0b7e053cae31a223627ec2f5cd43456abce160b0dd536e56a74e916ace81b3a&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <h2>Raygun</h2>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/5e0efc55-1b24-49e2-8dfa-c7544d237211/raygun.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TP6AAVNY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221427Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCYqLipFVjbsYDp3L%2BrWPEWGRLhIA%2BP9kPzXlSNCoHJuwIhAL%2Bs7CrVdi5%2Fd4KnEpTEtrWFUL76N4sxp8YyF64iz7KmKv8DCDcQABoMNjM3NDIzMTgzODA1IgzdgqFSpunU5UQs65Qq3AORmxEyaUXuEFHsrogkxc1sk3QQNA4ufr8fS15SGM1ADcle4Ojk2HvN8rh%2FTrm24xs%2B%2ByMO%2BVRMb1cnNBpCVdQXSBwK3Ae2qZXg9HDM9qPT%2Bfq95UqD%2Boo5j9a64iOGiAe0hIwPF3kH%2BCepsZoiYgGlIEGKTOqbBGoVXYCh%2FUtbBfw8yqkdncpTNHtXEcTjq83R6HwiQCqfAkqumc%2F4Wp8AEulzkVfOmZYV9ls7ESRrjWkcGeMiC22kiqNJY6AgoZKT2Qx333ytyoIfkkacQrDuNLRMcFnB9o7iUrk0O7hnwi7V4ZyVHVdGWUIilcfRzZ7L%2BDQi6GQhLa9YCP65yaXAA22qJhHTxOILDVVxFv70qT01MpgGow70yzmDrgALROLKq6gYMN%2Fw90MPyoXoW8HGAipsUfd%2F%2Fjf8cJXuANngf8NySJFcQlkjaM46cvp3ypILzhjMYjYeP8i8tdhSpnCGH5E%2F7G%2FJSioUCz6j4%2FjaumJvgT98cEKBlWzY1xeT2B408Hd3QcMd6SymgN2nZjbwQNN%2BHYwd%2FAVgg3cmqHR2Gqzo%2FdwrDMs%2B3IJQoQh9GZRp%2BtesrUKGIa8%2F%2FtX%2BSk9RznVt%2FFMuLRGstAnXm%2BMvbiHGlKw%2BIYJHVT6D%2BDCGqLfRBjqkAaWzBSOpq33lTFSnp4DAUB7tTUHoCGlCsye5Rzhev1iCSYt9IMApSEKm7TOoM33%2BXg%2B6SMOKqR61jDYtC7G%2FhMMtrvyLpDWaKPNPztlz2INwzPzTZ42zyXKrjvmGkS3cC1K8KNPHaSIIRnKradXaBSOMTxqfK8Vkawo7wFf8ZWz1euDhBKvxM0vYClHgDvIDPhBaEZoJ0Odwfj8IODZGdbbeAdjE&amp;X-Amz-Signature=59346f3d046763b259ffbe5a9baa88f06c9cfa4483a35853559b407692877267&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                <p>Leva 5 segundos para ser carregada, mas ao ser carregada dispara raios plasma como uma bobina, que causa um grande estrago, queimando e fritando as coisas que são atingidas e destruindo blocos.</p><p><strong>Durabilidade: 3000</strong></p><p><strong>Dano: 55</strong></p><h3>Munição</h3>
+                    <div class="image-item">
+                        <figure class="image-card">
+                            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/23b8e1b0-305f-4116-aba5-e44d9826fbf2/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466TP6AAVNY%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221427Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJIMEYCIQCYqLipFVjbsYDp3L%2BrWPEWGRLhIA%2BP9kPzXlSNCoHJuwIhAL%2Bs7CrVdi5%2Fd4KnEpTEtrWFUL76N4sxp8YyF64iz7KmKv8DCDcQABoMNjM3NDIzMTgzODA1IgzdgqFSpunU5UQs65Qq3AORmxEyaUXuEFHsrogkxc1sk3QQNA4ufr8fS15SGM1ADcle4Ojk2HvN8rh%2FTrm24xs%2B%2ByMO%2BVRMb1cnNBpCVdQXSBwK3Ae2qZXg9HDM9qPT%2Bfq95UqD%2Boo5j9a64iOGiAe0hIwPF3kH%2BCepsZoiYgGlIEGKTOqbBGoVXYCh%2FUtbBfw8yqkdncpTNHtXEcTjq83R6HwiQCqfAkqumc%2F4Wp8AEulzkVfOmZYV9ls7ESRrjWkcGeMiC22kiqNJY6AgoZKT2Qx333ytyoIfkkacQrDuNLRMcFnB9o7iUrk0O7hnwi7V4ZyVHVdGWUIilcfRzZ7L%2BDQi6GQhLa9YCP65yaXAA22qJhHTxOILDVVxFv70qT01MpgGow70yzmDrgALROLKq6gYMN%2Fw90MPyoXoW8HGAipsUfd%2F%2Fjf8cJXuANngf8NySJFcQlkjaM46cvp3ypILzhjMYjYeP8i8tdhSpnCGH5E%2F7G%2FJSioUCz6j4%2FjaumJvgT98cEKBlWzY1xeT2B408Hd3QcMd6SymgN2nZjbwQNN%2BHYwd%2FAVgg3cmqHR2Gqzo%2FdwrDMs%2B3IJQoQh9GZRp%2BtesrUKGIa8%2F%2FtX%2BSk9RznVt%2FFMuLRGstAnXm%2BMvbiHGlKw%2BIYJHVT6D%2BDCGqLfRBjqkAaWzBSOpq33lTFSnp4DAUB7tTUHoCGlCsye5Rzhev1iCSYt9IMApSEKm7TOoM33%2BXg%2B6SMOKqR61jDYtC7G%2FhMMtrvyLpDWaKPNPztlz2INwzPzTZ42zyXKrjvmGkS3cC1K8KNPHaSIIRnKradXaBSOMTxqfK8Vkawo7wFf8ZWz1euDhBKvxM0vYClHgDvIDPhBaEZoJ0Odwfj8IODZGdbbeAdjE&amp;X-Amz-Signature=5ebdb0544fe497a2f2ec63205a688d1029a0ddf2a177d3e46620a9e2f8426e76&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                            
+                        </figure>
+                    </div>
+                </div></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

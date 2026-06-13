@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Doce - Twisted Lands Wiki</title>
+    <link rel="shortcut icon" href="../icon.ico" type="image/x-icon" />
+    <style>
+  :root {
+    color-scheme: dark;
+    --bg: #040b12;
+    --bg-soft: #0b1927;
+    --panel: rgba(8, 19, 31, 0.92);
+    --panel-strong: rgba(13, 29, 47, 0.98);
+    --text: #f2f7ff;
+    --muted: #8ea4bb;
+    --accent: #71e2ff;
+    --accent-2: #b08aff;
+    --border: rgba(255,255,255,0.1);
+    --shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #2b1055 0%, #751111 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+  .brand-logo {
+    width: 220px;
+    max-width: 100%;
+    display: block;
+    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.25));
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .page-panel {
+    background: linear-gradient(135deg, var(--panel), var(--panel-strong));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 24px 28px;
+  }
+
+  .page-panel h1, .page-panel h2, .page-panel h3, .page-panel h4 {
+    color: var(--accent);
+    margin-top: 0.5rem;
+  }
+
+  .page-panel p, .page-panel li, .page-panel blockquote, .page-panel figcaption {
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .page-panel a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(113, 226, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  .page-panel a:hover {
+    border-bottom-color: var(--accent);
+    text-decoration: none;
+  }
+
+  .image-item {
+    display: inline-block;
+    width: auto;
+    max-width: 250px;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .image-card {
+    margin: 0;
+    background: var(--panel-strong);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .image-card img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+
+  .image-card figcaption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .page-panel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-panel blockquote {
+    border-left: 4px solid var(--accent);
+    padding-left: 14px;
+    margin-left: 0;
+    color: var(--muted);
+  }
+
+  .page-panel code {
+    background: rgba(113, 226, 255, 0.12);
+    padding: 2px 6px;
+    border-radius: 6px;
+    color: #bff6ff;
+  }
+
+  .page-panel ul, .page-panel ol {
+    padding-left: 20px;
+  }
+
+  .page-panel hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 768px) {
+    .image-item {
+      max-width: 200px;
+    }
+    .image-card img {
+      max-width: 200px;
+    }
+    .columns-container {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-item {
+      max-width: 150px;
+    }
+    .image-card img {
+      max-width: 150px;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div class="shell">
+      <div class="logo-header">
+        <a href="index.html">
+          <img class="brand-logo" src="../header-icon.png" alt="Twisted Lands" />
+        </a>
+      </div>
+
+      <main class="content">
+        <section class="page-panel">
+          <h2>Grama de Biscoito</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/56e56c07-b148-4aa9-a2ac-afef03f6686c/cookie_grass.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XMPYTFYE%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221421Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDklENlShLpgX0j9CrBuX%2FJH2no1wljUzfgtr29e90kkgIgVj2c6Bafrx20%2B2tOKsKF2AwZ0OS4kEjzGv1trds18KEq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDHupsIB59FP3OKgFEyrcA7fugG%2Fzhv5UBrVwlxbefhcbowmOm05Av55%2FpresYeg%2FL9u1jccRL2PuU%2BobePqRP%2FOdtN5M5wLfgcAMyXoCRmEjR%2Bo1L7JgcrZjnoQVqhiJYCqdc02fp503HpkTAiTeA9R1jEmm7%2BNjpSgLuErrHm5S4%2Fc0Dt3xq2J8%2F%2FHjKtVNkPAhTQE1oUPM6wE9rZ1ZntW1klpz9QRBfbf9jyTWp06jALzEE%2FzeEzDte1cltMPdF5R1xCAFzntRgZRxM7ThV%2BQ2lwq1bycozxJRNlgm9IYjWP0i8iQfLOZOHWr2%2F2xfMUkAIs2s6risOBSokx97JS5KaJ548Ynj5vkB29krnbLrSliuqDH0UAPuXBUVDtaJxoQMlOSRJt7j1Lfo90zIS3em08M2LX2MyCbc0WDdRizXnkl%2BBUamWLAJ8HMbBoC0tr0bwf9MebM3ACUo%2FgfGLh98QeNv1vmkQYxDKXHCDfqYK4xB0gLOad8vQiPg3l6dr12EskaEGp7ck1GPgpc5EUm1h%2FlUv9X5J3bF3PX9UaDZJx2HGU3S8tU9vnqwcqQfCyram8iGAEeIZkC%2FWEHnA8cuTxTyFLfKxC6B7ZQoIYLwbNe5eY%2Fu8XjVs925FTSPt%2BadnDrFESrvycG0MLqmt9EGOqUBlwNDF3qXqDZBSe62HCBavcz8vlxyZBVzOTJV3jJ2WmaT68UiuCxb%2FRf5LegTnn1S%2FPei0T7DYibNTGzRSseuXACgNB0ciVdTV7Y5CEav9lK7Wa79clPNHoxzJvDQV7hw5usMC%2FYxtg%2BdluNa%2BuG8FVN4xFV2%2FHkY54r%2BkqzqCBgxl5vKMpGJE%2BpR5Molp3CZwI2PJRg%2Fucne%2BWdYwenGzOCeMQFH&amp;X-Amz-Signature=d8dc2e48858fe51801bdba2c7da2ad80ff715dd8c1f559f9a1556ba80c301a34&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p></p><p><strong>Dureza: 0.6</strong></p><p><strong>Resistencia a explosão: 0.6</strong></p><p><strong>Ferramenta para quebrar: Pá</strong></p><h2>Pedra de Biscoito</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/93a70a0d-7c54-4d3d-a116-f1c6ecfa8e86/cookie_stone.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XMPYTFYE%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221421Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDklENlShLpgX0j9CrBuX%2FJH2no1wljUzfgtr29e90kkgIgVj2c6Bafrx20%2B2tOKsKF2AwZ0OS4kEjzGv1trds18KEq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDHupsIB59FP3OKgFEyrcA7fugG%2Fzhv5UBrVwlxbefhcbowmOm05Av55%2FpresYeg%2FL9u1jccRL2PuU%2BobePqRP%2FOdtN5M5wLfgcAMyXoCRmEjR%2Bo1L7JgcrZjnoQVqhiJYCqdc02fp503HpkTAiTeA9R1jEmm7%2BNjpSgLuErrHm5S4%2Fc0Dt3xq2J8%2F%2FHjKtVNkPAhTQE1oUPM6wE9rZ1ZntW1klpz9QRBfbf9jyTWp06jALzEE%2FzeEzDte1cltMPdF5R1xCAFzntRgZRxM7ThV%2BQ2lwq1bycozxJRNlgm9IYjWP0i8iQfLOZOHWr2%2F2xfMUkAIs2s6risOBSokx97JS5KaJ548Ynj5vkB29krnbLrSliuqDH0UAPuXBUVDtaJxoQMlOSRJt7j1Lfo90zIS3em08M2LX2MyCbc0WDdRizXnkl%2BBUamWLAJ8HMbBoC0tr0bwf9MebM3ACUo%2FgfGLh98QeNv1vmkQYxDKXHCDfqYK4xB0gLOad8vQiPg3l6dr12EskaEGp7ck1GPgpc5EUm1h%2FlUv9X5J3bF3PX9UaDZJx2HGU3S8tU9vnqwcqQfCyram8iGAEeIZkC%2FWEHnA8cuTxTyFLfKxC6B7ZQoIYLwbNe5eY%2Fu8XjVs925FTSPt%2BadnDrFESrvycG0MLqmt9EGOqUBlwNDF3qXqDZBSe62HCBavcz8vlxyZBVzOTJV3jJ2WmaT68UiuCxb%2FRf5LegTnn1S%2FPei0T7DYibNTGzRSseuXACgNB0ciVdTV7Y5CEav9lK7Wa79clPNHoxzJvDQV7hw5usMC%2FYxtg%2BdluNa%2BuG8FVN4xFV2%2FHkY54r%2BkqzqCBgxl5vKMpGJE%2BpR5Molp3CZwI2PJRg%2Fucne%2BWdYwenGzOCeMQFH&amp;X-Amz-Signature=70b4d225ccae9d9fe60a641ba262c61217343a733cb82a3a215add2df560e99f&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p></p><p><strong>Dureza: 6</strong></p><p><strong>Resistencia a explosão: 1.5</strong></p><p><strong>Ferramenta para quebrar: Picareta</strong></p><h2>Folha de Algodão Doce</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/7d1d8104-3853-4030-ad53-f007d57535ca/cotton_leaves.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XMPYTFYE%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221421Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDklENlShLpgX0j9CrBuX%2FJH2no1wljUzfgtr29e90kkgIgVj2c6Bafrx20%2B2tOKsKF2AwZ0OS4kEjzGv1trds18KEq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDHupsIB59FP3OKgFEyrcA7fugG%2Fzhv5UBrVwlxbefhcbowmOm05Av55%2FpresYeg%2FL9u1jccRL2PuU%2BobePqRP%2FOdtN5M5wLfgcAMyXoCRmEjR%2Bo1L7JgcrZjnoQVqhiJYCqdc02fp503HpkTAiTeA9R1jEmm7%2BNjpSgLuErrHm5S4%2Fc0Dt3xq2J8%2F%2FHjKtVNkPAhTQE1oUPM6wE9rZ1ZntW1klpz9QRBfbf9jyTWp06jALzEE%2FzeEzDte1cltMPdF5R1xCAFzntRgZRxM7ThV%2BQ2lwq1bycozxJRNlgm9IYjWP0i8iQfLOZOHWr2%2F2xfMUkAIs2s6risOBSokx97JS5KaJ548Ynj5vkB29krnbLrSliuqDH0UAPuXBUVDtaJxoQMlOSRJt7j1Lfo90zIS3em08M2LX2MyCbc0WDdRizXnkl%2BBUamWLAJ8HMbBoC0tr0bwf9MebM3ACUo%2FgfGLh98QeNv1vmkQYxDKXHCDfqYK4xB0gLOad8vQiPg3l6dr12EskaEGp7ck1GPgpc5EUm1h%2FlUv9X5J3bF3PX9UaDZJx2HGU3S8tU9vnqwcqQfCyram8iGAEeIZkC%2FWEHnA8cuTxTyFLfKxC6B7ZQoIYLwbNe5eY%2Fu8XjVs925FTSPt%2BadnDrFESrvycG0MLqmt9EGOqUBlwNDF3qXqDZBSe62HCBavcz8vlxyZBVzOTJV3jJ2WmaT68UiuCxb%2FRf5LegTnn1S%2FPei0T7DYibNTGzRSseuXACgNB0ciVdTV7Y5CEav9lK7Wa79clPNHoxzJvDQV7hw5usMC%2FYxtg%2BdluNa%2BuG8FVN4xFV2%2FHkY54r%2BkqzqCBgxl5vKMpGJE%2BpR5Molp3CZwI2PJRg%2Fucne%2BWdYwenGzOCeMQFH&amp;X-Amz-Signature=c0bc65201112e1948696436d8025c5bfbbc5a4d2e382323a775922bb75b71482&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p></p><p><strong>Dureza: 0.35</strong></p><p><strong>Resistencia a explosão: 0.2</strong></p><p><strong>Ferramenta para quebrar: Tesoura</strong></p><h2>Madeira de Bengala Doce</h2>
+                <div class="image-item">
+                    <figure class="image-card">
+                        <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/8e763220-217a-4480-b90e-b3168e55de77/c62cf80f-0e23-4789-b5f7-66827e5aba6d/candy_cane_log.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Credential=ASIAZI2LB466XMPYTFYE%2F20260613%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20260613T221421Z&amp;X-Amz-Expires=3600&amp;X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLXdlc3QtMiJHMEUCIQDklENlShLpgX0j9CrBuX%2FJH2no1wljUzfgtr29e90kkgIgVj2c6Bafrx20%2B2tOKsKF2AwZ0OS4kEjzGv1trds18KEq%2FwMINxAAGgw2Mzc0MjMxODM4MDUiDHupsIB59FP3OKgFEyrcA7fugG%2Fzhv5UBrVwlxbefhcbowmOm05Av55%2FpresYeg%2FL9u1jccRL2PuU%2BobePqRP%2FOdtN5M5wLfgcAMyXoCRmEjR%2Bo1L7JgcrZjnoQVqhiJYCqdc02fp503HpkTAiTeA9R1jEmm7%2BNjpSgLuErrHm5S4%2Fc0Dt3xq2J8%2F%2FHjKtVNkPAhTQE1oUPM6wE9rZ1ZntW1klpz9QRBfbf9jyTWp06jALzEE%2FzeEzDte1cltMPdF5R1xCAFzntRgZRxM7ThV%2BQ2lwq1bycozxJRNlgm9IYjWP0i8iQfLOZOHWr2%2F2xfMUkAIs2s6risOBSokx97JS5KaJ548Ynj5vkB29krnbLrSliuqDH0UAPuXBUVDtaJxoQMlOSRJt7j1Lfo90zIS3em08M2LX2MyCbc0WDdRizXnkl%2BBUamWLAJ8HMbBoC0tr0bwf9MebM3ACUo%2FgfGLh98QeNv1vmkQYxDKXHCDfqYK4xB0gLOad8vQiPg3l6dr12EskaEGp7ck1GPgpc5EUm1h%2FlUv9X5J3bF3PX9UaDZJx2HGU3S8tU9vnqwcqQfCyram8iGAEeIZkC%2FWEHnA8cuTxTyFLfKxC6B7ZQoIYLwbNe5eY%2Fu8XjVs925FTSPt%2BadnDrFESrvycG0MLqmt9EGOqUBlwNDF3qXqDZBSe62HCBavcz8vlxyZBVzOTJV3jJ2WmaT68UiuCxb%2FRf5LegTnn1S%2FPei0T7DYibNTGzRSseuXACgNB0ciVdTV7Y5CEav9lK7Wa79clPNHoxzJvDQV7hw5usMC%2FYxtg%2BdluNa%2BuG8FVN4xFV2%2FHkY54r%2BkqzqCBgxl5vKMpGJE%2BpR5Molp3CZwI2PJRg%2Fucne%2BWdYwenGzOCeMQFH&amp;X-Amz-Signature=5088589c10d215ac4fe3c64b456e91189879896e1e4370b15e728ad5e44a9f0a&amp;X-Amz-SignedHeaders=host&amp;x-amz-checksum-mode=ENABLED&amp;x-id=GetObject" alt="" loading="lazy" />
+                        
+                    </figure>
+                </div>
+            <p></p><p><strong>Dureza: 2</strong></p><p><strong>Resistencia a explosão: 2</strong></p><p><strong>Ferramenta para quebrar: Machado</strong></p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
